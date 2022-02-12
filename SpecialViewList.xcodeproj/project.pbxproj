@@ -15,6 +15,20 @@
 		CA5F0A2327B5E5250021E1FD /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5F0A2027B5E5250021E1FD /* NibOwnerLoadable.swift */; };
 		CA5F0A2827B5E8E40021E1FD /* SpecialViewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5F0A2627B5E8E40021E1FD /* SpecialViewListViewController.swift */; };
 		CA5F0A2927B5E8E40021E1FD /* SpecialViewListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA5F0A2727B5E8E40021E1FD /* SpecialViewListViewController.xib */; };
+		CA5F0AB727B5FB480021E1FD /* SpecialViewListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5F0AB527B5FB480021E1FD /* SpecialViewListTableViewCell.swift */; };
+		CA5F0AB827B5FB480021E1FD /* SpecialViewListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA5F0AB627B5FB480021E1FD /* SpecialViewListTableViewCell.xib */; };
+		CA5F0ABA27B633D20021E1FD /* SpecialViewListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5F0AB927B633D20021E1FD /* SpecialViewListViewModel.swift */; };
+		CA5F0ABF27B634EE0021E1FD /* Grid3x3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5F0ABD27B634EE0021E1FD /* Grid3x3ViewController.swift */; };
+		CA5F0AC027B634EE0021E1FD /* Grid3x3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA5F0ABE27B634EE0021E1FD /* Grid3x3ViewController.xib */; };
+		CA5F0AC227B635760021E1FD /* Grid3x3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5F0AC127B635760021E1FD /* Grid3x3View.swift */; };
+		CA5F0AC427B6358A0021E1FD /* Grid3x3View.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA5F0AC327B6358A0021E1FD /* Grid3x3View.xib */; };
+		CA5F0AC627B63E780021E1FD /* Grid3x3ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5F0AC527B63E770021E1FD /* Grid3x3ItemView.swift */; };
+		CA5F0AC827B63E850021E1FD /* Grid3x3ItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA5F0AC727B63E850021E1FD /* Grid3x3ItemView.xib */; };
+		CA5F0ACB27B645DA0021E1FD /* ItemContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5F0ACA27B645DA0021E1FD /* ItemContent.swift */; };
+		CA5F0ACD27B646020021E1FD /* Grid3x3ItemTapGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5F0ACC27B646020021E1FD /* Grid3x3ItemTapGesture.swift */; };
+		CA5F0ACF27B729EA0021E1FD /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5F0ACE27B729EA0021E1FD /* UIViewExtension.swift */; };
+		CA5F0AD127B7769E0021E1FD /* Grid3x3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5F0AD027B7769E0021E1FD /* Grid3x3ViewModel.swift */; };
+		CA5F0AD327B7770E0021E1FD /* SpecialViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5F0AD227B7770E0021E1FD /* SpecialViewList.swift */; };
 		CA664DBA27B5E31C0083D686 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA664DB927B5E31C0083D686 /* AppDelegate.swift */; };
 		CA664DC327B5E31D0083D686 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA664DC227B5E31D0083D686 /* Assets.xcassets */; };
 		CA664DC627B5E31D0083D686 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA664DC427B5E31D0083D686 /* LaunchScreen.storyboard */; };
@@ -29,6 +43,20 @@
 		CA5F0A2027B5E5250021E1FD /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibOwnerLoadable.swift; sourceTree = "<group>"; };
 		CA5F0A2627B5E8E40021E1FD /* SpecialViewListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialViewListViewController.swift; sourceTree = "<group>"; };
 		CA5F0A2727B5E8E40021E1FD /* SpecialViewListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpecialViewListViewController.xib; sourceTree = "<group>"; };
+		CA5F0AB527B5FB480021E1FD /* SpecialViewListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialViewListTableViewCell.swift; sourceTree = "<group>"; };
+		CA5F0AB627B5FB480021E1FD /* SpecialViewListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpecialViewListTableViewCell.xib; sourceTree = "<group>"; };
+		CA5F0AB927B633D20021E1FD /* SpecialViewListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialViewListViewModel.swift; sourceTree = "<group>"; };
+		CA5F0ABD27B634EE0021E1FD /* Grid3x3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid3x3ViewController.swift; sourceTree = "<group>"; };
+		CA5F0ABE27B634EE0021E1FD /* Grid3x3ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Grid3x3ViewController.xib; sourceTree = "<group>"; };
+		CA5F0AC127B635760021E1FD /* Grid3x3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid3x3View.swift; sourceTree = "<group>"; };
+		CA5F0AC327B6358A0021E1FD /* Grid3x3View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Grid3x3View.xib; sourceTree = "<group>"; };
+		CA5F0AC527B63E770021E1FD /* Grid3x3ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid3x3ItemView.swift; sourceTree = "<group>"; };
+		CA5F0AC727B63E850021E1FD /* Grid3x3ItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Grid3x3ItemView.xib; sourceTree = "<group>"; };
+		CA5F0ACA27B645DA0021E1FD /* ItemContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemContent.swift; sourceTree = "<group>"; };
+		CA5F0ACC27B646020021E1FD /* Grid3x3ItemTapGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid3x3ItemTapGesture.swift; sourceTree = "<group>"; };
+		CA5F0ACE27B729EA0021E1FD /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		CA5F0AD027B7769E0021E1FD /* Grid3x3ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid3x3ViewModel.swift; sourceTree = "<group>"; };
+		CA5F0AD227B7770E0021E1FD /* SpecialViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialViewList.swift; sourceTree = "<group>"; };
 		CA664DB627B5E31C0083D686 /* SpecialViewList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpecialViewList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA664DB927B5E31C0083D686 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA664DC227B5E31D0083D686 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,6 +78,7 @@
 		CA5F0A1627B5E4B70021E1FD /* Extenstion */ = {
 			isa = PBXGroup;
 			children = (
+				CA5F0ACE27B729EA0021E1FD /* UIViewExtension.swift */,
 				CA5F0A1727B5E4D30021E1FD /* NSObjectExtension.swift */,
 				CA5F0A1927B5E4E00021E1FD /* UICollectionViewExtension.swift */,
 				CA5F0A1A27B5E4E00021E1FD /* UITableViewExtension.swift */,
@@ -78,10 +107,46 @@
 		CA5F0A2527B5E5640021E1FD /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				CA5F0A2627B5E8E40021E1FD /* SpecialViewListViewController.swift */,
-				CA5F0A2727B5E8E40021E1FD /* SpecialViewListViewController.xib */,
+				CA5F0ABC27B634570021E1FD /* Grid3x3 */,
+				CA5F0ABB27B634300021E1FD /* SpecialViewList */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		CA5F0ABB27B634300021E1FD /* SpecialViewList */ = {
+			isa = PBXGroup;
+			children = (
+				CA5F0A2627B5E8E40021E1FD /* SpecialViewListViewController.swift */,
+				CA5F0A2727B5E8E40021E1FD /* SpecialViewListViewController.xib */,
+				CA5F0AB527B5FB480021E1FD /* SpecialViewListTableViewCell.swift */,
+				CA5F0AB627B5FB480021E1FD /* SpecialViewListTableViewCell.xib */,
+				CA5F0AB927B633D20021E1FD /* SpecialViewListViewModel.swift */,
+				CA5F0AD227B7770E0021E1FD /* SpecialViewList.swift */,
+			);
+			path = SpecialViewList;
+			sourceTree = "<group>";
+		};
+		CA5F0ABC27B634570021E1FD /* Grid3x3 */ = {
+			isa = PBXGroup;
+			children = (
+				CA5F0ABD27B634EE0021E1FD /* Grid3x3ViewController.swift */,
+				CA5F0ABE27B634EE0021E1FD /* Grid3x3ViewController.xib */,
+				CA5F0AC127B635760021E1FD /* Grid3x3View.swift */,
+				CA5F0AC327B6358A0021E1FD /* Grid3x3View.xib */,
+				CA5F0AC527B63E770021E1FD /* Grid3x3ItemView.swift */,
+				CA5F0AC727B63E850021E1FD /* Grid3x3ItemView.xib */,
+				CA5F0ACC27B646020021E1FD /* Grid3x3ItemTapGesture.swift */,
+				CA5F0AD027B7769E0021E1FD /* Grid3x3ViewModel.swift */,
+			);
+			path = Grid3x3;
+			sourceTree = "<group>";
+		};
+		CA5F0AC927B645730021E1FD /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				CA5F0ACA27B645DA0021E1FD /* ItemContent.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		CA664DAD27B5E31B0083D686 = {
@@ -103,6 +168,7 @@
 		CA664DB827B5E31C0083D686 /* SpecialViewList */ = {
 			isa = PBXGroup;
 			children = (
+				CA5F0AC927B645730021E1FD /* Entity */,
 				CA5F0A2527B5E5640021E1FD /* Component */,
 				CA5F0A1D27B5E4F70021E1FD /* Foundation */,
 				CA5F0A1627B5E4B70021E1FD /* Extenstion */,
@@ -172,9 +238,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA5F0AB827B5FB480021E1FD /* SpecialViewListTableViewCell.xib in Resources */,
 				CA664DC627B5E31D0083D686 /* LaunchScreen.storyboard in Resources */,
 				CA5F0A2927B5E8E40021E1FD /* SpecialViewListViewController.xib in Resources */,
 				CA664DC327B5E31D0083D686 /* Assets.xcassets in Resources */,
+				CA5F0AC827B63E850021E1FD /* Grid3x3ItemView.xib in Resources */,
+				CA5F0AC027B634EE0021E1FD /* Grid3x3ViewController.xib in Resources */,
+				CA5F0AC427B6358A0021E1FD /* Grid3x3View.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,14 +255,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA5F0ACB27B645DA0021E1FD /* ItemContent.swift in Sources */,
 				CA5F0A2327B5E5250021E1FD /* NibOwnerLoadable.swift in Sources */,
 				CA5F0A2227B5E5250021E1FD /* NibLoadable.swift in Sources */,
 				CA664DBA27B5E31C0083D686 /* AppDelegate.swift in Sources */,
+				CA5F0AD127B7769E0021E1FD /* Grid3x3ViewModel.swift in Sources */,
+				CA5F0ABA27B633D20021E1FD /* SpecialViewListViewModel.swift in Sources */,
 				CA5F0A1C27B5E4E00021E1FD /* UITableViewExtension.swift in Sources */,
+				CA5F0ACF27B729EA0021E1FD /* UIViewExtension.swift in Sources */,
 				CA5F0A1827B5E4D30021E1FD /* NSObjectExtension.swift in Sources */,
 				CA5F0A1B27B5E4E00021E1FD /* UICollectionViewExtension.swift in Sources */,
 				CA5F0A2127B5E5250021E1FD /* NibBundler.swift in Sources */,
 				CA5F0A2827B5E8E40021E1FD /* SpecialViewListViewController.swift in Sources */,
+				CA5F0AB727B5FB480021E1FD /* SpecialViewListTableViewCell.swift in Sources */,
+				CA5F0ABF27B634EE0021E1FD /* Grid3x3ViewController.swift in Sources */,
+				CA5F0AD327B7770E0021E1FD /* SpecialViewList.swift in Sources */,
+				CA5F0AC627B63E780021E1FD /* Grid3x3ItemView.swift in Sources */,
+				CA5F0AC227B635760021E1FD /* Grid3x3View.swift in Sources */,
+				CA5F0ACD27B646020021E1FD /* Grid3x3ItemTapGesture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
