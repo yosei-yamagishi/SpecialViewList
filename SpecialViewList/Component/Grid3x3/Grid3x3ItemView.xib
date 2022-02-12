@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Grid3x3ItemView" customModule="SpecialViewList" customModuleProvider="target">
+            <connections>
+                <outlet property="baseView" destination="O5E-Jc-VZY" id="usm-Ky-qRL"/>
+                <outlet property="itemLabel" destination="K73-2T-sev" id="7rN-OZ-xvF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="174" height="54"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O5E-Jc-VZY">
+                    <rect key="frame" x="0.0" y="0.0" width="174" height="54"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アイテム" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K73-2T-sev">
+                            <rect key="frame" x="8" y="0.0" width="158" height="54"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="K73-2T-sev" secondAttribute="bottom" id="R6O-cs-0S4"/>
+                        <constraint firstItem="K73-2T-sev" firstAttribute="leading" secondItem="O5E-Jc-VZY" secondAttribute="leading" constant="8" id="RuN-8n-i5M"/>
+                        <constraint firstItem="K73-2T-sev" firstAttribute="top" secondItem="O5E-Jc-VZY" secondAttribute="top" id="VRJ-IY-4D6"/>
+                        <constraint firstAttribute="trailing" secondItem="K73-2T-sev" secondAttribute="trailing" constant="8" id="trt-ll-lSQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="O5E-Jc-VZY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="927-a1-tP7"/>
+                <constraint firstAttribute="bottom" secondItem="O5E-Jc-VZY" secondAttribute="bottom" id="9Kv-bl-YL9"/>
+                <constraint firstItem="O5E-Jc-VZY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="edq-D1-R6H"/>
+                <constraint firstAttribute="trailing" secondItem="O5E-Jc-VZY" secondAttribute="trailing" id="fyi-n2-z1L"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-36.231884057971016" y="-150"/>
+        </view>
+    </objects>
+</document>

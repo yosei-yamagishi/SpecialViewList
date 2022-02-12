@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Grid3x3View" customModule="SpecialViewList" customModuleProvider="target">
+            <connections>
+                <outlet property="firstLineStackView" destination="4uB-FR-U7J" id="VRg-cz-eF5"/>
+                <outlet property="secondLineStackView" destination="TIE-L8-1bd" id="Fza-nH-UGc"/>
+                <outlet property="thirdLineStackView" destination="hfo-CA-8do" id="LVi-Pj-FpU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="148"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ht9-YZ-OGm">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="148"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="upU-IC-eqO">
+                            <rect key="frame" x="16" y="0.0" width="414" height="148"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4uB-FR-U7J">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="bn6-ar-qZq"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TIE-L8-1bd">
+                                    <rect key="frame" x="0.0" y="52" width="414" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="MQJ-tI-dUk"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hfo-CA-8do">
+                                    <rect key="frame" x="0.0" y="104" width="414" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="lu6-hC-7KK"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="upU-IC-eqO" firstAttribute="top" secondItem="3AV-cG-96A" secondAttribute="top" id="AYv-hX-QyX"/>
+                        <constraint firstItem="upU-IC-eqO" firstAttribute="height" secondItem="nTo-rx-xod" secondAttribute="height" id="Bvx-nX-e1i"/>
+                        <constraint firstItem="upU-IC-eqO" firstAttribute="bottom" secondItem="3AV-cG-96A" secondAttribute="bottom" id="OE1-X8-6Vm"/>
+                        <constraint firstItem="upU-IC-eqO" firstAttribute="trailing" secondItem="3AV-cG-96A" secondAttribute="trailing" constant="-16" id="bN4-wU-ddk"/>
+                        <constraint firstItem="upU-IC-eqO" firstAttribute="leading" secondItem="3AV-cG-96A" secondAttribute="leading" constant="16" id="qEz-eA-5CQ"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="3AV-cG-96A"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="nTo-rx-xod"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Ht9-YZ-OGm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="GP3-Jz-Gfw"/>
+                <constraint firstAttribute="trailing" secondItem="Ht9-YZ-OGm" secondAttribute="trailing" id="ohJ-fh-pPV"/>
+                <constraint firstItem="Ht9-YZ-OGm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rgK-oL-k2G"/>
+                <constraint firstAttribute="bottom" secondItem="Ht9-YZ-OGm" secondAttribute="bottom" id="xPJ-pD-n3m"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="144.92753623188406" y="-139.62053571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
