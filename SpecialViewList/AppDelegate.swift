@@ -8,7 +8,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
         let controller = SpecialViewListViewController()
-        window.rootViewController = controller
+        let navController = UINavigationController()
+        navController.viewControllers = [controller]
+        
+        window.rootViewController = navController
         window.makeKeyAndVisible()
         return true
     }
