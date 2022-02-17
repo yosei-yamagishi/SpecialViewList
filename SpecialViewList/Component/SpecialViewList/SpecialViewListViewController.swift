@@ -43,15 +43,12 @@ extension SpecialViewListViewController: UITableViewDataSource {
         switch listSection {
         case .customView:
             let item = listSection.items[indexPath.row]
-            switch item {
-            case .grid3x3:
-                let cell = tableView.dequeueReusableCell(for: indexPath) as SpecialViewListTableViewCell
-                cell.setup(
-                    title: item.title,
-                    discription: item.discription
-                )
-                return cell
-            }
+            let cell = tableView.dequeueReusableCell(for: indexPath) as SpecialViewListTableViewCell
+            cell.setup(
+                title: item.title,
+                discription: item.discription
+            )
+            return cell
         }
     }
     
@@ -83,6 +80,12 @@ extension SpecialViewListViewController: UITableViewDelegate {
             switch item {
             case .grid3x3:
                 let controller = Grid3x3ViewController()
+                navigationController?.pushViewController(
+                    controller,
+                    animated: true
+                )
+            case .autoFlowedTitle:
+                let controller = AutoFlowedTitleViewController()
                 navigationController?.pushViewController(
                     controller,
                     animated: true
