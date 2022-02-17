@@ -22,7 +22,7 @@ class Grid3x3ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         gridView.setup(contents: viewModel.contents)
-        navigationItem.title = viewModel.specialViewList.title
+        navigationItem.title = viewModel.specialViewListItem.title
     }
 }
 
