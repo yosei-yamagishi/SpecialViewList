@@ -32,6 +32,12 @@
 		CA664DBA27B5E31C0083D686 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA664DB927B5E31C0083D686 /* AppDelegate.swift */; };
 		CA664DC327B5E31D0083D686 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA664DC227B5E31D0083D686 /* Assets.xcassets */; };
 		CA664DC627B5E31D0083D686 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA664DC427B5E31D0083D686 /* LaunchScreen.storyboard */; };
+		CAABE3D227BC6D3000A5D396 /* AutoFlowedTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAABE3D027BC6D3000A5D396 /* AutoFlowedTitleViewController.swift */; };
+		CAABE3D327BC6D3000A5D396 /* AutoFlowedTitleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAABE3D127BC6D3000A5D396 /* AutoFlowedTitleViewController.xib */; };
+		CAABE3D527BC6D5700A5D396 /* AutoFlowedTitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAABE3D427BC6D5700A5D396 /* AutoFlowedTitleViewModel.swift */; };
+		CAABE3D727BC6F2200A5D396 /* AutoFlowedTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAABE3D627BC6F2200A5D396 /* AutoFlowedTitleView.swift */; };
+		CAABE3D927BC6F3100A5D396 /* AutoFlowedTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAABE3D827BC6F3100A5D396 /* AutoFlowedTitleView.xib */; };
+		CAABE42427BDD10500A5D396 /* AutoFlowedTitleConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAABE42327BDD10500A5D396 /* AutoFlowedTitleConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +68,12 @@
 		CA664DC227B5E31D0083D686 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA664DC527B5E31D0083D686 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA664DC727B5E31D0083D686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAABE3D027BC6D3000A5D396 /* AutoFlowedTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFlowedTitleViewController.swift; sourceTree = "<group>"; };
+		CAABE3D127BC6D3000A5D396 /* AutoFlowedTitleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoFlowedTitleViewController.xib; sourceTree = "<group>"; };
+		CAABE3D427BC6D5700A5D396 /* AutoFlowedTitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFlowedTitleViewModel.swift; sourceTree = "<group>"; };
+		CAABE3D627BC6F2200A5D396 /* AutoFlowedTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFlowedTitleView.swift; sourceTree = "<group>"; };
+		CAABE3D827BC6F3100A5D396 /* AutoFlowedTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoFlowedTitleView.xib; sourceTree = "<group>"; };
+		CAABE42327BDD10500A5D396 /* AutoFlowedTitleConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFlowedTitleConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +119,7 @@
 		CA5F0A2527B5E5640021E1FD /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				CAABE3CF27BC6CFE00A5D396 /* AutoFlowedTitleView */,
 				CA5F0ABC27B634570021E1FD /* Grid3x3 */,
 				CA5F0ABB27B634300021E1FD /* SpecialViewList */,
 			);
@@ -180,6 +193,19 @@
 			path = SpecialViewList;
 			sourceTree = "<group>";
 		};
+		CAABE3CF27BC6CFE00A5D396 /* AutoFlowedTitleView */ = {
+			isa = PBXGroup;
+			children = (
+				CAABE3D027BC6D3000A5D396 /* AutoFlowedTitleViewController.swift */,
+				CAABE3D127BC6D3000A5D396 /* AutoFlowedTitleViewController.xib */,
+				CAABE3D427BC6D5700A5D396 /* AutoFlowedTitleViewModel.swift */,
+				CAABE3D627BC6F2200A5D396 /* AutoFlowedTitleView.swift */,
+				CAABE3D827BC6F3100A5D396 /* AutoFlowedTitleView.xib */,
+				CAABE42327BDD10500A5D396 /* AutoFlowedTitleConfig.swift */,
+			);
+			path = AutoFlowedTitleView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -245,6 +271,8 @@
 				CA5F0AC827B63E850021E1FD /* Grid3x3ItemView.xib in Resources */,
 				CA5F0AC027B634EE0021E1FD /* Grid3x3ViewController.xib in Resources */,
 				CA5F0AC427B6358A0021E1FD /* Grid3x3View.xib in Resources */,
+				CAABE3D927BC6F3100A5D396 /* AutoFlowedTitleView.xib in Resources */,
+				CAABE3D327BC6D3000A5D396 /* AutoFlowedTitleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,17 +288,21 @@
 				CA5F0A2227B5E5250021E1FD /* NibLoadable.swift in Sources */,
 				CA664DBA27B5E31C0083D686 /* AppDelegate.swift in Sources */,
 				CA5F0AD127B7769E0021E1FD /* Grid3x3ViewModel.swift in Sources */,
+				CAABE3D527BC6D5700A5D396 /* AutoFlowedTitleViewModel.swift in Sources */,
 				CA5F0ABA27B633D20021E1FD /* SpecialViewListViewModel.swift in Sources */,
 				CA5F0A1C27B5E4E00021E1FD /* UITableViewExtension.swift in Sources */,
+				CAABE42427BDD10500A5D396 /* AutoFlowedTitleConfig.swift in Sources */,
 				CA5F0ACF27B729EA0021E1FD /* UIViewExtension.swift in Sources */,
 				CA5F0A1827B5E4D30021E1FD /* NSObjectExtension.swift in Sources */,
 				CA5F0A1B27B5E4E00021E1FD /* UICollectionViewExtension.swift in Sources */,
 				CA5F0A2127B5E5250021E1FD /* NibBundler.swift in Sources */,
+				CAABE3D227BC6D3000A5D396 /* AutoFlowedTitleViewController.swift in Sources */,
 				CA5F0A2827B5E8E40021E1FD /* SpecialViewListViewController.swift in Sources */,
 				CA5F0AB727B5FB480021E1FD /* SpecialViewListTableViewCell.swift in Sources */,
 				CA5F0ABF27B634EE0021E1FD /* Grid3x3ViewController.swift in Sources */,
 				CA5F0AD327B7770E0021E1FD /* SpecialViewList.swift in Sources */,
 				CA5F0AC627B63E780021E1FD /* Grid3x3ItemView.swift in Sources */,
+				CAABE3D727BC6F2200A5D396 /* AutoFlowedTitleView.swift in Sources */,
 				CA5F0AC227B635760021E1FD /* Grid3x3View.swift in Sources */,
 				CA5F0ACD27B646020021E1FD /* Grid3x3ItemTapGesture.swift in Sources */,
 			);
