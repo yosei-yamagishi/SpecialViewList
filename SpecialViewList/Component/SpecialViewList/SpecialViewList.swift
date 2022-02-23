@@ -11,13 +11,13 @@ enum SpecialViewList {
         var items: [Item] {
             switch self {
             case .customView:
-                return [.grid3x3, .autoFlowedTitle]
+                return [.grid3x3, .autoFlowedTitle, .linkLabel]
             }
         }
     }
 
     enum Item: CaseIterable {
-        case grid3x3, autoFlowedTitle
+        case grid3x3, autoFlowedTitle, linkLabel
         
         var title: String {
             switch self {
@@ -25,6 +25,8 @@ enum SpecialViewList {
                 return "3行x3列のアイテムView"
             case .autoFlowedTitle:
                 return "自動で流れるタイトルView"
+            case .linkLabel:
+                return "リンクできるラベルを含む警告View"
             }
         }
         
@@ -35,6 +37,8 @@ enum SpecialViewList {
                 + "Labelに応じて可変に横幅が調整されます。"
             case .autoFlowedTitle:
                 return "長いタイトルが自動で右から左、左から右に流れるView"
+            case .linkLabel:
+                return "タップ可能な下線付きラベルを含むView"
             }
         }
     }
