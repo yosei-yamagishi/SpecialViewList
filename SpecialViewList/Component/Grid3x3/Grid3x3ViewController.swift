@@ -23,6 +23,7 @@ class Grid3x3ViewController: UIViewController {
         super.viewDidLoad()
         gridView.setup(contents: viewModel.contents)
         navigationItem.title = viewModel.specialViewListItem.title
+        navigationItem.largeTitleDisplayMode = .never
     }
 }
 

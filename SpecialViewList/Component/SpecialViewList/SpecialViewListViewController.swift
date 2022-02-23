@@ -24,6 +24,13 @@ class SpecialViewListViewController: UIViewController {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationItem.title = "サンプル一覧"
+        navigationItem.largeTitleDisplayMode = .always
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
 }
 
 extension SpecialViewListViewController: UITableViewDataSource {
@@ -86,6 +93,12 @@ extension SpecialViewListViewController: UITableViewDelegate {
                 )
             case .autoFlowedTitle:
                 let controller = AutoFlowedTitleViewController()
+                navigationController?.pushViewController(
+                    controller,
+                    animated: true
+                )
+            case .linkLabel:
+                let controller = LinkLabelViewController()
                 navigationController?.pushViewController(
                     controller,
                     animated: true
