@@ -18,6 +18,7 @@ class AutoFlowedTitleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = viewModel.specialViewListItem.title
+        navigationItem.largeTitleDisplayMode = .never
     }
     
     override func viewWillAppear(_ animated: Bool) {

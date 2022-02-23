@@ -98,7 +98,11 @@ extension SpecialViewListViewController: UITableViewDelegate {
                     animated: true
                 )
             case .linkLabel:
-                break
+                let controller = LinkLabelViewController()
+                navigationController?.pushViewController(
+                    controller,
+                    animated: true
+                )
             }
         }
     }
