@@ -11,13 +11,13 @@ enum SpecialViewList {
         var items: [Item] {
             switch self {
             case .customView:
-                return [.grid3x3, .autoFlowedTitle, .linkLabel]
+                return [.grid3x3, .autoFlowedTitle, .linkLabel, .subtitlePlayer]
             }
         }
     }
 
     enum Item: CaseIterable {
-        case grid3x3, autoFlowedTitle, linkLabel
+        case grid3x3, autoFlowedTitle, linkLabel, subtitlePlayer
         
         var title: String {
             switch self {
@@ -27,6 +27,8 @@ enum SpecialViewList {
                 return "自動で流れるタイトルView"
             case .linkLabel:
                 return "リンクできるラベルを含む警告View"
+            case .subtitlePlayer:
+                return "音声字幕が表示されるView"
             }
         }
         
@@ -39,6 +41,8 @@ enum SpecialViewList {
                 return "長いタイトルが自動で右から左、左から右に流れるView"
             case .linkLabel:
                 return "タップ可能な下線付きラベルを含むView"
+            case .subtitlePlayer:
+                return "音声再生中に音声字幕が再生されている箇所に動くView"
             }
         }
     }
