@@ -31,6 +31,35 @@ class SpecialViewListViewController: UIViewController {
         navigationItem.largeTitleDisplayMode = .always
         navigationController?.navigationBar.prefersLargeTitles = true
     }
+    
+    private func openView(listItem: SpecialViewList.Item) {
+        switch listItem {
+        case .grid3x3:
+            let controller = Grid3x3ViewController()
+            navigationController?.pushViewController(
+                controller,
+                animated: true
+            )
+        case .autoFlowedTitle:
+            let controller = AutoFlowedTitleViewController()
+            navigationController?.pushViewController(
+                controller,
+                animated: true
+            )
+        case .linkLabel:
+            let controller = LinkLabelViewController()
+            navigationController?.pushViewController(
+                controller,
+                animated: true
+            )
+        case .subtitlePlayer:
+            let controller = SubtitlePlayerViewController()
+            navigationController?.pushViewController(
+                controller,
+                animated: true
+            )
+        }
+    }
 }
 
 extension SpecialViewListViewController: UITableViewDataSource {
@@ -83,27 +112,9 @@ extension SpecialViewListViewController: UITableViewDelegate {
         let listSection = viewModel.listSections[indexPath.section]
         switch listSection {
         case .customView:
-            let item = listSection.items[indexPath.row]
-            switch item {
-            case .grid3x3:
-                let controller = Grid3x3ViewController()
-                navigationController?.pushViewController(
-                    controller,
-                    animated: true
-                )
-            case .autoFlowedTitle:
-                let controller = AutoFlowedTitleViewController()
-                navigationController?.pushViewController(
-                    controller,
-                    animated: true
-                )
-            case .linkLabel:
-                let controller = LinkLabelViewController()
-                navigationController?.pushViewController(
-                    controller,
-                    animated: true
-                )
-            }
+            openView(
+                listItem: listSection.items[indexPath.row]
+            )
         }
     }
 }
