@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA36A78427CE4F6A003B9140 /* SubtitleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36A78327CE4F6A003B9140 /* SubtitleInfo.swift */; };
+		CA36A78827CE5A99003B9140 /* SubtitlePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36A78627CE5A99003B9140 /* SubtitlePlayerViewController.swift */; };
+		CA36A78927CE5A99003B9140 /* SubtitlePlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA36A78727CE5A99003B9140 /* SubtitlePlayerViewController.xib */; };
+		CA36A78B27CE5AC7003B9140 /* SubtitlePlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36A78A27CE5AC7003B9140 /* SubtitlePlayerView.swift */; };
+		CA36A78D27CE5AE0003B9140 /* SubtitlePlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA36A78C27CE5AE0003B9140 /* SubtitlePlayerView.xib */; };
+		CA36A79027CE5D94003B9140 /* SubtitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36A78E27CE5D94003B9140 /* SubtitleTableViewCell.swift */; };
+		CA36A79127CE5D94003B9140 /* SubtitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA36A78F27CE5D94003B9140 /* SubtitleTableViewCell.xib */; };
+		CA36A79327CE60C8003B9140 /* SubtitlePlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36A79227CE60C8003B9140 /* SubtitlePlayerViewModel.swift */; };
+		CA36A79F27CFB1DF003B9140 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36A79E27CFB1DF003B9140 /* AudioPlayer.swift */; };
+		CA36A7A227CFBC7F003B9140 /* audio_tmp_30.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CA36A7A127CFBC7E003B9140 /* audio_tmp_30.m4a */; };
 		CA3F554C27C602B300D6CAC2 /* LinkLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3F554A27C602B300D6CAC2 /* LinkLabelViewController.swift */; };
 		CA3F554D27C602B300D6CAC2 /* LinkLabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA3F554B27C602B300D6CAC2 /* LinkLabelViewController.xib */; };
 		CA3F554F27C603E400D6CAC2 /* LinkLabelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3F554E27C603E400D6CAC2 /* LinkLabelViewModel.swift */; };
@@ -47,6 +57,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA36A78327CE4F6A003B9140 /* SubtitleInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleInfo.swift; sourceTree = "<group>"; };
+		CA36A78627CE5A99003B9140 /* SubtitlePlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitlePlayerViewController.swift; sourceTree = "<group>"; };
+		CA36A78727CE5A99003B9140 /* SubtitlePlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubtitlePlayerViewController.xib; sourceTree = "<group>"; };
+		CA36A78A27CE5AC7003B9140 /* SubtitlePlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitlePlayerView.swift; sourceTree = "<group>"; };
+		CA36A78C27CE5AE0003B9140 /* SubtitlePlayerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubtitlePlayerView.xib; sourceTree = "<group>"; };
+		CA36A78E27CE5D94003B9140 /* SubtitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleTableViewCell.swift; sourceTree = "<group>"; };
+		CA36A78F27CE5D94003B9140 /* SubtitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubtitleTableViewCell.xib; sourceTree = "<group>"; };
+		CA36A79227CE60C8003B9140 /* SubtitlePlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitlePlayerViewModel.swift; sourceTree = "<group>"; };
+		CA36A79E27CFB1DF003B9140 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		CA36A7A127CFBC7E003B9140 /* audio_tmp_30.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = audio_tmp_30.m4a; sourceTree = "<group>"; };
 		CA3F554A27C602B300D6CAC2 /* LinkLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkLabelViewController.swift; sourceTree = "<group>"; };
 		CA3F554B27C602B300D6CAC2 /* LinkLabelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LinkLabelViewController.xib; sourceTree = "<group>"; };
 		CA3F554E27C603E400D6CAC2 /* LinkLabelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkLabelViewModel.swift; sourceTree = "<group>"; };
@@ -99,6 +119,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA36A78527CE59CE003B9140 /* SubtitlePlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				CA36A78627CE5A99003B9140 /* SubtitlePlayerViewController.swift */,
+				CA36A78727CE5A99003B9140 /* SubtitlePlayerViewController.xib */,
+				CA36A78A27CE5AC7003B9140 /* SubtitlePlayerView.swift */,
+				CA36A78C27CE5AE0003B9140 /* SubtitlePlayerView.xib */,
+				CA36A78E27CE5D94003B9140 /* SubtitleTableViewCell.swift */,
+				CA36A78F27CE5D94003B9140 /* SubtitleTableViewCell.xib */,
+				CA36A79227CE60C8003B9140 /* SubtitlePlayerViewModel.swift */,
+			);
+			path = SubtitlePlayerView;
+			sourceTree = "<group>";
+		};
+		CA36A79D27CFB1C4003B9140 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				CA36A79E27CFB1DF003B9140 /* AudioPlayer.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		CA36A7A027CFBC6A003B9140 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CA36A7A127CFBC7E003B9140 /* audio_tmp_30.m4a */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		CA3F554927C6026500D6CAC2 /* LinkLabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +176,7 @@
 		CA5F0A1D27B5E4F70021E1FD /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				CA36A79D27CFB1C4003B9140 /* Player */,
 				CA5F0A2427B5E5290021E1FD /* Views */,
 			);
 			path = Foundation;
@@ -144,6 +195,7 @@
 		CA5F0A2527B5E5640021E1FD /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				CA36A78527CE59CE003B9140 /* SubtitlePlayerView */,
 				CA3F554927C6026500D6CAC2 /* LinkLabel */,
 				CAABE3CF27BC6CFE00A5D396 /* AutoFlowedTitleView */,
 				CA5F0ABC27B634570021E1FD /* Grid3x3 */,
@@ -184,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				CA5F0ACA27B645DA0021E1FD /* ItemContent.swift */,
+				CA36A78327CE4F6A003B9140 /* SubtitleInfo.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -207,6 +260,7 @@
 		CA664DB827B5E31C0083D686 /* SpecialViewList */ = {
 			isa = PBXGroup;
 			children = (
+				CA36A7A027CFBC6A003B9140 /* Assets */,
 				CA5F0AC927B645730021E1FD /* Entity */,
 				CA5F0A2527B5E5640021E1FD /* Component */,
 				CA5F0A1D27B5E4F70021E1FD /* Foundation */,
@@ -292,9 +346,13 @@
 			files = (
 				CA3F555327C6050600D6CAC2 /* LinkLabelView.xib in Resources */,
 				CA5F0AB827B5FB480021E1FD /* SpecialViewListTableViewCell.xib in Resources */,
+				CA36A78927CE5A99003B9140 /* SubtitlePlayerViewController.xib in Resources */,
+				CA36A78D27CE5AE0003B9140 /* SubtitlePlayerView.xib in Resources */,
 				CA664DC627B5E31D0083D686 /* LaunchScreen.storyboard in Resources */,
 				CA5F0A2927B5E8E40021E1FD /* SpecialViewListViewController.xib in Resources */,
 				CA3F554D27C602B300D6CAC2 /* LinkLabelViewController.xib in Resources */,
+				CA36A79127CE5D94003B9140 /* SubtitleTableViewCell.xib in Resources */,
+				CA36A7A227CFBC7F003B9140 /* audio_tmp_30.m4a in Resources */,
 				CA664DC327B5E31D0083D686 /* Assets.xcassets in Resources */,
 				CA5F0AC827B63E850021E1FD /* Grid3x3ItemView.xib in Resources */,
 				CA5F0AC027B634EE0021E1FD /* Grid3x3ViewController.xib in Resources */,
@@ -311,14 +369,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA36A78427CE4F6A003B9140 /* SubtitleInfo.swift in Sources */,
 				CA5F0ACB27B645DA0021E1FD /* ItemContent.swift in Sources */,
+				CA36A79F27CFB1DF003B9140 /* AudioPlayer.swift in Sources */,
 				CA5F0A2327B5E5250021E1FD /* NibOwnerLoadable.swift in Sources */,
 				CA3F555127C604FB00D6CAC2 /* LinkLabelView.swift in Sources */,
 				CA5F0A2227B5E5250021E1FD /* NibLoadable.swift in Sources */,
 				CA664DBA27B5E31C0083D686 /* AppDelegate.swift in Sources */,
+				CA36A78B27CE5AC7003B9140 /* SubtitlePlayerView.swift in Sources */,
 				CA5F0AD127B7769E0021E1FD /* Grid3x3ViewModel.swift in Sources */,
 				CA3F554F27C603E400D6CAC2 /* LinkLabelViewModel.swift in Sources */,
 				CAABE3D527BC6D5700A5D396 /* AutoFlowedTitleViewModel.swift in Sources */,
+				CA36A78827CE5A99003B9140 /* SubtitlePlayerViewController.swift in Sources */,
 				CA5F0ABA27B633D20021E1FD /* SpecialViewListViewModel.swift in Sources */,
 				CA5F0A1C27B5E4E00021E1FD /* UITableViewExtension.swift in Sources */,
 				CAABE42427BDD10500A5D396 /* AutoFlowedTitleConfig.swift in Sources */,
@@ -335,7 +397,9 @@
 				CA5F0AC627B63E780021E1FD /* Grid3x3ItemView.swift in Sources */,
 				CAABE3D727BC6F2200A5D396 /* AutoFlowedTitleView.swift in Sources */,
 				CA3F554C27C602B300D6CAC2 /* LinkLabelViewController.swift in Sources */,
+				CA36A79027CE5D94003B9140 /* SubtitleTableViewCell.swift in Sources */,
 				CA5F0AC227B635760021E1FD /* Grid3x3View.swift in Sources */,
+				CA36A79327CE60C8003B9140 /* SubtitlePlayerViewModel.swift in Sources */,
 				CA5F0ACD27B646020021E1FD /* Grid3x3ItemTapGesture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
