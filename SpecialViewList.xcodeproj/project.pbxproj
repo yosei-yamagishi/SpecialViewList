@@ -54,6 +54,9 @@
 		CAABE3D727BC6F2200A5D396 /* AutoFlowedTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAABE3D627BC6F2200A5D396 /* AutoFlowedTitleView.swift */; };
 		CAABE3D927BC6F3100A5D396 /* AutoFlowedTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAABE3D827BC6F3100A5D396 /* AutoFlowedTitleView.xib */; };
 		CAABE42427BDD10500A5D396 /* AutoFlowedTitleConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAABE42327BDD10500A5D396 /* AutoFlowedTitleConfig.swift */; };
+		CACFFABF2848A9BF00D920FF /* VideoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACFFABD2848A9BF00D920FF /* VideoCollectionViewController.swift */; };
+		CACFFAC02848A9BF00D920FF /* VideoCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CACFFABE2848A9BF00D920FF /* VideoCollectionViewController.xib */; };
+		CACFFAC22848B2BA00D920FF /* VideoCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACFFAC12848B2BA00D920FF /* VideoCollectionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +109,9 @@
 		CAABE3D627BC6F2200A5D396 /* AutoFlowedTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFlowedTitleView.swift; sourceTree = "<group>"; };
 		CAABE3D827BC6F3100A5D396 /* AutoFlowedTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoFlowedTitleView.xib; sourceTree = "<group>"; };
 		CAABE42327BDD10500A5D396 /* AutoFlowedTitleConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFlowedTitleConfig.swift; sourceTree = "<group>"; };
+		CACFFABD2848A9BF00D920FF /* VideoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewController.swift; sourceTree = "<group>"; };
+		CACFFABE2848A9BF00D920FF /* VideoCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCollectionViewController.xib; sourceTree = "<group>"; };
+		CACFFAC12848B2BA00D920FF /* VideoCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +201,7 @@
 		CA5F0A2527B5E5640021E1FD /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				CACFFABC2848A9A700D920FF /* VideoCollection */,
 				CA36A78527CE59CE003B9140 /* SubtitlePlayerView */,
 				CA3F554927C6026500D6CAC2 /* LinkLabel */,
 				CAABE3CF27BC6CFE00A5D396 /* AutoFlowedTitleView */,
@@ -286,6 +293,16 @@
 			path = AutoFlowedTitleView;
 			sourceTree = "<group>";
 		};
+		CACFFABC2848A9A700D920FF /* VideoCollection */ = {
+			isa = PBXGroup;
+			children = (
+				CACFFABD2848A9BF00D920FF /* VideoCollectionViewController.swift */,
+				CACFFABE2848A9BF00D920FF /* VideoCollectionViewController.xib */,
+				CACFFAC12848B2BA00D920FF /* VideoCollectionViewModel.swift */,
+			);
+			path = VideoCollection;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -356,6 +373,7 @@
 				CA664DC327B5E31D0083D686 /* Assets.xcassets in Resources */,
 				CA5F0AC827B63E850021E1FD /* Grid3x3ItemView.xib in Resources */,
 				CA5F0AC027B634EE0021E1FD /* Grid3x3ViewController.xib in Resources */,
+				CACFFAC02848A9BF00D920FF /* VideoCollectionViewController.xib in Resources */,
 				CA5F0AC427B6358A0021E1FD /* Grid3x3View.xib in Resources */,
 				CAABE3D927BC6F3100A5D396 /* AutoFlowedTitleView.xib in Resources */,
 				CAABE3D327BC6D3000A5D396 /* AutoFlowedTitleViewController.xib in Resources */,
@@ -384,6 +402,7 @@
 				CA5F0ABA27B633D20021E1FD /* SpecialViewListViewModel.swift in Sources */,
 				CA5F0A1C27B5E4E00021E1FD /* UITableViewExtension.swift in Sources */,
 				CAABE42427BDD10500A5D396 /* AutoFlowedTitleConfig.swift in Sources */,
+				CACFFABF2848A9BF00D920FF /* VideoCollectionViewController.swift in Sources */,
 				CA5F0ACF27B729EA0021E1FD /* UIViewExtension.swift in Sources */,
 				CA5F0A1827B5E4D30021E1FD /* NSObjectExtension.swift in Sources */,
 				CA5F0A1B27B5E4E00021E1FD /* UICollectionViewExtension.swift in Sources */,
@@ -396,6 +415,7 @@
 				CA5F0AD327B7770E0021E1FD /* SpecialViewList.swift in Sources */,
 				CA5F0AC627B63E780021E1FD /* Grid3x3ItemView.swift in Sources */,
 				CAABE3D727BC6F2200A5D396 /* AutoFlowedTitleView.swift in Sources */,
+				CACFFAC22848B2BA00D920FF /* VideoCollectionViewModel.swift in Sources */,
 				CA3F554C27C602B300D6CAC2 /* LinkLabelViewController.swift in Sources */,
 				CA36A79027CE5D94003B9140 /* SubtitleTableViewCell.swift in Sources */,
 				CA5F0AC227B635760021E1FD /* Grid3x3View.swift in Sources */,

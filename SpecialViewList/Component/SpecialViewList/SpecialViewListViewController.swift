@@ -58,6 +58,12 @@ class SpecialViewListViewController: UIViewController {
                 controller,
                 animated: true
             )
+        case .videoCollection:
+            let controller = VideoCollectionViewController()
+            navigationController?.pushViewController(
+                controller,
+                animated: true
+            )
         }
     }
 }
