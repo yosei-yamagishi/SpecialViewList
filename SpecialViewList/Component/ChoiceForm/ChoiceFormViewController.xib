@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChoiceFormViewController" customModule="SpecialViewList" customModuleProvider="target">
             <connections>
+                <outlet property="choiceFormView" destination="lzT-fX-Txg" id="iBu-o8-vae"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,9 +18,23 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lzT-fX-Txg" customClass="ChoiceFormView" customModule="SpecialViewList" customModuleProvider="target">
+                    <rect key="frame" x="16" y="60" width="382" height="416"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="416" id="MCd-cc-4Qd"/>
+                    </constraints>
+                </view>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="139" y="100"/>
+            <constraints>
+                <constraint firstItem="lzT-fX-Txg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Mx7-Kh-ihl"/>
+                <constraint firstItem="lzT-fX-Txg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="eu8-pu-7GH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lzT-fX-Txg" secondAttribute="trailing" constant="16" id="qqM-o3-IAa"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
         </view>
     </objects>
     <resources>
