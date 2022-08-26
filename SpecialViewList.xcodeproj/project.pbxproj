@@ -66,6 +66,8 @@
 		CAAAA90928B76E01003903F8 /* ChoiceFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAAA90828B76E01003903F8 /* ChoiceFormViewModel.swift */; };
 		CAAAA90B28B76EFB003903F8 /* ChoiceFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAAA90A28B76EFB003903F8 /* ChoiceFormView.swift */; };
 		CAAAA90D28B76F1A003903F8 /* ChoiceFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAAAA90C28B76F1A003903F8 /* ChoiceFormView.xib */; };
+		CAAAA90F28B7753F003903F8 /* ChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAAA90E28B7753F003903F8 /* ChoiceView.swift */; };
+		CAAAA91128B79A8E003903F8 /* ChoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAAAA91028B79A8E003903F8 /* ChoiceView.xib */; };
 		CAABE3D227BC6D3000A5D396 /* AutoFlowedTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAABE3D027BC6D3000A5D396 /* AutoFlowedTitleViewController.swift */; };
 		CAABE3D327BC6D3000A5D396 /* AutoFlowedTitleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAABE3D127BC6D3000A5D396 /* AutoFlowedTitleViewController.xib */; };
 		CAABE3D527BC6D5700A5D396 /* AutoFlowedTitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAABE3D427BC6D5700A5D396 /* AutoFlowedTitleViewModel.swift */; };
@@ -143,6 +145,8 @@
 		CAAAA90828B76E01003903F8 /* ChoiceFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceFormViewModel.swift; sourceTree = "<group>"; };
 		CAAAA90A28B76EFB003903F8 /* ChoiceFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceFormView.swift; sourceTree = "<group>"; };
 		CAAAA90C28B76F1A003903F8 /* ChoiceFormView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChoiceFormView.xib; sourceTree = "<group>"; };
+		CAAAA90E28B7753F003903F8 /* ChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceView.swift; sourceTree = "<group>"; };
+		CAAAA91028B79A8E003903F8 /* ChoiceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChoiceView.xib; sourceTree = "<group>"; };
 		CAABE3D027BC6D3000A5D396 /* AutoFlowedTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFlowedTitleViewController.swift; sourceTree = "<group>"; };
 		CAABE3D127BC6D3000A5D396 /* AutoFlowedTitleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoFlowedTitleViewController.xib; sourceTree = "<group>"; };
 		CAABE3D427BC6D5700A5D396 /* AutoFlowedTitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFlowedTitleViewModel.swift; sourceTree = "<group>"; };
@@ -342,6 +346,8 @@
 				CAAAA90828B76E01003903F8 /* ChoiceFormViewModel.swift */,
 				CAAAA90A28B76EFB003903F8 /* ChoiceFormView.swift */,
 				CAAAA90C28B76F1A003903F8 /* ChoiceFormView.xib */,
+				CAAAA90E28B7753F003903F8 /* ChoiceView.swift */,
+				CAAAA91028B79A8E003903F8 /* ChoiceView.xib */,
 			);
 			path = ChoiceForm;
 			sourceTree = "<group>";
@@ -460,6 +466,7 @@
 				CA9460F7284A04EA00EBF5FE /* VideoView.xib in Resources */,
 				CACFFAC82848B3C100D920FF /* VideoCollectionView.xib in Resources */,
 				CA5F0AC427B6358A0021E1FD /* Grid3x3View.xib in Resources */,
+				CAAAA91128B79A8E003903F8 /* ChoiceView.xib in Resources */,
 				CAABE3D927BC6F3100A5D396 /* AutoFlowedTitleView.xib in Resources */,
 				CAABE3D327BC6D3000A5D396 /* AutoFlowedTitleViewController.xib in Resources */,
 			);
@@ -517,6 +524,7 @@
 				CA5F0AC227B635760021E1FD /* Grid3x3View.swift in Sources */,
 				CA36A79327CE60C8003B9140 /* SubtitlePlayerViewModel.swift in Sources */,
 				CA5F0ACD27B646020021E1FD /* Grid3x3ItemTapGesture.swift in Sources */,
+				CAAAA90F28B7753F003903F8 /* ChoiceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
