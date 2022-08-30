@@ -61,6 +61,13 @@
 		CA946109284DB4D700EBF5FE /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA946108284DB4D700EBF5FE /* VideoPlayer.swift */; };
 		CA94610B284DB6ED00EBF5FE /* AVPlayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA94610A284DB6ED00EBF5FE /* AVPlayerExtension.swift */; };
 		CA94610D284DBB5500EBF5FE /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA94610C284DBB5500EBF5FE /* Video.swift */; };
+		CAAAA90628B76DAE003903F8 /* ChoiceFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAAA90428B76DAE003903F8 /* ChoiceFormViewController.swift */; };
+		CAAAA90728B76DAE003903F8 /* ChoiceFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAAAA90528B76DAE003903F8 /* ChoiceFormViewController.xib */; };
+		CAAAA90928B76E01003903F8 /* ChoiceFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAAA90828B76E01003903F8 /* ChoiceFormViewModel.swift */; };
+		CAAAA90B28B76EFB003903F8 /* ChoiceFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAAA90A28B76EFB003903F8 /* ChoiceFormView.swift */; };
+		CAAAA90D28B76F1A003903F8 /* ChoiceFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAAAA90C28B76F1A003903F8 /* ChoiceFormView.xib */; };
+		CAAAA90F28B7753F003903F8 /* ChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAAA90E28B7753F003903F8 /* ChoiceView.swift */; };
+		CAAAA91128B79A8E003903F8 /* ChoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAAAA91028B79A8E003903F8 /* ChoiceView.xib */; };
 		CAABE3D227BC6D3000A5D396 /* AutoFlowedTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAABE3D027BC6D3000A5D396 /* AutoFlowedTitleViewController.swift */; };
 		CAABE3D327BC6D3000A5D396 /* AutoFlowedTitleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAABE3D127BC6D3000A5D396 /* AutoFlowedTitleViewController.xib */; };
 		CAABE3D527BC6D5700A5D396 /* AutoFlowedTitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAABE3D427BC6D5700A5D396 /* AutoFlowedTitleViewModel.swift */; };
@@ -133,6 +140,13 @@
 		CA946108284DB4D700EBF5FE /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
 		CA94610A284DB6ED00EBF5FE /* AVPlayerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerExtension.swift; sourceTree = "<group>"; };
 		CA94610C284DBB5500EBF5FE /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		CAAAA90428B76DAE003903F8 /* ChoiceFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceFormViewController.swift; sourceTree = "<group>"; };
+		CAAAA90528B76DAE003903F8 /* ChoiceFormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChoiceFormViewController.xib; sourceTree = "<group>"; };
+		CAAAA90828B76E01003903F8 /* ChoiceFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceFormViewModel.swift; sourceTree = "<group>"; };
+		CAAAA90A28B76EFB003903F8 /* ChoiceFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceFormView.swift; sourceTree = "<group>"; };
+		CAAAA90C28B76F1A003903F8 /* ChoiceFormView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChoiceFormView.xib; sourceTree = "<group>"; };
+		CAAAA90E28B7753F003903F8 /* ChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceView.swift; sourceTree = "<group>"; };
+		CAAAA91028B79A8E003903F8 /* ChoiceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChoiceView.xib; sourceTree = "<group>"; };
 		CAABE3D027BC6D3000A5D396 /* AutoFlowedTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFlowedTitleViewController.swift; sourceTree = "<group>"; };
 		CAABE3D127BC6D3000A5D396 /* AutoFlowedTitleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoFlowedTitleViewController.xib; sourceTree = "<group>"; };
 		CAABE3D427BC6D5700A5D396 /* AutoFlowedTitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFlowedTitleViewModel.swift; sourceTree = "<group>"; };
@@ -243,6 +257,7 @@
 		CA5F0A2527B5E5640021E1FD /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				CAAAA90328B76D99003903F8 /* ChoiceForm */,
 				CACFFABC2848A9A700D920FF /* VideoCollection */,
 				CA36A78527CE59CE003B9140 /* SubtitlePlayerView */,
 				CA3F554927C6026500D6CAC2 /* LinkLabel */,
@@ -321,6 +336,20 @@
 				CA664DC727B5E31D0083D686 /* Info.plist */,
 			);
 			path = SpecialViewList;
+			sourceTree = "<group>";
+		};
+		CAAAA90328B76D99003903F8 /* ChoiceForm */ = {
+			isa = PBXGroup;
+			children = (
+				CAAAA90428B76DAE003903F8 /* ChoiceFormViewController.swift */,
+				CAAAA90528B76DAE003903F8 /* ChoiceFormViewController.xib */,
+				CAAAA90828B76E01003903F8 /* ChoiceFormViewModel.swift */,
+				CAAAA90A28B76EFB003903F8 /* ChoiceFormView.swift */,
+				CAAAA90C28B76F1A003903F8 /* ChoiceFormView.xib */,
+				CAAAA90E28B7753F003903F8 /* ChoiceView.swift */,
+				CAAAA91028B79A8E003903F8 /* ChoiceView.xib */,
+			);
+			path = ChoiceForm;
 			sourceTree = "<group>";
 		};
 		CAABE3CF27BC6CFE00A5D396 /* AutoFlowedTitleView */ = {
@@ -413,6 +442,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA3F555327C6050600D6CAC2 /* LinkLabelView.xib in Resources */,
+				CAAAA90728B76DAE003903F8 /* ChoiceFormViewController.xib in Resources */,
 				CA946104284B145100EBF5FE /* movie2.mp4 in Resources */,
 				CA5F0AB827B5FB480021E1FD /* SpecialViewListTableViewCell.xib in Resources */,
 				CA9460FD284A4A5100EBF5FE /* VideoCollectionViewCell.xib in Resources */,
@@ -426,6 +456,7 @@
 				CA946107284B145100EBF5FE /* movie5.mp4 in Resources */,
 				CA5F0A2927B5E8E40021E1FD /* SpecialViewListViewController.xib in Resources */,
 				CA3F554D27C602B300D6CAC2 /* LinkLabelViewController.xib in Resources */,
+				CAAAA90D28B76F1A003903F8 /* ChoiceFormView.xib in Resources */,
 				CA36A79127CE5D94003B9140 /* SubtitleTableViewCell.xib in Resources */,
 				CA36A7A227CFBC7F003B9140 /* audio_tmp_30.m4a in Resources */,
 				CA664DC327B5E31D0083D686 /* Assets.xcassets in Resources */,
@@ -435,6 +466,7 @@
 				CA9460F7284A04EA00EBF5FE /* VideoView.xib in Resources */,
 				CACFFAC82848B3C100D920FF /* VideoCollectionView.xib in Resources */,
 				CA5F0AC427B6358A0021E1FD /* Grid3x3View.xib in Resources */,
+				CAAAA91128B79A8E003903F8 /* ChoiceView.xib in Resources */,
 				CAABE3D927BC6F3100A5D396 /* AutoFlowedTitleView.xib in Resources */,
 				CAABE3D327BC6D3000A5D396 /* AutoFlowedTitleViewController.xib in Resources */,
 			);
@@ -458,6 +490,7 @@
 				CA36A78B27CE5AC7003B9140 /* SubtitlePlayerView.swift in Sources */,
 				CA9460F5284A049400EBF5FE /* VideoView.swift in Sources */,
 				CA5F0AD127B7769E0021E1FD /* Grid3x3ViewModel.swift in Sources */,
+				CAAAA90B28B76EFB003903F8 /* ChoiceFormView.swift in Sources */,
 				CA3F554F27C603E400D6CAC2 /* LinkLabelViewModel.swift in Sources */,
 				CAABE3D527BC6D5700A5D396 /* AutoFlowedTitleViewModel.swift in Sources */,
 				CA36A78827CE5A99003B9140 /* SubtitlePlayerViewController.swift in Sources */,
@@ -477,6 +510,8 @@
 				CA5F0A2827B5E8E40021E1FD /* SpecialViewListViewController.swift in Sources */,
 				CA5F0AB727B5FB480021E1FD /* SpecialViewListTableViewCell.swift in Sources */,
 				CACFFACA2848B45500D920FF /* VideoPreviewView.swift in Sources */,
+				CAAAA90628B76DAE003903F8 /* ChoiceFormViewController.swift in Sources */,
+				CAAAA90928B76E01003903F8 /* ChoiceFormViewModel.swift in Sources */,
 				CA3F555527C6083600D6CAC2 /* LabelLinkTapGesture.swift in Sources */,
 				CA5F0ABF27B634EE0021E1FD /* Grid3x3ViewController.swift in Sources */,
 				CA5F0AD327B7770E0021E1FD /* SpecialViewList.swift in Sources */,
@@ -489,6 +524,7 @@
 				CA5F0AC227B635760021E1FD /* Grid3x3View.swift in Sources */,
 				CA36A79327CE60C8003B9140 /* SubtitlePlayerViewModel.swift in Sources */,
 				CA5F0ACD27B646020021E1FD /* Grid3x3ItemTapGesture.swift in Sources */,
+				CAAAA90F28B7753F003903F8 /* ChoiceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

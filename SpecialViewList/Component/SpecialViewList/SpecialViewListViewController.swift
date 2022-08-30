@@ -69,6 +69,15 @@ class SpecialViewListViewController: UIViewController {
                 controller,
                 animated: true
             )
+        case .choiceForm:
+            let viewModel = ChoiceFormViewModel()
+            let controller = ChoiceFormViewController(
+                viewModel: viewModel
+            )
+            navigationController?.pushViewController(
+                controller,
+                animated: true
+            )
         }
     }
 }

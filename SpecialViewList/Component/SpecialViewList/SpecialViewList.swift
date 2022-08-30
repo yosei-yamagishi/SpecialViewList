@@ -16,14 +16,15 @@ enum SpecialViewList {
                     .autoFlowedTitle,
                     .linkLabel,
                     .subtitlePlayer,
-                    .videoCollection
+                    .videoCollection,
+                    .choiceForm
                 ]
             }
         }
     }
 
     enum Item: CaseIterable {
-        case grid3x3, autoFlowedTitle, linkLabel, subtitlePlayer, videoCollection
+        case grid3x3, autoFlowedTitle, linkLabel, subtitlePlayer, videoCollection, choiceForm
         
         var title: String {
             switch self {
@@ -37,6 +38,8 @@ enum SpecialViewList {
                 return "音声字幕が表示されるView"
             case .videoCollection:
                 return "フリックで複数の動画が見れるView"
+            case .choiceForm:
+                return "選択肢を入力するフォーム"
             }
         }
         
@@ -53,6 +56,8 @@ enum SpecialViewList {
                 return "音声再生中に音声字幕が再生されている箇所に動くView"
             case .videoCollection:
                 return "複数の動画を表示して再生するView"
+            case .choiceForm:
+                return "選択肢を4つまで増やして入力ができるフォームView"
             }
         }
     }
