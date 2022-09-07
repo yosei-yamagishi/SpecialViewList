@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1635CDC828C8E23500ADF7A6 /* SomeAutoVideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1635CDC628C8E23500ADF7A6 /* SomeAutoVideoPlayerViewController.swift */; };
+		1635CDC928C8E23500ADF7A6 /* SomeAutoVideoPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1635CDC728C8E23500ADF7A6 /* SomeAutoVideoPlayerViewController.xib */; };
+		1635CDCB28C8E25A00ADF7A6 /* SomeAutoVideoPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1635CDCA28C8E25A00ADF7A6 /* SomeAutoVideoPlayerViewModel.swift */; };
 		1673A7AB28C4CE8700F9BF77 /* TableViewCellAnimationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673A7AA28C4CE8700F9BF77 /* TableViewCellAnimationViewModel.swift */; };
 		1673A7AE28C4CF7700F9BF77 /* TableViewCellAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673A7AC28C4CF7700F9BF77 /* TableViewCellAnimationViewController.swift */; };
 		1673A7AF28C4CF7700F9BF77 /* TableViewCellAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1673A7AD28C4CF7700F9BF77 /* TableViewCellAnimationViewController.xib */; };
@@ -91,6 +94,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1635CDC628C8E23500ADF7A6 /* SomeAutoVideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeAutoVideoPlayerViewController.swift; sourceTree = "<group>"; };
+		1635CDC728C8E23500ADF7A6 /* SomeAutoVideoPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SomeAutoVideoPlayerViewController.xib; sourceTree = "<group>"; };
+		1635CDCA28C8E25A00ADF7A6 /* SomeAutoVideoPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeAutoVideoPlayerViewModel.swift; sourceTree = "<group>"; };
 		1673A7AA28C4CE8700F9BF77 /* TableViewCellAnimationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellAnimationViewModel.swift; sourceTree = "<group>"; };
 		1673A7AC28C4CF7700F9BF77 /* TableViewCellAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellAnimationViewController.swift; sourceTree = "<group>"; };
 		1673A7AD28C4CF7700F9BF77 /* TableViewCellAnimationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellAnimationViewController.xib; sourceTree = "<group>"; };
@@ -187,6 +193,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1635CDC528C8E21000ADF7A6 /* SomeAutoVideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				1635CDC628C8E23500ADF7A6 /* SomeAutoVideoPlayerViewController.swift */,
+				1635CDC728C8E23500ADF7A6 /* SomeAutoVideoPlayerViewController.xib */,
+				1635CDCA28C8E25A00ADF7A6 /* SomeAutoVideoPlayerViewModel.swift */,
+			);
+			path = SomeAutoVideoPlayer;
+			sourceTree = "<group>";
+		};
 		1673A7A928C4CE5000F9BF77 /* TableViewCellAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +301,7 @@
 		CA5F0A2527B5E5640021E1FD /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				1635CDC528C8E21000ADF7A6 /* SomeAutoVideoPlayer */,
 				1673A7A928C4CE5000F9BF77 /* TableViewCellAnimation */,
 				CAAAA90328B76D99003903F8 /* ChoiceForm */,
 				CACFFABC2848A9A700D920FF /* VideoCollection */,
@@ -476,6 +493,7 @@
 				CA946104284B145100EBF5FE /* movie2.mp4 in Resources */,
 				CA5F0AB827B5FB480021E1FD /* SpecialViewListTableViewCell.xib in Resources */,
 				CA9460FD284A4A5100EBF5FE /* VideoCollectionViewCell.xib in Resources */,
+				1635CDC928C8E23500ADF7A6 /* SomeAutoVideoPlayerViewController.xib in Resources */,
 				CA946105284B145100EBF5FE /* movie4.mp4 in Resources */,
 				CACFFACC2848B46400D920FF /* VideoPreviewView.xib in Resources */,
 				CA36A78927CE5A99003B9140 /* SubtitlePlayerViewController.xib in Resources */,
@@ -521,6 +539,7 @@
 				CA3F555127C604FB00D6CAC2 /* LinkLabelView.swift in Sources */,
 				1673A7AE28C4CF7700F9BF77 /* TableViewCellAnimationViewController.swift in Sources */,
 				CA5F0A2227B5E5250021E1FD /* NibLoadable.swift in Sources */,
+				1635CDCB28C8E25A00ADF7A6 /* SomeAutoVideoPlayerViewModel.swift in Sources */,
 				CA664DBA27B5E31C0083D686 /* AppDelegate.swift in Sources */,
 				CA36A78B27CE5AC7003B9140 /* SubtitlePlayerView.swift in Sources */,
 				CA9460F5284A049400EBF5FE /* VideoView.swift in Sources */,
@@ -541,6 +560,7 @@
 				CA5F0A1827B5E4D30021E1FD /* NSObjectExtension.swift in Sources */,
 				CA5F0A1B27B5E4E00021E1FD /* UICollectionViewExtension.swift in Sources */,
 				CA5F0A2127B5E5250021E1FD /* NibBundler.swift in Sources */,
+				1635CDC828C8E23500ADF7A6 /* SomeAutoVideoPlayerViewController.swift in Sources */,
 				CAABE3D227BC6D3000A5D396 /* AutoFlowedTitleViewController.swift in Sources */,
 				CA5F0A2827B5E8E40021E1FD /* SpecialViewListViewController.swift in Sources */,
 				CA5F0AB727B5FB480021E1FD /* SpecialViewListTableViewCell.swift in Sources */,
