@@ -78,6 +78,15 @@ class SpecialViewListViewController: UIViewController {
                 controller,
                 animated: true
             )
+        case .tableViewCellAnimation:
+            let viewModel = TableViewCellAnimationViewModel()
+            let controller = TableViewCellAnimationViewController(
+                viewModel: viewModel
+            )
+            navigationController?.pushViewController(
+                controller,
+                animated: true
+            )
         }
     }
 }
