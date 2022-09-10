@@ -1,6 +1,5 @@
 import Foundation
 import Combine
-import AVFoundation
 
 class VideoCollectionViewModel {
     @Published private(set) var isMuted: Bool = false

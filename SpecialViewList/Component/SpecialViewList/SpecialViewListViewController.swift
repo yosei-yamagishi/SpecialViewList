@@ -87,6 +87,19 @@ class SpecialViewListViewController: UIViewController {
                 controller,
                 animated: true
             )
+        case .defaultAVPlayerView:
+            let videoPlayer = VideoPlayer()
+            let viewModel = DefaultAVPlayerViewModel(
+                videoPlayer: videoPlayer
+            )
+            let controller =  DefaultAVPlayerViewController(
+                videoPlayer: videoPlayer,
+                viewModel: viewModel
+            )
+            navigationController?.pushViewController(
+                controller,
+                animated: true
+            )
         }
     }
 }
