@@ -19,14 +19,15 @@ enum SpecialViewList {
                     .videoCollection,
                     .choiceForm,
                     .tableViewCellAnimation,
-                    .defaultAVPlayerView
+                    .defaultAVPlayerView,
+                    .orientation
                 ]
             }
         }
     }
 
     enum Item: CaseIterable {
-        case grid3x3, autoFlowedTitle, linkLabel, subtitlePlayer, videoCollection, choiceForm, tableViewCellAnimation, defaultAVPlayerView
+        case grid3x3, autoFlowedTitle, linkLabel, subtitlePlayer, videoCollection, choiceForm, tableViewCellAnimation, defaultAVPlayerView, orientation
         
         var title: String {
             switch self {
@@ -46,6 +47,8 @@ enum SpecialViewList {
                 return "TableVeiewのcellがアニメーションするView"
             case .defaultAVPlayerView:
                 return "動画が自動で再生されるview"
+            case .orientation:
+                return "回転に対応するView"
             }
         }
         
@@ -68,6 +71,8 @@ enum SpecialViewList {
                 return "TableVeiewのcellをタップすると別のcellが開くようなアニメーションするTableView"
             case .defaultAVPlayerView:
                 return "AVKitのAVPlayerViewControllerを使用した方法で動画を再生するView"
+            case .orientation:
+                return "回転したときのViewの動きを確認するためView"
             }
         }
     }

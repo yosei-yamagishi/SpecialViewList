@@ -100,6 +100,12 @@ class SpecialViewListViewController: UIViewController {
                 controller,
                 animated: true
             )
+        case .orientation:
+            let controller = OrientationSampleViewController()
+            navigationController?.pushViewController(
+                controller,
+                animated: true
+            )
         }
     }
 }
