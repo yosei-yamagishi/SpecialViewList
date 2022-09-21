@@ -101,11 +101,9 @@ class SpecialViewListViewController: UIViewController {
                 animated: true
             )
         case .orientation:
-            let controller = OrientationSampleViewController()
-            navigationController?.pushViewController(
-                controller,
-                animated: true
-            )
+            let controller = RotateScreenSampleViewController()
+            controller.modalPresentationStyle = .fullScreen
+            present(controller, animated: true)
         }
     }
 }
