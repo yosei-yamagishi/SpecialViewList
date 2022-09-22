@@ -2,7 +2,7 @@ import UIKit
 
 extension UIDevice {
     static func setOrientation(
-        deviceOrientation: UIDeviceOrientation
+        deviceOrientation: UIInterfaceOrientation
     ) {
         current.setValue(
             deviceOrientation.rawValue,

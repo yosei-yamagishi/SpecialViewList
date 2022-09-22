@@ -10,7 +10,7 @@ extension UIViewController {
     }
     
     func updateOrientaiton(
-        deviceOrientation: UIDeviceOrientation
+        deviceOrientation: UIInterfaceOrientation
     ) {
         if #available(iOS 16.0, *) {
             let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
