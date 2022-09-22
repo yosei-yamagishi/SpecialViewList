@@ -41,8 +41,8 @@ class RotateScreenSampleViewController: UIViewController {
         UIAction { [weak self] _ in
             guard let self = self else { return }
             let rotatedDeviceOrientation = self.isPortrait
-                ? UIDeviceOrientation.landscapeRight
-                : UIDeviceOrientation.portrait
+                ? UIInterfaceOrientation.landscapeRight
+                : UIInterfaceOrientation.portrait
             self.updateOrientaiton(
                 deviceOrientation: rotatedDeviceOrientation
             )
