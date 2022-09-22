@@ -104,6 +104,8 @@ class SpecialViewListViewController: UIViewController {
             let controller = RotateScreenSampleViewController()
             controller.modalPresentationStyle = .fullScreen
             present(controller, animated: true)
+        case .hostingController:
+            break
         }
     }
 }
@@ -122,27 +124,20 @@ extension SpecialViewListViewController: UITableViewDataSource {
         cellForRowAt indexPath: IndexPath
     ) -> UITableViewCell {
         let listSection = viewModel.listSections[indexPath.section]
-        switch listSection {
-        case .customView:
-            let item = listSection.items[indexPath.row]
-            let cell = tableView.dequeueReusableCell(for: indexPath) as SpecialViewListTableViewCell
-            cell.setup(
-                title: item.title,
-                discription: item.discription
-            )
-            return cell
-        }
+        let item = listSection.items[indexPath.row]
+        let cell = tableView.dequeueReusableCell(for: indexPath) as SpecialViewListTableViewCell
+        cell.setup(
+            title: item.title,
+            discription: item.discription
+        )
+        return cell
     }
     
     func tableView(
         _ tableView: UITableView,
         titleForHeaderInSection section: Int
     ) -> String? {
-        let listSection = viewModel.listSections[section]
-        switch listSection {
-        case .customView:
-            return listSection.title
-        }
+        viewModel.listSections[section].title
     }
 }
 
@@ -156,11 +151,8 @@ extension SpecialViewListViewController: UITableViewDelegate {
         }
         
         let listSection = viewModel.listSections[indexPath.section]
-        switch listSection {
-        case .customView:
-            openView(
-                listItem: listSection.items[indexPath.row]
-            )
-        }
+        openView(
+            listItem: listSection.items[indexPath.row]
+        )
     }
 }
