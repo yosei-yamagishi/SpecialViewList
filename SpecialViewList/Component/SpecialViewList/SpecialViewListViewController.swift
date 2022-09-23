@@ -105,7 +105,14 @@ class SpecialViewListViewController: UIViewController {
             controller.modalPresentationStyle = .fullScreen
             present(controller, animated: true)
         case .hostingController:
-            break
+            let viewModel = HostingControllerViewModel()
+            let controller = HostingControllerViewController(
+                viewModel: viewModel
+            )
+            navigationController?.pushViewController(
+                controller,
+                animated: true
+            )
         }
     }
 }
