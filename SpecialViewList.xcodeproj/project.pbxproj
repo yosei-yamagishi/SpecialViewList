@@ -23,6 +23,17 @@
 		1673A7B328C4D19C00F9BF77 /* CellAnimationHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1673A7B228C4D19C00F9BF77 /* CellAnimationHeaderView.xib */; };
 		1673A7B628C573CC00F9BF77 /* CellAnimationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673A7B428C573CC00F9BF77 /* CellAnimationTableViewCell.swift */; };
 		1673A7B728C573CC00F9BF77 /* CellAnimationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1673A7B528C573CC00F9BF77 /* CellAnimationTableViewCell.xib */; };
+		16CAA19928DC94DF00A5108B /* HostingControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CAA19728DC94DF00A5108B /* HostingControllerViewController.swift */; };
+		16CAA19A28DC94DF00A5108B /* HostingControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16CAA19828DC94DF00A5108B /* HostingControllerViewController.xib */; };
+		16CAA19C28DC976500A5108B /* HostingBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CAA19B28DC976500A5108B /* HostingBaseView.swift */; };
+		16CAA19E28DC98E800A5108B /* HostingControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CAA19D28DC98E800A5108B /* HostingControllerViewModel.swift */; };
+		16CAA1A428DC9A0F00A5108B /* UDFViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CAA1A128DC9A0F00A5108B /* UDFViewModel.swift */; };
+		16CAA1A528DC9A0F00A5108B /* ActionSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CAA1A228DC9A0F00A5108B /* ActionSender.swift */; };
+		16CAA1A628DC9A0F00A5108B /* StateHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CAA1A328DC9A0F00A5108B /* StateHolder.swift */; };
+		16CAA1AB28DCADBB00A5108B /* NextHostingControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CAA1A928DCADBB00A5108B /* NextHostingControllerViewController.swift */; };
+		16CAA1AC28DCADBB00A5108B /* NextHostingControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16CAA1AA28DCADBB00A5108B /* NextHostingControllerViewController.xib */; };
+		16CAA1AE28DCAF5800A5108B /* NextHostingBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CAA1AD28DCAF5800A5108B /* NextHostingBaseView.swift */; };
+		16CAA1B028DCB30200A5108B /* NextHostingControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CAA1AF28DCB30200A5108B /* NextHostingControllerViewModel.swift */; };
 		CA36A78427CE4F6A003B9140 /* SubtitleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36A78327CE4F6A003B9140 /* SubtitleInfo.swift */; };
 		CA36A78827CE5A99003B9140 /* SubtitlePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36A78627CE5A99003B9140 /* SubtitlePlayerViewController.swift */; };
 		CA36A78927CE5A99003B9140 /* SubtitlePlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA36A78727CE5A99003B9140 /* SubtitlePlayerViewController.xib */; };
@@ -116,6 +127,17 @@
 		1673A7B228C4D19C00F9BF77 /* CellAnimationHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellAnimationHeaderView.xib; sourceTree = "<group>"; };
 		1673A7B428C573CC00F9BF77 /* CellAnimationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellAnimationTableViewCell.swift; sourceTree = "<group>"; };
 		1673A7B528C573CC00F9BF77 /* CellAnimationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellAnimationTableViewCell.xib; sourceTree = "<group>"; };
+		16CAA19728DC94DF00A5108B /* HostingControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingControllerViewController.swift; sourceTree = "<group>"; };
+		16CAA19828DC94DF00A5108B /* HostingControllerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HostingControllerViewController.xib; sourceTree = "<group>"; };
+		16CAA19B28DC976500A5108B /* HostingBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingBaseView.swift; sourceTree = "<group>"; };
+		16CAA19D28DC98E800A5108B /* HostingControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingControllerViewModel.swift; sourceTree = "<group>"; };
+		16CAA1A128DC9A0F00A5108B /* UDFViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDFViewModel.swift; sourceTree = "<group>"; };
+		16CAA1A228DC9A0F00A5108B /* ActionSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSender.swift; sourceTree = "<group>"; };
+		16CAA1A328DC9A0F00A5108B /* StateHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateHolder.swift; sourceTree = "<group>"; };
+		16CAA1A928DCADBB00A5108B /* NextHostingControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextHostingControllerViewController.swift; sourceTree = "<group>"; };
+		16CAA1AA28DCADBB00A5108B /* NextHostingControllerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NextHostingControllerViewController.xib; sourceTree = "<group>"; };
+		16CAA1AD28DCAF5800A5108B /* NextHostingBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextHostingBaseView.swift; sourceTree = "<group>"; };
+		16CAA1AF28DCB30200A5108B /* NextHostingControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextHostingControllerViewModel.swift; sourceTree = "<group>"; };
 		CA36A78327CE4F6A003B9140 /* SubtitleInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleInfo.swift; sourceTree = "<group>"; };
 		CA36A78627CE5A99003B9140 /* SubtitlePlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitlePlayerViewController.swift; sourceTree = "<group>"; };
 		CA36A78727CE5A99003B9140 /* SubtitlePlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubtitlePlayerViewController.xib; sourceTree = "<group>"; };
@@ -240,6 +262,39 @@
 			path = TableViewCellAnimation;
 			sourceTree = "<group>";
 		};
+		16CAA19628DC93C100A5108B /* HostingController */ = {
+			isa = PBXGroup;
+			children = (
+				16CAA1A828DCAD6F00A5108B /* NextHostingController */,
+				16CAA19728DC94DF00A5108B /* HostingControllerViewController.swift */,
+				16CAA19828DC94DF00A5108B /* HostingControllerViewController.xib */,
+				16CAA19B28DC976500A5108B /* HostingBaseView.swift */,
+				16CAA19D28DC98E800A5108B /* HostingControllerViewModel.swift */,
+			);
+			path = HostingController;
+			sourceTree = "<group>";
+		};
+		16CAA1A728DC9A1E00A5108B /* UDF */ = {
+			isa = PBXGroup;
+			children = (
+				16CAA1A228DC9A0F00A5108B /* ActionSender.swift */,
+				16CAA1A328DC9A0F00A5108B /* StateHolder.swift */,
+				16CAA1A128DC9A0F00A5108B /* UDFViewModel.swift */,
+			);
+			path = UDF;
+			sourceTree = "<group>";
+		};
+		16CAA1A828DCAD6F00A5108B /* NextHostingController */ = {
+			isa = PBXGroup;
+			children = (
+				16CAA1A928DCADBB00A5108B /* NextHostingControllerViewController.swift */,
+				16CAA1AA28DCADBB00A5108B /* NextHostingControllerViewController.xib */,
+				16CAA1AD28DCAF5800A5108B /* NextHostingBaseView.swift */,
+				16CAA1AF28DCB30200A5108B /* NextHostingControllerViewModel.swift */,
+			);
+			path = NextHostingController;
+			sourceTree = "<group>";
+		};
 		CA36A78527CE59CE003B9140 /* SubtitlePlayerView */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,6 +361,7 @@
 		CA5F0A1D27B5E4F70021E1FD /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				16CAA1A728DC9A1E00A5108B /* UDF */,
 				CA36A79D27CFB1C4003B9140 /* Player */,
 				CA5F0A2427B5E5290021E1FD /* Views */,
 			);
@@ -326,6 +382,7 @@
 		CA5F0A2527B5E5640021E1FD /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				16CAA19628DC93C100A5108B /* HostingController */,
 				1635CDE528D989F400ADF7A6 /* Orientation */,
 				1635CDC528C8E21000ADF7A6 /* SomeAutoVideoPlayer */,
 				1673A7A928C4CE5000F9BF77 /* TableViewCellAnimation */,
@@ -513,6 +570,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16CAA19A28DC94DF00A5108B /* HostingControllerViewController.xib in Resources */,
 				1673A7B328C4D19C00F9BF77 /* CellAnimationHeaderView.xib in Resources */,
 				CA3F555327C6050600D6CAC2 /* LinkLabelView.xib in Resources */,
 				CAAAA90728B76DAE003903F8 /* ChoiceFormViewController.xib in Resources */,
@@ -530,6 +588,7 @@
 				1635CDD128CC319D00ADF7A6 /* AVPlayerViewControllerView.xib in Resources */,
 				CA946107284B145100EBF5FE /* movie5.mp4 in Resources */,
 				CA5F0A2927B5E8E40021E1FD /* SpecialViewListViewController.xib in Resources */,
+				16CAA1AC28DCADBB00A5108B /* NextHostingControllerViewController.xib in Resources */,
 				CA3F554D27C602B300D6CAC2 /* LinkLabelViewController.xib in Resources */,
 				CAAAA90D28B76F1A003903F8 /* ChoiceFormView.xib in Resources */,
 				CA36A79127CE5D94003B9140 /* SubtitleTableViewCell.xib in Resources */,
@@ -557,15 +616,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16CAA1A528DC9A0F00A5108B /* ActionSender.swift in Sources */,
 				1673A7AB28C4CE8700F9BF77 /* TableViewCellAnimationViewModel.swift in Sources */,
 				CA36A78427CE4F6A003B9140 /* SubtitleInfo.swift in Sources */,
 				CACFFAC62848B3B700D920FF /* VideoCollectionView.swift in Sources */,
 				CA5F0ACB27B645DA0021E1FD /* ItemContent.swift in Sources */,
+				16CAA1AE28DCAF5800A5108B /* NextHostingBaseView.swift in Sources */,
 				CA36A79F27CFB1DF003B9140 /* AudioPlayer.swift in Sources */,
 				CA5F0A2327B5E5250021E1FD /* NibOwnerLoadable.swift in Sources */,
 				1673A7B628C573CC00F9BF77 /* CellAnimationTableViewCell.swift in Sources */,
 				CA3F555127C604FB00D6CAC2 /* LinkLabelView.swift in Sources */,
 				1673A7AE28C4CF7700F9BF77 /* TableViewCellAnimationViewController.swift in Sources */,
+				16CAA19928DC94DF00A5108B /* HostingControllerViewController.swift in Sources */,
 				1635CDE828D98AE800ADF7A6 /* RotateScreenSampleViewController.swift in Sources */,
 				CA5F0A2227B5E5250021E1FD /* NibLoadable.swift in Sources */,
 				1635CDCB28C8E25A00ADF7A6 /* DefaultAVPlayerViewModel.swift in Sources */,
@@ -592,14 +654,18 @@
 				CA5F0A1B27B5E4E00021E1FD /* UICollectionViewExtension.swift in Sources */,
 				CA5F0A2127B5E5250021E1FD /* NibBundler.swift in Sources */,
 				1635CDC828C8E23500ADF7A6 /* DefaultAVPlayerViewController.swift in Sources */,
+				16CAA1A428DC9A0F00A5108B /* UDFViewModel.swift in Sources */,
 				CAABE3D227BC6D3000A5D396 /* AutoFlowedTitleViewController.swift in Sources */,
 				CA5F0A2827B5E8E40021E1FD /* SpecialViewListViewController.swift in Sources */,
+				16CAA19C28DC976500A5108B /* HostingBaseView.swift in Sources */,
 				CA5F0AB727B5FB480021E1FD /* SpecialViewListTableViewCell.swift in Sources */,
 				CACFFACA2848B45500D920FF /* VideoPreviewView.swift in Sources */,
 				CAAAA90628B76DAE003903F8 /* ChoiceFormViewController.swift in Sources */,
 				CAAAA90928B76E01003903F8 /* ChoiceFormViewModel.swift in Sources */,
 				CA3F555527C6083600D6CAC2 /* LabelLinkTapGesture.swift in Sources */,
+				16CAA1B028DCB30200A5108B /* NextHostingControllerViewModel.swift in Sources */,
 				CA5F0ABF27B634EE0021E1FD /* Grid3x3ViewController.swift in Sources */,
+				16CAA1AB28DCADBB00A5108B /* NextHostingControllerViewController.swift in Sources */,
 				CA5F0AD327B7770E0021E1FD /* SpecialViewList.swift in Sources */,
 				CA5F0AC627B63E780021E1FD /* Grid3x3ItemView.swift in Sources */,
 				CAABE3D727BC6F2200A5D396 /* AutoFlowedTitleView.swift in Sources */,
@@ -610,7 +676,9 @@
 				CA36A79027CE5D94003B9140 /* SubtitleTableViewCell.swift in Sources */,
 				1635CDEB28DACF7900ADF7A6 /* UIDeviceExtension.swift in Sources */,
 				CA5F0AC227B635760021E1FD /* Grid3x3View.swift in Sources */,
+				16CAA1A628DC9A0F00A5108B /* StateHolder.swift in Sources */,
 				CA36A79327CE60C8003B9140 /* SubtitlePlayerViewModel.swift in Sources */,
+				16CAA19E28DC98E800A5108B /* HostingControllerViewModel.swift in Sources */,
 				CA5F0ACD27B646020021E1FD /* Grid3x3ItemTapGesture.swift in Sources */,
 				CAAAA90F28B7753F003903F8 /* ChoiceView.swift in Sources */,
 			);

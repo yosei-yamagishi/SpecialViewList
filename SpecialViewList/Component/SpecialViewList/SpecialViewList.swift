@@ -1,9 +1,10 @@
 enum SpecialViewList {
     enum Section: CaseIterable {
-        case customView
+        case customView, viewController
         
         var title: String {
             switch self {
+            case .viewController: return "ViewController"
             case .customView: return "CustomView"
             }
         }
@@ -22,12 +23,19 @@ enum SpecialViewList {
                     .defaultAVPlayerView,
                     .orientation
                 ]
+            case .viewController:
+                return [
+                    .hostingController
+                ]
             }
         }
     }
 
     enum Item: CaseIterable {
+        // customView
         case grid3x3, autoFlowedTitle, linkLabel, subtitlePlayer, videoCollection, choiceForm, tableViewCellAnimation, defaultAVPlayerView, orientation
+        // viewController
+        case hostingController
         
         var title: String {
             switch self {
@@ -49,6 +57,8 @@ enum SpecialViewList {
                 return "動画が自動で再生されるview"
             case .orientation:
                 return "回転に対応するView"
+            case .hostingController:
+                return "SwiftUIのViewをUIKitのBaseのVCに表示する画面"
             }
         }
         
@@ -73,6 +83,8 @@ enum SpecialViewList {
                 return "AVKitのAVPlayerViewControllerを使用した方法で動画を再生するView"
             case .orientation:
                 return "回転したときのViewの動きを確認するためView"
+            case .hostingController:
+                return "UIHostingViewControllerを使用して、SwiftUIのViewをUIKitのVCに表示するための画面"
             }
         }
     }
