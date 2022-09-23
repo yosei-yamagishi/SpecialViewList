@@ -25,7 +25,8 @@ enum SpecialViewList {
                 ]
             case .viewController:
                 return [
-                    .hostingController
+                    .hostingController,
+                    .loginByConcurrency
                 ]
             }
         }
@@ -35,7 +36,7 @@ enum SpecialViewList {
         // customView
         case grid3x3, autoFlowedTitle, linkLabel, subtitlePlayer, videoCollection, choiceForm, tableViewCellAnimation, defaultAVPlayerView, orientation
         // viewController
-        case hostingController
+        case hostingController, loginByConcurrency
         
         var title: String {
             switch self {
@@ -59,6 +60,8 @@ enum SpecialViewList {
                 return "回転に対応するView"
             case .hostingController:
                 return "SwiftUIのViewをUIKitのBaseのVCに表示する画面"
+            case .loginByConcurrency:
+                return "SwiftConcurrencyを利用したログイン画面"
             }
         }
         
@@ -85,6 +88,8 @@ enum SpecialViewList {
                 return "回転したときのViewの動きを確認するためView"
             case .hostingController:
                 return "UIHostingViewControllerを使用して、SwiftUIのViewをUIKitのVCに表示するための画面"
+            case .loginByConcurrency:
+                return "MVVMのアーキテクチャでログイン画面を作成し、ログイン処理をSwiftConcurrencyを用いて記述している画面"
             }
         }
     }

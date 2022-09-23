@@ -113,6 +113,8 @@ class SpecialViewListViewController: UIViewController {
                 controller,
                 animated: true
             )
+        case .loginByConcurrency:
+            break
         }
     }
 }
