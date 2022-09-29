@@ -34,6 +34,8 @@
 		16CAA1AC28DCADBB00A5108B /* NextHostingControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16CAA1AA28DCADBB00A5108B /* NextHostingControllerViewController.xib */; };
 		16CAA1AE28DCAF5800A5108B /* NextHostingBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CAA1AD28DCAF5800A5108B /* NextHostingBaseView.swift */; };
 		16CAA1B028DCB30200A5108B /* NextHostingControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CAA1AF28DCB30200A5108B /* NextHostingControllerViewModel.swift */; };
+		16CAA1B428E0186300A5108B /* LoginByConcurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CAA1B228E0186300A5108B /* LoginByConcurrencyViewController.swift */; };
+		16CAA1B528E0186300A5108B /* LoginByConcurrencyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16CAA1B328E0186300A5108B /* LoginByConcurrencyViewController.xib */; };
 		CA36A78427CE4F6A003B9140 /* SubtitleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36A78327CE4F6A003B9140 /* SubtitleInfo.swift */; };
 		CA36A78827CE5A99003B9140 /* SubtitlePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36A78627CE5A99003B9140 /* SubtitlePlayerViewController.swift */; };
 		CA36A78927CE5A99003B9140 /* SubtitlePlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA36A78727CE5A99003B9140 /* SubtitlePlayerViewController.xib */; };
@@ -138,6 +140,8 @@
 		16CAA1AA28DCADBB00A5108B /* NextHostingControllerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NextHostingControllerViewController.xib; sourceTree = "<group>"; };
 		16CAA1AD28DCAF5800A5108B /* NextHostingBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextHostingBaseView.swift; sourceTree = "<group>"; };
 		16CAA1AF28DCB30200A5108B /* NextHostingControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextHostingControllerViewModel.swift; sourceTree = "<group>"; };
+		16CAA1B228E0186300A5108B /* LoginByConcurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginByConcurrencyViewController.swift; sourceTree = "<group>"; };
+		16CAA1B328E0186300A5108B /* LoginByConcurrencyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginByConcurrencyViewController.xib; sourceTree = "<group>"; };
 		CA36A78327CE4F6A003B9140 /* SubtitleInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleInfo.swift; sourceTree = "<group>"; };
 		CA36A78627CE5A99003B9140 /* SubtitlePlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitlePlayerViewController.swift; sourceTree = "<group>"; };
 		CA36A78727CE5A99003B9140 /* SubtitlePlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubtitlePlayerViewController.xib; sourceTree = "<group>"; };
@@ -295,6 +299,15 @@
 			path = NextHostingController;
 			sourceTree = "<group>";
 		};
+		16CAA1B128E0182700A5108B /* LoginByConcurrency */ = {
+			isa = PBXGroup;
+			children = (
+				16CAA1B228E0186300A5108B /* LoginByConcurrencyViewController.swift */,
+				16CAA1B328E0186300A5108B /* LoginByConcurrencyViewController.xib */,
+			);
+			path = LoginByConcurrency;
+			sourceTree = "<group>";
+		};
 		CA36A78527CE59CE003B9140 /* SubtitlePlayerView */ = {
 			isa = PBXGroup;
 			children = (
@@ -382,6 +395,7 @@
 		CA5F0A2527B5E5640021E1FD /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				16CAA1B128E0182700A5108B /* LoginByConcurrency */,
 				16CAA19628DC93C100A5108B /* HostingController */,
 				1635CDE528D989F400ADF7A6 /* Orientation */,
 				1635CDC528C8E21000ADF7A6 /* SomeAutoVideoPlayer */,
@@ -584,6 +598,7 @@
 				CA946103284B145100EBF5FE /* movie3.mp4 in Resources */,
 				CA36A78D27CE5AE0003B9140 /* SubtitlePlayerView.xib in Resources */,
 				CA664DC627B5E31D0083D686 /* LaunchScreen.storyboard in Resources */,
+				16CAA1B528E0186300A5108B /* LoginByConcurrencyViewController.xib in Resources */,
 				CA946106284B145100EBF5FE /* movie1.mp4 in Resources */,
 				1635CDD128CC319D00ADF7A6 /* AVPlayerViewControllerView.xib in Resources */,
 				CA946107284B145100EBF5FE /* movie5.mp4 in Resources */,
@@ -669,6 +684,7 @@
 				CA5F0AD327B7770E0021E1FD /* SpecialViewList.swift in Sources */,
 				CA5F0AC627B63E780021E1FD /* Grid3x3ItemView.swift in Sources */,
 				CAABE3D727BC6F2200A5D396 /* AutoFlowedTitleView.swift in Sources */,
+				16CAA1B428E0186300A5108B /* LoginByConcurrencyViewController.swift in Sources */,
 				CACFFAC22848B2BA00D920FF /* VideoCollectionViewModel.swift in Sources */,
 				CA3F554C27C602B300D6CAC2 /* LinkLabelViewController.swift in Sources */,
 				CA9460F9284A436900EBF5FE /* CollectionLayout.swift in Sources */,
@@ -827,6 +843,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -853,6 +870,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
