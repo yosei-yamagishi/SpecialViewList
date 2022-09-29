@@ -114,7 +114,14 @@ class SpecialViewListViewController: UIViewController {
                 animated: true
             )
         case .loginByConcurrency:
-            break
+            let viewModel = LoginViewModel<AuthServiceImp>()
+            let controller = LoginByConcurrencyViewController(
+                viewModel: viewModel
+            )
+            navigationController?.pushViewController(
+                controller,
+                animated: true
+            )
         }
     }
 }
