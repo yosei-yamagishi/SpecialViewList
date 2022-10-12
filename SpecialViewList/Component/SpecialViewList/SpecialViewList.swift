@@ -26,7 +26,8 @@ enum SpecialViewList {
             case .viewController:
                 return [
                     .hostingController,
-                    .loginByConcurrency
+                    .loginByConcurrency,
+                    .videoPreviewOnCollectionView
                 ]
             }
         }
@@ -36,7 +37,7 @@ enum SpecialViewList {
         // customView
         case grid3x3, autoFlowedTitle, linkLabel, subtitlePlayer, videoCollection, choiceForm, tableViewCellAnimation, defaultAVPlayerView, orientation
         // viewController
-        case hostingController, loginByConcurrency
+        case hostingController, loginByConcurrency, videoPreviewOnCollectionView
         
         var title: String {
             switch self {
@@ -62,6 +63,8 @@ enum SpecialViewList {
                 return "SwiftUIのViewをUIKitのBaseのVCに表示する画面"
             case .loginByConcurrency:
                 return "SwiftConcurrencyを利用したログイン画面"
+            case .videoPreviewOnCollectionView:
+                return "CollectionViewのCell上で動画を再生される画面"
             }
         }
         
@@ -90,6 +93,8 @@ enum SpecialViewList {
                 return "UIHostingViewControllerを使用して、SwiftUIのViewをUIKitのVCに表示するための画面"
             case .loginByConcurrency:
                 return "MVVMのアーキテクチャでログイン画面を作成し、ログイン処理をSwiftConcurrencyを用いて記述している画面"
+            case .videoPreviewOnCollectionView:
+                return "CollectionViewのCell上で動画が正しく再生されるかやcellのreloadでも再生され続けるのかの確認の為の画面"
             }
         }
     }

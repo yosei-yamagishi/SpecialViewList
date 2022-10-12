@@ -122,6 +122,19 @@ class SpecialViewListViewController: UIViewController {
                 controller,
                 animated: true
             )
+        case .videoPreviewOnCollectionView:
+            let videoPlayer = VideoPlayer()
+            let viewModel = VideoOnCollectionViewModel(
+                videoPlayer: videoPlayer
+            )
+            let controller = VideoOnCollectionViewController(
+                viewModel: viewModel,
+                videoPlayer: videoPlayer
+            )
+            navigationController?.pushViewController(
+                controller,
+                animated: true
+            )
         }
     }
 }

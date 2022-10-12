@@ -4,6 +4,13 @@ struct Video {
 }
 
 extension Video {
+    static var sampleVideo: Video {
+        Video(
+            thumbnailImageUrlString: "thumbnail1",
+            videoUrlString: "movie1.mp4"
+        )
+    }
+    
     static func sampleVideos() -> [Video] {
         [
             Video(

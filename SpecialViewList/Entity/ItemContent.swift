@@ -13,6 +13,9 @@ extension ItemContent {
         ItemContent(name: "アイテム７７７７７７７"),
         ItemContent(name: "アイテム８８８８８８８８"),
         ItemContent(name: "アイテム９９９９９９９９９"),
+        ItemContent(name: "アイテム１０１０１０１０１０"),
+        ItemContent(name: "アイテム１１１１１１１１１１１"),
+        ItemContent(name: "アイテム１２１２１２１２１２１２"),
     ]
     
 }
