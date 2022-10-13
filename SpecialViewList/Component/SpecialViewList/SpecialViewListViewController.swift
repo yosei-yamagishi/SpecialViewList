@@ -135,6 +135,15 @@ class SpecialViewListViewController: UIViewController {
                 controller,
                 animated: true
             )
+        case .bottomUpKeyboardHeightView:
+            let viewModel = BottomUpKeyboardHeightViewModel()
+            let controller = BottomUpKeyboardHeightViewController(
+                viewModel: viewModel
+            )
+            navigationController?.pushViewController(
+                controller,
+                animated: true
+            )
         }
     }
 }
