@@ -6,6 +6,7 @@ protocol VideoPlayerProtocol {
 
 protocol VideoPlayerControlProtocol {
     var isPlaying: Bool { get }
+    var currentTime: Float { get }
     func play(isMuted: Bool)
     func pauseAndInit()
     func mute(isMuted: Bool)
@@ -15,6 +16,9 @@ protocol VideoPlayerControlProtocol {
 class VideoPlayer: VideoPlayerProtocol, VideoPlayerControlProtocol {
     var player: AVPlayer?
     var isPlaying: Bool { player?.isPlaying ?? false }
+    var currentTime: Float {
+        Float(player?.currentTime().seconds ?? .zero)
+    }
 
     func prepare(url: URL) {
         let item = AVPlayerItem(url: url)
