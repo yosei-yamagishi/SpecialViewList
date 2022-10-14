@@ -11,6 +11,13 @@ extension Video {
         )
     }
     
+    static var sampleVideo2: Video {
+        Video(
+            thumbnailImageUrlString: "thumbnail2",
+            videoUrlString: "movie2.mp4"
+        )
+    }
+    
     static func sampleVideos() -> [Video] {
         [
             Video(
