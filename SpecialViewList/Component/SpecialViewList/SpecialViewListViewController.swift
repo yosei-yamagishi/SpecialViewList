@@ -135,6 +135,19 @@ class SpecialViewListViewController: UIViewController {
                 controller,
                 animated: true
             )
+        case .clippingPictureInVideo:
+            let videoPlayer = VideoPlayer()
+            let viewModel = ClippingPictureInVideoModel(
+                videoPlayer: videoPlayer
+            )
+            let controller = ClippingPictureInVideoViewController(
+                viewModel: viewModel,
+                videoPlayer: videoPlayer
+            )
+            navigationController?.pushViewController(
+                controller,
+                animated: true
+            )
         }
     }
 }
