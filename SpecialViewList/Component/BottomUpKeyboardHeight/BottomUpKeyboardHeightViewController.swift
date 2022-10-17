@@ -115,8 +115,10 @@ extension BottomUpKeyboardHeightViewController: UICollectionViewDataSource {
         numberOfItemsInSection section: Int
     ) -> Int {
         switch viewModel.sections[section] {
-        case .contents: return viewModel.contents.count
-        case .input: return 1
+        case .contents1: return viewModel.contents.count
+        case .inputText1: return 1
+        case .contents2: return viewModel.contents.count
+        case .inputText2: return 1
         }
     }
     
@@ -125,7 +127,7 @@ extension BottomUpKeyboardHeightViewController: UICollectionViewDataSource {
         cellForItemAt indexPath: IndexPath
     ) -> UICollectionViewCell {
         switch viewModel.sections[indexPath.section] {
-        case .contents:
+        case .contents1, .contents2:
             let cell = collectionView.dequeueReusableCell(
                 for: indexPath
             ) as ContentCollectionViewCell
@@ -133,10 +135,12 @@ extension BottomUpKeyboardHeightViewController: UICollectionViewDataSource {
                 titleText: viewModel.contents[indexPath.item].name
             )
             return cell
-        case .input:
+        case .inputText1, .inputText2:
             let cell = collectionView.dequeueReusableCell(
                 for: indexPath
             ) as TextFieldCollectionViewCell
+            cell.setIndexPath(indexPath: indexPath)
+            cell.delegate = self
             return cell
         }
     }
@@ -149,12 +153,12 @@ extension BottomUpKeyboardHeightViewController: UICollectionViewDelegateFlowLayo
         sizeForItemAt indexPath: IndexPath
     ) -> CGSize {
         switch viewModel.sections[indexPath.section] {
-        case .input:
+        case .inputText1, .inputText2:
             return CGSize(
                 width: UIScreen.main.bounds.width,
                 height: 72
             )
-        case .contents:
+        case .contents1, .contents2:
             return CGSize(
                 width: UIScreen.main.bounds.width,
                 height: 56
@@ -187,3 +191,16 @@ extension BottomUpKeyboardHeightViewController: UICollectionViewDelegateFlowLayo
     }
 }
 
+extension BottomUpKeyboardHeightViewController: TextFieldCollectionViewCellDelegate {
+    func didBeginEditing(indexPath: IndexPath) {
+        collectionView.scrollToItem(
+            at: indexPath,
+            at: .bottom,
+            animated: false
+        )
+    }
+    
+    func didTapReturn() {
+        view.endEditing(true)
+    }
+}
