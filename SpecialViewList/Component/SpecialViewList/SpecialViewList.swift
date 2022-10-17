@@ -27,7 +27,8 @@ enum SpecialViewList {
                 return [
                     .hostingController,
                     .loginByConcurrency,
-                    .videoPreviewOnCollectionView
+                    .videoPreviewOnCollectionView,
+                    .bottomUpKeyboardHeightView
                 ]
             }
         }
@@ -37,7 +38,7 @@ enum SpecialViewList {
         // customView
         case grid3x3, autoFlowedTitle, linkLabel, subtitlePlayer, videoCollection, choiceForm, tableViewCellAnimation, defaultAVPlayerView, orientation
         // viewController
-        case hostingController, loginByConcurrency, videoPreviewOnCollectionView
+        case hostingController, loginByConcurrency, videoPreviewOnCollectionView, bottomUpKeyboardHeightView
         
         var title: String {
             switch self {
@@ -65,6 +66,8 @@ enum SpecialViewList {
                 return "SwiftConcurrencyを利用したログイン画面"
             case .videoPreviewOnCollectionView:
                 return "CollectionViewのCell上で動画を再生される画面"
+            case .bottomUpKeyboardHeightView:
+                return "入力時のキーボード高さ分の調整画面"
             }
         }
         
@@ -95,6 +98,8 @@ enum SpecialViewList {
                 return "MVVMのアーキテクチャでログイン画面を作成し、ログイン処理をSwiftConcurrencyを用いて記述している画面"
             case .videoPreviewOnCollectionView:
                 return "CollectionViewのCell上で動画が正しく再生されるかやcellのreloadでも再生され続けるのかの確認の為の画面"
+            case .bottomUpKeyboardHeightView:
+                return "CollectionViewのCellに入力部分があり入力時にキーボードの高さ分だけ、ボトムの制約を調整してキーボードに隠れないようにして、入力しやすくする画面"
             }
         }
     }

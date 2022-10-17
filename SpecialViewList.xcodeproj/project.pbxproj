@@ -23,6 +23,11 @@
 		1658D80928F6A87C00E88878 /* ContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1658D80728F6A87C00E88878 /* ContentCollectionViewCell.swift */; };
 		1658D80A28F6A87C00E88878 /* ContentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1658D80828F6A87C00E88878 /* ContentCollectionViewCell.xib */; };
 		1658D80C28F7006100E88878 /* VideoOnCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1658D80B28F7006100E88878 /* VideoOnCollectionViewModel.swift */; };
+		1658D81028F777F200E88878 /* BottomUpKeyboardHeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1658D80E28F777F200E88878 /* BottomUpKeyboardHeightViewController.swift */; };
+		1658D81128F777F200E88878 /* BottomUpKeyboardHeightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1658D80F28F777F200E88878 /* BottomUpKeyboardHeightViewController.xib */; };
+		1658D81428F7905300E88878 /* TextFieldCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1658D81228F7905300E88878 /* TextFieldCollectionViewCell.swift */; };
+		1658D81528F7905300E88878 /* TextFieldCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1658D81328F7905300E88878 /* TextFieldCollectionViewCell.xib */; };
+		1658D81728F7921D00E88878 /* BottomUpKeyboardHeightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1658D81628F7921D00E88878 /* BottomUpKeyboardHeightViewModel.swift */; };
 		1673A7AB28C4CE8700F9BF77 /* TableViewCellAnimationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673A7AA28C4CE8700F9BF77 /* TableViewCellAnimationViewModel.swift */; };
 		1673A7AE28C4CF7700F9BF77 /* TableViewCellAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673A7AC28C4CF7700F9BF77 /* TableViewCellAnimationViewController.swift */; };
 		1673A7AF28C4CF7700F9BF77 /* TableViewCellAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1673A7AD28C4CF7700F9BF77 /* TableViewCellAnimationViewController.xib */; };
@@ -136,6 +141,11 @@
 		1658D80728F6A87C00E88878 /* ContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewCell.swift; sourceTree = "<group>"; };
 		1658D80828F6A87C00E88878 /* ContentCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentCollectionViewCell.xib; sourceTree = "<group>"; };
 		1658D80B28F7006100E88878 /* VideoOnCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoOnCollectionViewModel.swift; sourceTree = "<group>"; };
+		1658D80E28F777F200E88878 /* BottomUpKeyboardHeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomUpKeyboardHeightViewController.swift; sourceTree = "<group>"; };
+		1658D80F28F777F200E88878 /* BottomUpKeyboardHeightViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomUpKeyboardHeightViewController.xib; sourceTree = "<group>"; };
+		1658D81228F7905300E88878 /* TextFieldCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCollectionViewCell.swift; sourceTree = "<group>"; };
+		1658D81328F7905300E88878 /* TextFieldCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldCollectionViewCell.xib; sourceTree = "<group>"; };
+		1658D81628F7921D00E88878 /* BottomUpKeyboardHeightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomUpKeyboardHeightViewModel.swift; sourceTree = "<group>"; };
 		1673A7AA28C4CE8700F9BF77 /* TableViewCellAnimationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellAnimationViewModel.swift; sourceTree = "<group>"; };
 		1673A7AC28C4CF7700F9BF77 /* TableViewCellAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellAnimationViewController.swift; sourceTree = "<group>"; };
 		1673A7AD28C4CF7700F9BF77 /* TableViewCellAnimationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellAnimationViewController.xib; sourceTree = "<group>"; };
@@ -291,8 +301,20 @@
 			children = (
 				1658D80728F6A87C00E88878 /* ContentCollectionViewCell.swift */,
 				1658D80828F6A87C00E88878 /* ContentCollectionViewCell.xib */,
+				1658D81228F7905300E88878 /* TextFieldCollectionViewCell.swift */,
+				1658D81328F7905300E88878 /* TextFieldCollectionViewCell.xib */,
 			);
 			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		1658D80D28F777A900E88878 /* BottomUpKeyboardHeight */ = {
+			isa = PBXGroup;
+			children = (
+				1658D80E28F777F200E88878 /* BottomUpKeyboardHeightViewController.swift */,
+				1658D80F28F777F200E88878 /* BottomUpKeyboardHeightViewController.xib */,
+				1658D81628F7921D00E88878 /* BottomUpKeyboardHeightViewModel.swift */,
+			);
+			path = BottomUpKeyboardHeight;
 			sourceTree = "<group>";
 		};
 		1673A7A928C4CE5000F9BF77 /* TableViewCellAnimation */ = {
@@ -439,6 +461,7 @@
 		CA5F0A2527B5E5640021E1FD /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				1658D80D28F777A900E88878 /* BottomUpKeyboardHeight */,
 				1658D7FC28F6A3CE00E88878 /* VideoOnCollectionView */,
 				16CAA1B128E0182700A5108B /* LoginByConcurrency */,
 				16CAA19628DC93C100A5108B /* HostingController */,
@@ -649,12 +672,14 @@
 				1635CDD128CC319D00ADF7A6 /* AVPlayerViewControllerView.xib in Resources */,
 				CA946107284B145100EBF5FE /* movie5.mp4 in Resources */,
 				CA5F0A2927B5E8E40021E1FD /* SpecialViewListViewController.xib in Resources */,
+				1658D81528F7905300E88878 /* TextFieldCollectionViewCell.xib in Resources */,
 				16CAA1AC28DCADBB00A5108B /* NextHostingControllerViewController.xib in Resources */,
 				CA3F554D27C602B300D6CAC2 /* LinkLabelViewController.xib in Resources */,
 				CAAAA90D28B76F1A003903F8 /* ChoiceFormView.xib in Resources */,
 				CA36A79127CE5D94003B9140 /* SubtitleTableViewCell.xib in Resources */,
 				1658D80028F6A3E600E88878 /* VideoOnCollectionViewController.xib in Resources */,
 				1673A7B728C573CC00F9BF77 /* CellAnimationTableViewCell.xib in Resources */,
+				1658D81128F777F200E88878 /* BottomUpKeyboardHeightViewController.xib in Resources */,
 				CA36A7A227CFBC7F003B9140 /* audio_tmp_30.m4a in Resources */,
 				1658D80528F6A83D00E88878 /* VideoPreviewCollectionViewCell.xib in Resources */,
 				CA664DC327B5E31D0083D686 /* Assets.xcassets in Resources */,
@@ -695,6 +720,7 @@
 				1635CDE828D98AE800ADF7A6 /* RotateScreenSampleViewController.swift in Sources */,
 				1658D80C28F7006100E88878 /* VideoOnCollectionViewModel.swift in Sources */,
 				CA5F0A2227B5E5250021E1FD /* NibLoadable.swift in Sources */,
+				1658D81028F777F200E88878 /* BottomUpKeyboardHeightViewController.swift in Sources */,
 				1635CDCB28C8E25A00ADF7A6 /* DefaultAVPlayerViewModel.swift in Sources */,
 				1635CDED28DAD3BE00ADF7A6 /* UIViewControllerExtension.swift in Sources */,
 				CA664DBA27B5E31C0083D686 /* AppDelegate.swift in Sources */,
@@ -705,6 +731,7 @@
 				CA3F554F27C603E400D6CAC2 /* LinkLabelViewModel.swift in Sources */,
 				CAABE3D527BC6D5700A5D396 /* AutoFlowedTitleViewModel.swift in Sources */,
 				CA36A78827CE5A99003B9140 /* SubtitlePlayerViewController.swift in Sources */,
+				1658D81728F7921D00E88878 /* BottomUpKeyboardHeightViewModel.swift in Sources */,
 				CA5F0ABA27B633D20021E1FD /* SpecialViewListViewModel.swift in Sources */,
 				CA9460FC284A4A5100EBF5FE /* VideoCollectionViewCell.swift in Sources */,
 				1658D80428F6A83D00E88878 /* VideoPreviewCollectionViewCell.swift in Sources */,
@@ -714,6 +741,7 @@
 				CA94610D284DBB5500EBF5FE /* Video.swift in Sources */,
 				1658D80928F6A87C00E88878 /* ContentCollectionViewCell.swift in Sources */,
 				CAABE42427BDD10500A5D396 /* AutoFlowedTitleConfig.swift in Sources */,
+				1658D81428F7905300E88878 /* TextFieldCollectionViewCell.swift in Sources */,
 				CACFFABF2848A9BF00D920FF /* VideoCollectionViewController.swift in Sources */,
 				1635CDCF28CC319000ADF7A6 /* AVPlayerViewControllerView.swift in Sources */,
 				CA5F0ACF27B729EA0021E1FD /* UIViewExtension.swift in Sources */,

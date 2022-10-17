@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TextFieldCollectionViewCell" customModule="SpecialViewList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="289" height="72"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="289" height="72"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="入力してください" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WCF-Dg-tP7">
+                        <rect key="frame" x="16" y="16" width="257" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="PHF-xs-RO1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="WCF-Dg-tP7" secondAttribute="trailing" constant="16" id="0UH-ky-qLP"/>
+                <constraint firstItem="WCF-Dg-tP7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="GeP-if-fDV"/>
+                <constraint firstAttribute="bottom" secondItem="WCF-Dg-tP7" secondAttribute="bottom" constant="16" id="Q43-rl-gdP"/>
+                <constraint firstItem="WCF-Dg-tP7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="bHv-U0-bCQ"/>
+            </constraints>
+            <size key="customSize" width="289" height="71"/>
+            <connections>
+                <outlet property="textFieldView" destination="WCF-Dg-tP7" id="xo7-PP-VDj"/>
+            </connections>
+            <point key="canvasLocation" x="211.53846153846152" y="28.080568720379144"/>
+        </collectionViewCell>
+    </objects>
+</document>
