@@ -95,9 +95,15 @@ class BottomUpKeyboardHeightViewController: UIViewController {
         duration: TimeInterval
     ) {
         let safeAreaBottomHeight = self.view.safeAreaInsets.bottom
-        collectionViewBottom.constant = keyboardHeight == 0
+        let bottomConstant = keyboardHeight.isZero
             ? keyboardHeight
             : keyboardHeight - safeAreaBottomHeight
+        
+        if bottomConstant == collectionViewBottom.constant {
+            return
+        }
+        
+        collectionViewBottom.constant = bottomConstant
         UIView.animate(withDuration: duration) {
             self.view.layoutIfNeeded()
         }
