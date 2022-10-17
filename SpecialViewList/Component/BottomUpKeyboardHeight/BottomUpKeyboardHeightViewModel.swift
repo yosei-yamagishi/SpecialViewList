@@ -1,7 +1,9 @@
 class BottomUpKeyboardHeightViewModel {
     enum SectionType: CaseIterable {
-        case contents
-        case input
+        case contents1
+        case inputText1
+        case contents2
+        case inputText2
     }
     
     let sections: [SectionType] = SectionType.allCases
