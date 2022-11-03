@@ -28,7 +28,8 @@ enum SpecialViewList {
                     .hostingController,
                     .loginByConcurrency,
                     .videoPreviewOnCollectionView,
-                    .bottomUpKeyboardHeightView
+                    .bottomUpKeyboardHeightView,
+                    .collectionViewCompositionalLayoutView
                 ]
             }
         }
@@ -38,7 +39,7 @@ enum SpecialViewList {
         // customView
         case grid3x3, autoFlowedTitle, linkLabel, subtitlePlayer, videoCollection, choiceForm, tableViewCellAnimation, defaultAVPlayerView, orientation
         // viewController
-        case hostingController, loginByConcurrency, videoPreviewOnCollectionView, bottomUpKeyboardHeightView
+        case hostingController, loginByConcurrency, videoPreviewOnCollectionView, bottomUpKeyboardHeightView, collectionViewCompositionalLayoutView
         
         var title: String {
             switch self {
@@ -68,6 +69,8 @@ enum SpecialViewList {
                 return "CollectionViewのCell上で動画を再生される画面"
             case .bottomUpKeyboardHeightView:
                 return "入力時のキーボード高さ分の調整画面"
+            case .collectionViewCompositionalLayoutView:
+                return "CollectionViewCompositionalLayoutをつかったCollectionViewの画面"
             }
         }
         
@@ -100,6 +103,8 @@ enum SpecialViewList {
                 return "CollectionViewのCell上で動画が正しく再生されるかやcellのreloadでも再生され続けるのかの確認の為の画面"
             case .bottomUpKeyboardHeightView:
                 return "CollectionViewのCellに入力部分があり入力時にキーボードの高さ分だけ、ボトムの制約を調整してキーボードに隠れないようにして、入力しやすくする画面"
+            case .collectionViewCompositionalLayoutView:
+                return "CollectionViewのcellを自動でサイズ調整するためにCollectionViewCompositionalLayoutを使って実装"
             }
         }
     }

@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		161383EA2913608300A4E787 /* CollectionViewCompositionalLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161383E82913608300A4E787 /* CollectionViewCompositionalLayoutViewController.swift */; };
+		161383EB2913608300A4E787 /* CollectionViewCompositionalLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 161383E92913608300A4E787 /* CollectionViewCompositionalLayoutViewController.xib */; };
+		161383EE2913778D00A4E787 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161383EC2913778D00A4E787 /* ImageCollectionViewCell.swift */; };
+		161383EF2913778D00A4E787 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 161383ED2913778D00A4E787 /* ImageCollectionViewCell.xib */; };
+		161383F22913794500A4E787 /* OverviewWithToggleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161383F02913794500A4E787 /* OverviewWithToggleCollectionViewCell.swift */; };
+		161383F32913794500A4E787 /* OverviewWithToggleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 161383F12913794500A4E787 /* OverviewWithToggleCollectionViewCell.xib */; };
+		161383F52913E36000A4E787 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161383F42913E36000A4E787 /* Sample.swift */; };
+		161383F72913E37F00A4E787 /* CollectionContentDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161383F62913E37F00A4E787 /* CollectionContentDetail.swift */; };
+		161383F9291400E900A4E787 /* CollectionViewCompositionalLayoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161383F8291400E900A4E787 /* CollectionViewCompositionalLayoutViewModel.swift */; };
 		1635CDC828C8E23500ADF7A6 /* DefaultAVPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1635CDC628C8E23500ADF7A6 /* DefaultAVPlayerViewController.swift */; };
 		1635CDC928C8E23500ADF7A6 /* DefaultAVPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1635CDC728C8E23500ADF7A6 /* DefaultAVPlayerViewController.xib */; };
 		1635CDCB28C8E25A00ADF7A6 /* DefaultAVPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1635CDCA28C8E25A00ADF7A6 /* DefaultAVPlayerViewModel.swift */; };
@@ -125,6 +134,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		161383E82913608300A4E787 /* CollectionViewCompositionalLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCompositionalLayoutViewController.swift; sourceTree = "<group>"; };
+		161383E92913608300A4E787 /* CollectionViewCompositionalLayoutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCompositionalLayoutViewController.xib; sourceTree = "<group>"; };
+		161383EC2913778D00A4E787 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		161383ED2913778D00A4E787 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		161383F02913794500A4E787 /* OverviewWithToggleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewWithToggleCollectionViewCell.swift; sourceTree = "<group>"; };
+		161383F12913794500A4E787 /* OverviewWithToggleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OverviewWithToggleCollectionViewCell.xib; sourceTree = "<group>"; };
+		161383F42913E36000A4E787 /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
+		161383F62913E37F00A4E787 /* CollectionContentDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionContentDetail.swift; sourceTree = "<group>"; };
+		161383F8291400E900A4E787 /* CollectionViewCompositionalLayoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCompositionalLayoutViewModel.swift; sourceTree = "<group>"; };
 		1635CDC628C8E23500ADF7A6 /* DefaultAVPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAVPlayerViewController.swift; sourceTree = "<group>"; };
 		1635CDC728C8E23500ADF7A6 /* DefaultAVPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultAVPlayerViewController.xib; sourceTree = "<group>"; };
 		1635CDCA28C8E25A00ADF7A6 /* DefaultAVPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAVPlayerViewModel.swift; sourceTree = "<group>"; };
@@ -255,6 +273,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		161383E72913605800A4E787 /* CollectionViewCompositionalLayout */ = {
+			isa = PBXGroup;
+			children = (
+				161383E82913608300A4E787 /* CollectionViewCompositionalLayoutViewController.swift */,
+				161383E92913608300A4E787 /* CollectionViewCompositionalLayoutViewController.xib */,
+				161383F8291400E900A4E787 /* CollectionViewCompositionalLayoutViewModel.swift */,
+			);
+			path = CollectionViewCompositionalLayout;
+			sourceTree = "<group>";
+		};
 		1635CDC528C8E21000ADF7A6 /* SomeAutoVideoPlayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,6 +331,10 @@
 				1658D80828F6A87C00E88878 /* ContentCollectionViewCell.xib */,
 				1658D81228F7905300E88878 /* TextFieldCollectionViewCell.swift */,
 				1658D81328F7905300E88878 /* TextFieldCollectionViewCell.xib */,
+				161383EC2913778D00A4E787 /* ImageCollectionViewCell.swift */,
+				161383ED2913778D00A4E787 /* ImageCollectionViewCell.xib */,
+				161383F02913794500A4E787 /* OverviewWithToggleCollectionViewCell.swift */,
+				161383F12913794500A4E787 /* OverviewWithToggleCollectionViewCell.xib */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -461,6 +493,7 @@
 		CA5F0A2527B5E5640021E1FD /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				161383E72913605800A4E787 /* CollectionViewCompositionalLayout */,
 				1658D80D28F777A900E88878 /* BottomUpKeyboardHeight */,
 				1658D7FC28F6A3CE00E88878 /* VideoOnCollectionView */,
 				16CAA1B128E0182700A5108B /* LoginByConcurrency */,
@@ -513,6 +546,8 @@
 				CA5F0ACA27B645DA0021E1FD /* ItemContent.swift */,
 				CA36A78327CE4F6A003B9140 /* SubtitleInfo.swift */,
 				CA94610C284DBB5500EBF5FE /* Video.swift */,
+				161383F42913E36000A4E787 /* Sample.swift */,
+				161383F62913E37F00A4E787 /* CollectionContentDetail.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -654,12 +689,14 @@
 			files = (
 				16CAA19A28DC94DF00A5108B /* HostingControllerViewController.xib in Resources */,
 				1673A7B328C4D19C00F9BF77 /* CellAnimationHeaderView.xib in Resources */,
+				161383EF2913778D00A4E787 /* ImageCollectionViewCell.xib in Resources */,
 				CA3F555327C6050600D6CAC2 /* LinkLabelView.xib in Resources */,
 				CAAAA90728B76DAE003903F8 /* ChoiceFormViewController.xib in Resources */,
 				CA946104284B145100EBF5FE /* movie2.mp4 in Resources */,
 				CA5F0AB827B5FB480021E1FD /* SpecialViewListTableViewCell.xib in Resources */,
 				CA9460FD284A4A5100EBF5FE /* VideoCollectionViewCell.xib in Resources */,
 				1635CDC928C8E23500ADF7A6 /* DefaultAVPlayerViewController.xib in Resources */,
+				161383F32913794500A4E787 /* OverviewWithToggleCollectionViewCell.xib in Resources */,
 				1658D80A28F6A87C00E88878 /* ContentCollectionViewCell.xib in Resources */,
 				CA946105284B145100EBF5FE /* movie4.mp4 in Resources */,
 				CACFFACC2848B46400D920FF /* VideoPreviewView.xib in Resources */,
@@ -687,6 +724,7 @@
 				CA5F0AC827B63E850021E1FD /* Grid3x3ItemView.xib in Resources */,
 				1673A7AF28C4CF7700F9BF77 /* TableViewCellAnimationViewController.xib in Resources */,
 				CA5F0AC027B634EE0021E1FD /* Grid3x3ViewController.xib in Resources */,
+				161383EB2913608300A4E787 /* CollectionViewCompositionalLayoutViewController.xib in Resources */,
 				CACFFAC02848A9BF00D920FF /* VideoCollectionViewController.xib in Resources */,
 				CA9460F7284A04EA00EBF5FE /* VideoView.xib in Resources */,
 				CACFFAC82848B3C100D920FF /* VideoCollectionView.xib in Resources */,
@@ -721,6 +759,7 @@
 				1658D80C28F7006100E88878 /* VideoOnCollectionViewModel.swift in Sources */,
 				CA5F0A2227B5E5250021E1FD /* NibLoadable.swift in Sources */,
 				1658D81028F777F200E88878 /* BottomUpKeyboardHeightViewController.swift in Sources */,
+				161383F22913794500A4E787 /* OverviewWithToggleCollectionViewCell.swift in Sources */,
 				1635CDCB28C8E25A00ADF7A6 /* DefaultAVPlayerViewModel.swift in Sources */,
 				1635CDED28DAD3BE00ADF7A6 /* UIViewControllerExtension.swift in Sources */,
 				CA664DBA27B5E31C0083D686 /* AppDelegate.swift in Sources */,
@@ -739,6 +778,7 @@
 				CA946109284DB4D700EBF5FE /* VideoPlayer.swift in Sources */,
 				CA5F0A1C27B5E4E00021E1FD /* UITableViewExtension.swift in Sources */,
 				CA94610D284DBB5500EBF5FE /* Video.swift in Sources */,
+				161383F72913E37F00A4E787 /* CollectionContentDetail.swift in Sources */,
 				1658D80928F6A87C00E88878 /* ContentCollectionViewCell.swift in Sources */,
 				CAABE42427BDD10500A5D396 /* AutoFlowedTitleConfig.swift in Sources */,
 				1658D81428F7905300E88878 /* TextFieldCollectionViewCell.swift in Sources */,
@@ -747,6 +787,7 @@
 				CA5F0ACF27B729EA0021E1FD /* UIViewExtension.swift in Sources */,
 				CA5F0A1827B5E4D30021E1FD /* NSObjectExtension.swift in Sources */,
 				CA5F0A1B27B5E4E00021E1FD /* UICollectionViewExtension.swift in Sources */,
+				161383EA2913608300A4E787 /* CollectionViewCompositionalLayoutViewController.swift in Sources */,
 				CA5F0A2127B5E5250021E1FD /* NibBundler.swift in Sources */,
 				1635CDC828C8E23500ADF7A6 /* DefaultAVPlayerViewController.swift in Sources */,
 				16CAA1A428DC9A0F00A5108B /* UDFViewModel.swift in Sources */,
@@ -754,6 +795,7 @@
 				CA5F0A2827B5E8E40021E1FD /* SpecialViewListViewController.swift in Sources */,
 				16CAA19C28DC976500A5108B /* HostingBaseView.swift in Sources */,
 				CA5F0AB727B5FB480021E1FD /* SpecialViewListTableViewCell.swift in Sources */,
+				161383EE2913778D00A4E787 /* ImageCollectionViewCell.swift in Sources */,
 				CACFFACA2848B45500D920FF /* VideoPreviewView.swift in Sources */,
 				CAAAA90628B76DAE003903F8 /* ChoiceFormViewController.swift in Sources */,
 				CAAAA90928B76E01003903F8 /* ChoiceFormViewModel.swift in Sources */,
@@ -769,6 +811,7 @@
 				CA3F554C27C602B300D6CAC2 /* LinkLabelViewController.swift in Sources */,
 				CA9460F9284A436900EBF5FE /* CollectionLayout.swift in Sources */,
 				1673A7B128C4D19000F9BF77 /* CellAnimationHeaderView.swift in Sources */,
+				161383F9291400E900A4E787 /* CollectionViewCompositionalLayoutViewModel.swift in Sources */,
 				CA36A79027CE5D94003B9140 /* SubtitleTableViewCell.swift in Sources */,
 				1635CDEB28DACF7900ADF7A6 /* UIDeviceExtension.swift in Sources */,
 				CA5F0AC227B635760021E1FD /* Grid3x3View.swift in Sources */,
@@ -776,6 +819,7 @@
 				CA36A79327CE60C8003B9140 /* SubtitlePlayerViewModel.swift in Sources */,
 				16CAA19E28DC98E800A5108B /* HostingControllerViewModel.swift in Sources */,
 				CA5F0ACD27B646020021E1FD /* Grid3x3ItemTapGesture.swift in Sources */,
+				161383F52913E36000A4E787 /* Sample.swift in Sources */,
 				CAAAA90F28B7753F003903F8 /* ChoiceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
