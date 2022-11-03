@@ -6,32 +6,32 @@ struct Video {
 extension Video {
     static var sampleVideo: Video {
         Video(
-            thumbnailImageUrlString: "thumbnail1",
-            videoUrlString: "movie1.mp4"
+            thumbnailImageUrlString: Sample.thumbnailFileName1,
+            videoUrlString: Sample.movie1
         )
     }
     
     static func sampleVideos() -> [Video] {
         [
             Video(
-                thumbnailImageUrlString: "thumbnail1",
-                videoUrlString: "movie1.mp4"
+                thumbnailImageUrlString: Sample.thumbnailFileName1,
+                videoUrlString: Sample.movie1
             ),
             Video(
-                thumbnailImageUrlString: "thumbnail2",
-                videoUrlString: "movie2.mp4"
+                thumbnailImageUrlString: Sample.thumbnailFileName2,
+                videoUrlString: Sample.movie2
             ),
             Video(
-                thumbnailImageUrlString: "thumbnail3",
-                videoUrlString: "movie3.mp4"
+                thumbnailImageUrlString: Sample.thumbnailFileName3,
+                videoUrlString: Sample.movie3
             ),
             Video(
-                thumbnailImageUrlString: "thumbnail4",
-                videoUrlString: "movie4.mp4"
+                thumbnailImageUrlString: Sample.thumbnailFileName4,
+                videoUrlString: Sample.movie4
             ),
             Video(
-                thumbnailImageUrlString: "thumbnail5",
-                videoUrlString: "movie5.mp4"
+                thumbnailImageUrlString: Sample.thumbnailFileName5,
+                videoUrlString: Sample.movie5
             )
         ]
     }

@@ -144,6 +144,12 @@ class SpecialViewListViewController: UIViewController {
                 controller,
                 animated: true
             )
+        case .collectionViewCompositionalLayoutView:
+            let viewModel = CollectionViewCompositionalLayoutViewModel()
+            let controller = CollectionViewCompositionalLayoutViewController(
+                viewModel: viewModel
+            )
+            present(controller, animated: true)
         }
     }
 }
