@@ -149,7 +149,9 @@ class SpecialViewListViewController: UIViewController {
             let controller = CollectionViewCompositionalLayoutViewController(
                 viewModel: viewModel
             )
-            present(controller, animated: true)
+            let nav = UINavigationController()
+            nav.viewControllers = [controller]
+            present(nav, animated: true)
         }
     }
 }

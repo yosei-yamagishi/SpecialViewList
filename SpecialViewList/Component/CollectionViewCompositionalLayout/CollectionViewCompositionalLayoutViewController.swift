@@ -122,6 +122,10 @@ class CollectionViewCompositionalLayoutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.largeTitleDisplayMode = .never
+        navigationItem.rightBarButtonItem = .createCloseBarButtonItem { [weak self] _ in
+            guard let self else { return }
+            self.dismiss(animated: true)
+        }
         viewModel.send(.viewDidLoad)
     }
 
