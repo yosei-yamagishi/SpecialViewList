@@ -4,6 +4,11 @@ class CollectionViewCompositionalLayoutViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView! {
         didSet {
             collectionView.dataSource = self
+            collectionView.register(
+                UINib(nibName: CollectionHeaderView.className, bundle: nil),
+                forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+                withReuseIdentifier: CollectionHeaderView.className
+            )
             let nibs = [
                 ContentCollectionViewCell.self,
                 ImageCollectionViewCell.self,
@@ -17,6 +22,9 @@ class CollectionViewCompositionalLayoutViewController: UIViewController {
     }
     
     private var collectionLayout: UICollectionViewCompositionalLayout {
+        let config = UICollectionViewCompositionalLayoutConfiguration()
+        config.scrollDirection = .vertical
+        
         let sectionProvider = { [weak self] (section: Int, layoutEnvironment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection? in
             guard let self else { return nil }
             let sectionType = self.viewModel.state.sections[section]
@@ -66,6 +74,15 @@ class CollectionViewCompositionalLayoutViewController: UIViewController {
                 let layoutSection = NSCollectionLayoutSection(group: group)
                 return layoutSection
             case .content:
+                let headerSize = NSCollectionLayoutSize(
+                    widthDimension: .fractionalWidth(1),
+                    heightDimension: .absolute(56)
+                )
+                let sectionHeader = NSCollectionLayoutBoundarySupplementaryItem(
+                    layoutSize: headerSize,
+                    elementKind: UICollectionView.elementKindSectionHeader,
+                    alignment: .top
+                )
                 let itemSize = NSCollectionLayoutSize(
                     widthDimension: .fractionalWidth(1),
                     heightDimension: .absolute(44)
@@ -77,12 +94,14 @@ class CollectionViewCompositionalLayoutViewController: UIViewController {
                     count: 1
                 )
                 let layoutSection = NSCollectionLayoutSection(group: group)
+                layoutSection.boundarySupplementaryItems = [sectionHeader]
                 return layoutSection
             }
         }
         
         return UICollectionViewCompositionalLayout(
-            sectionProvider: sectionProvider
+            sectionProvider: sectionProvider,
+            configuration: config
         )
     }
     
@@ -159,6 +178,29 @@ extension CollectionViewCompositionalLayoutViewController: UICollectionViewDataS
             let title = viewModel.state.contentDetail.contents[indexPath.item].title
             cell.set(titleText: title)
             return cell
+        }
+    }
+    
+    func collectionView(
+        _ collectionView: UICollectionView,
+        viewForSupplementaryElementOfKind kind: String,
+        at indexPath: IndexPath
+    ) -> UICollectionReusableView {
+        let sectionType = viewModel.state.sections[indexPath.section]
+        switch sectionType {
+        case .content:
+            guard let headerView = collectionView.dequeueReusableSupplementaryView(
+                ofKind: UICollectionView.elementKindSectionHeader,
+                withReuseIdentifier: CollectionHeaderView.className,
+                for: indexPath
+            ) as? CollectionHeaderView
+            else {
+                return UICollectionReusableView()
+            }
+            headerView.setHeaderTitle(headerTitle: "コンテンツヘッダー")
+            return headerView
+        default:
+            return UICollectionReusableView()
         }
     }
 }
