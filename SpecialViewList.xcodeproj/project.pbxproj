@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		161383A329096C0500A4E787 /* QueuePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161383A129096C0500A4E787 /* QueuePlayerViewController.swift */; };
+		161383A429096C0500A4E787 /* QueuePlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 161383A229096C0500A4E787 /* QueuePlayerViewController.xib */; };
+		161383BB290AAFE500A4E787 /* AudioSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161383BA290AAFE500A4E787 /* AudioSession.swift */; };
+		161383BD290AB04500A4E787 /* VideoQueuePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161383BC290AB04500A4E787 /* VideoQueuePlayer.swift */; };
+		161383BF290ABA8D00A4E787 /* VideoOnControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161383BE290ABA8D00A4E787 /* VideoOnControlView.swift */; };
+		161383C1290ABACB00A4E787 /* VideoOnControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 161383C0290ABACB00A4E787 /* VideoOnControlView.xib */; };
+		161383C3290AC05200A4E787 /* VideoControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161383C2290AC05200A4E787 /* VideoControlView.swift */; };
+		161383C5290AC06400A4E787 /* VideoControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 161383C4290AC06400A4E787 /* VideoControlView.xib */; };
+		161383D1290C060200A4E787 /* VideoQueuePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161383D0290C060200A4E787 /* VideoQueuePreviewView.swift */; };
+		161383D3290C061000A4E787 /* VideoQueuePreviewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 161383D2290C061000A4E787 /* VideoQueuePreviewView.xib */; };
+		161383D6290C104600A4E787 /* PlayerTimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161383D5290C104600A4E787 /* PlayerTimeFormatter.swift */; };
+		161F90832931C37D00E11026 /* QueuePlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F90822931C37D00E11026 /* QueuePlayerViewModel.swift */; };
 		1635CDC828C8E23500ADF7A6 /* DefaultAVPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1635CDC628C8E23500ADF7A6 /* DefaultAVPlayerViewController.swift */; };
 		1635CDC928C8E23500ADF7A6 /* DefaultAVPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1635CDC728C8E23500ADF7A6 /* DefaultAVPlayerViewController.xib */; };
 		1635CDCB28C8E25A00ADF7A6 /* DefaultAVPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1635CDCA28C8E25A00ADF7A6 /* DefaultAVPlayerViewModel.swift */; };
@@ -125,6 +137,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		161383A129096C0500A4E787 /* QueuePlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueuePlayerViewController.swift; sourceTree = "<group>"; };
+		161383A229096C0500A4E787 /* QueuePlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QueuePlayerViewController.xib; sourceTree = "<group>"; };
+		161383BA290AAFE500A4E787 /* AudioSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSession.swift; sourceTree = "<group>"; };
+		161383BC290AB04500A4E787 /* VideoQueuePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoQueuePlayer.swift; sourceTree = "<group>"; };
+		161383BE290ABA8D00A4E787 /* VideoOnControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoOnControlView.swift; sourceTree = "<group>"; };
+		161383C0290ABACB00A4E787 /* VideoOnControlView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoOnControlView.xib; sourceTree = "<group>"; };
+		161383C2290AC05200A4E787 /* VideoControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoControlView.swift; sourceTree = "<group>"; };
+		161383C4290AC06400A4E787 /* VideoControlView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoControlView.xib; sourceTree = "<group>"; };
+		161383D0290C060200A4E787 /* VideoQueuePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoQueuePreviewView.swift; sourceTree = "<group>"; };
+		161383D2290C061000A4E787 /* VideoQueuePreviewView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoQueuePreviewView.xib; sourceTree = "<group>"; };
+		161383D5290C104600A4E787 /* PlayerTimeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTimeFormatter.swift; sourceTree = "<group>"; };
+		161F90822931C37D00E11026 /* QueuePlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueuePlayerViewModel.swift; sourceTree = "<group>"; };
 		1635CDC628C8E23500ADF7A6 /* DefaultAVPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAVPlayerViewController.swift; sourceTree = "<group>"; };
 		1635CDC728C8E23500ADF7A6 /* DefaultAVPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultAVPlayerViewController.xib; sourceTree = "<group>"; };
 		1635CDCA28C8E25A00ADF7A6 /* DefaultAVPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAVPlayerViewModel.swift; sourceTree = "<group>"; };
@@ -255,6 +279,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		161383A029096BDB00A4E787 /* QueuePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				161383A129096C0500A4E787 /* QueuePlayerViewController.swift */,
+				161383A229096C0500A4E787 /* QueuePlayerViewController.xib */,
+				161F90822931C37D00E11026 /* QueuePlayerViewModel.swift */,
+			);
+			path = QueuePlayer;
+			sourceTree = "<group>";
+		};
+		161383D4290C103100A4E787 /* Formatter */ = {
+			isa = PBXGroup;
+			children = (
+				161383D5290C104600A4E787 /* PlayerTimeFormatter.swift */,
+			);
+			path = Formatter;
+			sourceTree = "<group>";
+		};
 		1635CDC528C8E21000ADF7A6 /* SomeAutoVideoPlayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -392,6 +434,8 @@
 			children = (
 				CA36A79E27CFB1DF003B9140 /* AudioPlayer.swift */,
 				CA946108284DB4D700EBF5FE /* VideoPlayer.swift */,
+				161383BA290AAFE500A4E787 /* AudioSession.swift */,
+				161383BC290AB04500A4E787 /* VideoQueuePlayer.swift */,
 			);
 			path = Player;
 			sourceTree = "<group>";
@@ -439,6 +483,7 @@
 		CA5F0A1D27B5E4F70021E1FD /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				161383D4290C103100A4E787 /* Formatter */,
 				16CAA1A728DC9A1E00A5108B /* UDF */,
 				CA36A79D27CFB1C4003B9140 /* Player */,
 				CA5F0A2427B5E5290021E1FD /* Views */,
@@ -454,6 +499,12 @@
 				CA5F0A1F27B5E5250021E1FD /* NibLoadable.swift */,
 				CA5F0A2027B5E5250021E1FD /* NibOwnerLoadable.swift */,
 				CA9460F8284A436900EBF5FE /* CollectionLayout.swift */,
+				161383BE290ABA8D00A4E787 /* VideoOnControlView.swift */,
+				161383C0290ABACB00A4E787 /* VideoOnControlView.xib */,
+				161383C2290AC05200A4E787 /* VideoControlView.swift */,
+				161383C4290AC06400A4E787 /* VideoControlView.xib */,
+				161383D0290C060200A4E787 /* VideoQueuePreviewView.swift */,
+				161383D2290C061000A4E787 /* VideoQueuePreviewView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -461,6 +512,7 @@
 		CA5F0A2527B5E5640021E1FD /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				161383A029096BDB00A4E787 /* QueuePlayer */,
 				1658D80D28F777A900E88878 /* BottomUpKeyboardHeight */,
 				1658D7FC28F6A3CE00E88878 /* VideoOnCollectionView */,
 				16CAA1B128E0182700A5108B /* LoginByConcurrency */,
@@ -579,15 +631,15 @@
 		CACFFABC2848A9A700D920FF /* VideoCollection */ = {
 			isa = PBXGroup;
 			children = (
+				CACFFAC92848B45500D920FF /* VideoPreviewView.swift */,
+				CACFFACB2848B46400D920FF /* VideoPreviewView.xib */,
+				CA9460F4284A049400EBF5FE /* VideoView.swift */,
+				CA9460F6284A04EA00EBF5FE /* VideoView.xib */,
 				CACFFABD2848A9BF00D920FF /* VideoCollectionViewController.swift */,
 				CACFFABE2848A9BF00D920FF /* VideoCollectionViewController.xib */,
 				CACFFAC12848B2BA00D920FF /* VideoCollectionViewModel.swift */,
 				CACFFAC52848B3B700D920FF /* VideoCollectionView.swift */,
 				CACFFAC72848B3C100D920FF /* VideoCollectionView.xib */,
-				CACFFAC92848B45500D920FF /* VideoPreviewView.swift */,
-				CACFFACB2848B46400D920FF /* VideoPreviewView.xib */,
-				CA9460F4284A049400EBF5FE /* VideoView.swift */,
-				CA9460F6284A04EA00EBF5FE /* VideoView.xib */,
 				CA9460FA284A4A5100EBF5FE /* VideoCollectionViewCell.swift */,
 				CA9460FB284A4A5100EBF5FE /* VideoCollectionViewCell.xib */,
 			);
@@ -667,6 +719,7 @@
 				CA946103284B145100EBF5FE /* movie3.mp4 in Resources */,
 				CA36A78D27CE5AE0003B9140 /* SubtitlePlayerView.xib in Resources */,
 				CA664DC627B5E31D0083D686 /* LaunchScreen.storyboard in Resources */,
+				161383D3290C061000A4E787 /* VideoQueuePreviewView.xib in Resources */,
 				16CAA1B528E0186300A5108B /* LoginByConcurrencyViewController.xib in Resources */,
 				CA946106284B145100EBF5FE /* movie1.mp4 in Resources */,
 				1635CDD128CC319D00ADF7A6 /* AVPlayerViewControllerView.xib in Resources */,
@@ -678,6 +731,7 @@
 				CAAAA90D28B76F1A003903F8 /* ChoiceFormView.xib in Resources */,
 				CA36A79127CE5D94003B9140 /* SubtitleTableViewCell.xib in Resources */,
 				1658D80028F6A3E600E88878 /* VideoOnCollectionViewController.xib in Resources */,
+				161383C5290AC06400A4E787 /* VideoControlView.xib in Resources */,
 				1673A7B728C573CC00F9BF77 /* CellAnimationTableViewCell.xib in Resources */,
 				1658D81128F777F200E88878 /* BottomUpKeyboardHeightViewController.xib in Resources */,
 				CA36A7A227CFBC7F003B9140 /* audio_tmp_30.m4a in Resources */,
@@ -687,9 +741,11 @@
 				CA5F0AC827B63E850021E1FD /* Grid3x3ItemView.xib in Resources */,
 				1673A7AF28C4CF7700F9BF77 /* TableViewCellAnimationViewController.xib in Resources */,
 				CA5F0AC027B634EE0021E1FD /* Grid3x3ViewController.xib in Resources */,
+				161383A429096C0500A4E787 /* QueuePlayerViewController.xib in Resources */,
 				CACFFAC02848A9BF00D920FF /* VideoCollectionViewController.xib in Resources */,
 				CA9460F7284A04EA00EBF5FE /* VideoView.xib in Resources */,
 				CACFFAC82848B3C100D920FF /* VideoCollectionView.xib in Resources */,
+				161383C1290ABACB00A4E787 /* VideoOnControlView.xib in Resources */,
 				CA5F0AC427B6358A0021E1FD /* Grid3x3View.xib in Resources */,
 				CAAAA91128B79A8E003903F8 /* ChoiceView.xib in Resources */,
 				CAABE3D927BC6F3100A5D396 /* AutoFlowedTitleView.xib in Resources */,
@@ -704,9 +760,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				161383D1290C060200A4E787 /* VideoQueuePreviewView.swift in Sources */,
 				16CAA1A528DC9A0F00A5108B /* ActionSender.swift in Sources */,
 				1673A7AB28C4CE8700F9BF77 /* TableViewCellAnimationViewModel.swift in Sources */,
 				CA36A78427CE4F6A003B9140 /* SubtitleInfo.swift in Sources */,
+				161383A329096C0500A4E787 /* QueuePlayerViewController.swift in Sources */,
 				CACFFAC62848B3B700D920FF /* VideoCollectionView.swift in Sources */,
 				CA5F0ACB27B645DA0021E1FD /* ItemContent.swift in Sources */,
 				1658D7FF28F6A3E600E88878 /* VideoOnCollectionViewController.swift in Sources */,
@@ -722,6 +780,7 @@
 				CA5F0A2227B5E5250021E1FD /* NibLoadable.swift in Sources */,
 				1658D81028F777F200E88878 /* BottomUpKeyboardHeightViewController.swift in Sources */,
 				1635CDCB28C8E25A00ADF7A6 /* DefaultAVPlayerViewModel.swift in Sources */,
+				161383D6290C104600A4E787 /* PlayerTimeFormatter.swift in Sources */,
 				1635CDED28DAD3BE00ADF7A6 /* UIViewControllerExtension.swift in Sources */,
 				CA664DBA27B5E31C0083D686 /* AppDelegate.swift in Sources */,
 				CA36A78B27CE5AC7003B9140 /* SubtitlePlayerView.swift in Sources */,
@@ -759,6 +818,7 @@
 				CAAAA90928B76E01003903F8 /* ChoiceFormViewModel.swift in Sources */,
 				CA3F555527C6083600D6CAC2 /* LabelLinkTapGesture.swift in Sources */,
 				16CAA1B028DCB30200A5108B /* NextHostingControllerViewModel.swift in Sources */,
+				161383BB290AAFE500A4E787 /* AudioSession.swift in Sources */,
 				CA5F0ABF27B634EE0021E1FD /* Grid3x3ViewController.swift in Sources */,
 				16CAA1AB28DCADBB00A5108B /* NextHostingControllerViewController.swift in Sources */,
 				CA5F0AD327B7770E0021E1FD /* SpecialViewList.swift in Sources */,
@@ -766,6 +826,8 @@
 				CAABE3D727BC6F2200A5D396 /* AutoFlowedTitleView.swift in Sources */,
 				16CAA1B428E0186300A5108B /* LoginByConcurrencyViewController.swift in Sources */,
 				CACFFAC22848B2BA00D920FF /* VideoCollectionViewModel.swift in Sources */,
+				161383C3290AC05200A4E787 /* VideoControlView.swift in Sources */,
+				161383BF290ABA8D00A4E787 /* VideoOnControlView.swift in Sources */,
 				CA3F554C27C602B300D6CAC2 /* LinkLabelViewController.swift in Sources */,
 				CA9460F9284A436900EBF5FE /* CollectionLayout.swift in Sources */,
 				1673A7B128C4D19000F9BF77 /* CellAnimationHeaderView.swift in Sources */,
@@ -776,6 +838,8 @@
 				CA36A79327CE60C8003B9140 /* SubtitlePlayerViewModel.swift in Sources */,
 				16CAA19E28DC98E800A5108B /* HostingControllerViewModel.swift in Sources */,
 				CA5F0ACD27B646020021E1FD /* Grid3x3ItemTapGesture.swift in Sources */,
+				161F90832931C37D00E11026 /* QueuePlayerViewModel.swift in Sources */,
+				161383BD290AB04500A4E787 /* VideoQueuePlayer.swift in Sources */,
 				CAAAA90F28B7753F003903F8 /* ChoiceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -845,7 +909,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -900,7 +964,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -923,7 +987,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -950,7 +1014,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -28,7 +28,8 @@ enum SpecialViewList {
                     .hostingController,
                     .loginByConcurrency,
                     .videoPreviewOnCollectionView,
-                    .bottomUpKeyboardHeightView
+                    .bottomUpKeyboardHeightView,
+                    .queuePlayerView
                 ]
             }
         }
@@ -38,7 +39,7 @@ enum SpecialViewList {
         // customView
         case grid3x3, autoFlowedTitle, linkLabel, subtitlePlayer, videoCollection, choiceForm, tableViewCellAnimation, defaultAVPlayerView, orientation
         // viewController
-        case hostingController, loginByConcurrency, videoPreviewOnCollectionView, bottomUpKeyboardHeightView
+        case hostingController, loginByConcurrency, videoPreviewOnCollectionView, bottomUpKeyboardHeightView, queuePlayerView
         
         var title: String {
             switch self {
@@ -68,6 +69,8 @@ enum SpecialViewList {
                 return "CollectionViewのCell上で動画を再生される画面"
             case .bottomUpKeyboardHeightView:
                 return "入力時のキーボード高さ分の調整画面"
+            case .queuePlayerView:
+                return "AVQueuePlayerを用いた動画プレイヤー画面"
             }
         }
         
@@ -100,6 +103,8 @@ enum SpecialViewList {
                 return "CollectionViewのCell上で動画が正しく再生されるかやcellのreloadでも再生され続けるのかの確認の為の画面"
             case .bottomUpKeyboardHeightView:
                 return "CollectionViewのCellに入力部分があり入力時にキーボードの高さ分だけ、ボトムの制約を調整してキーボードに隠れないようにして、入力しやすくする画面"
+            case .queuePlayerView:
+                return "AVQueuePlayerを使用して、複数の動画のリストから動画を選択して再生し、終わったら次の動画を再生する動画の再生プレイヤー画面"
             }
         }
     }

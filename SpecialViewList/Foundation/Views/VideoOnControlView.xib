@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21507"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoOnControlView" customModule="SpecialViewList" customModuleProvider="target">
+            <connections>
+                <outlet property="videoControlView" destination="KMV-I7-aMr" id="sbD-es-Ltc"/>
+                <outlet property="videoView" destination="qoy-6V-tge" id="Ocs-6g-G5D"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="219"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c7j-lE-gfd">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="219"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qoy-6V-tge" customClass="VideoQueuePreviewView" customModule="SpecialViewList" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="219"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KMV-I7-aMr" customClass="VideoControlView" customModule="SpecialViewList" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="219"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="qoy-6V-tge" firstAttribute="leading" secondItem="c7j-lE-gfd" secondAttribute="leading" id="3La-Aw-D7x"/>
+                        <constraint firstAttribute="bottom" secondItem="qoy-6V-tge" secondAttribute="bottom" id="E7f-Cg-tpE"/>
+                        <constraint firstItem="KMV-I7-aMr" firstAttribute="leading" secondItem="c7j-lE-gfd" secondAttribute="leading" id="HaB-oy-ziS"/>
+                        <constraint firstItem="qoy-6V-tge" firstAttribute="top" secondItem="c7j-lE-gfd" secondAttribute="top" id="Uj6-fd-tCr"/>
+                        <constraint firstAttribute="trailing" secondItem="KMV-I7-aMr" secondAttribute="trailing" id="Usj-zN-fls"/>
+                        <constraint firstAttribute="trailing" secondItem="qoy-6V-tge" secondAttribute="trailing" id="d20-fk-W6G"/>
+                        <constraint firstAttribute="bottom" secondItem="KMV-I7-aMr" secondAttribute="bottom" id="ijh-rJ-DQc"/>
+                        <constraint firstItem="KMV-I7-aMr" firstAttribute="top" secondItem="c7j-lE-gfd" secondAttribute="top" id="wRZ-f9-Nl6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="c7j-lE-gfd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8Wd-9N-WjS"/>
+                <constraint firstAttribute="bottom" secondItem="c7j-lE-gfd" secondAttribute="bottom" id="MiC-88-Llr"/>
+                <constraint firstAttribute="trailing" secondItem="c7j-lE-gfd" secondAttribute="trailing" id="ohe-hG-I5B"/>
+                <constraint firstItem="c7j-lE-gfd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yRY-b7-ALE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="27.69230769230769" y="251.30331753554501"/>
+        </view>
+    </objects>
+</document>

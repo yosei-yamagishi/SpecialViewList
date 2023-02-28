@@ -144,6 +144,19 @@ class SpecialViewListViewController: UIViewController {
                 controller,
                 animated: true
             )
+        case .queuePlayerView:
+            let videoQueuePlayer = VideoQueuePlayerImpl()
+            let viewModel = QueuePlayerViewModel(
+                videoQueuePlayer: videoQueuePlayer
+            )
+            let controller = QueuePlayerViewController(
+                viewModel: viewModel,
+                videoQueuePlayer: videoQueuePlayer
+            )
+            navigationController?.pushViewController(
+                controller,
+                animated: true
+            )
         }
     }
 }
