@@ -53,6 +53,8 @@
 		166D482829BCBCB000AA5D68 /* VideoSubtitleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166D482729BCBCB000AA5D68 /* VideoSubtitleListView.swift */; };
 		166D482A29BCBCB800AA5D68 /* VideoSubtitleListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 166D482929BCBCB800AA5D68 /* VideoSubtitleListView.xib */; };
 		166D482E29BF611800AA5D68 /* low_cloud_speech-to-text.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 166D482D29BF611800AA5D68 /* low_cloud_speech-to-text.mp4 */; };
+		166D483229BFCD6400AA5D68 /* SplitVideoAndListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166D483029BFCD6400AA5D68 /* SplitVideoAndListViewController.swift */; };
+		166D483329BFCD6400AA5D68 /* SplitVideoAndListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 166D483129BFCD6400AA5D68 /* SplitVideoAndListViewController.xib */; };
 		1673A7AB28C4CE8700F9BF77 /* TableViewCellAnimationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673A7AA28C4CE8700F9BF77 /* TableViewCellAnimationViewModel.swift */; };
 		1673A7AE28C4CF7700F9BF77 /* TableViewCellAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673A7AC28C4CF7700F9BF77 /* TableViewCellAnimationViewController.swift */; };
 		1673A7AF28C4CF7700F9BF77 /* TableViewCellAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1673A7AD28C4CF7700F9BF77 /* TableViewCellAnimationViewController.xib */; };
@@ -198,6 +200,8 @@
 		166D482729BCBCB000AA5D68 /* VideoSubtitleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSubtitleListView.swift; sourceTree = "<group>"; };
 		166D482929BCBCB800AA5D68 /* VideoSubtitleListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoSubtitleListView.xib; sourceTree = "<group>"; };
 		166D482D29BF611800AA5D68 /* low_cloud_speech-to-text.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "low_cloud_speech-to-text.mp4"; sourceTree = "<group>"; };
+		166D483029BFCD6400AA5D68 /* SplitVideoAndListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitVideoAndListViewController.swift; sourceTree = "<group>"; };
+		166D483129BFCD6400AA5D68 /* SplitVideoAndListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplitVideoAndListViewController.xib; sourceTree = "<group>"; };
 		1673A7AA28C4CE8700F9BF77 /* TableViewCellAnimationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellAnimationViewModel.swift; sourceTree = "<group>"; };
 		1673A7AC28C4CF7700F9BF77 /* TableViewCellAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellAnimationViewController.swift; sourceTree = "<group>"; };
 		1673A7AD28C4CF7700F9BF77 /* TableViewCellAnimationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellAnimationViewController.xib; sourceTree = "<group>"; };
@@ -413,6 +417,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		166D482F29BFCCF200AA5D68 /* SplitVideoAndList */ = {
+			isa = PBXGroup;
+			children = (
+				166D483029BFCD6400AA5D68 /* SplitVideoAndListViewController.swift */,
+				166D483129BFCD6400AA5D68 /* SplitVideoAndListViewController.xib */,
+			);
+			path = SplitVideoAndList;
+			sourceTree = "<group>";
+		};
 		1673A7A928C4CE5000F9BF77 /* TableViewCellAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -574,6 +587,7 @@
 		CA5F0A2527B5E5640021E1FD /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				166D482F29BFCCF200AA5D68 /* SplitVideoAndList */,
 				16CADC1329B16B090034C617 /* VideoPlayerWithSubtitle */,
 				161383E72913605800A4E787 /* CollectionViewCompositionalLayout */,
 				1658D80D28F777A900E88878 /* BottomUpKeyboardHeight */,
@@ -817,6 +831,7 @@
 				CAAAA91128B79A8E003903F8 /* ChoiceView.xib in Resources */,
 				CAABE3D927BC6F3100A5D396 /* AutoFlowedTitleView.xib in Resources */,
 				CAABE3D327BC6D3000A5D396 /* AutoFlowedTitleViewController.xib in Resources */,
+				166D483329BFCD6400AA5D68 /* SplitVideoAndListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -871,6 +886,7 @@
 				CA94610D284DBB5500EBF5FE /* Video.swift in Sources */,
 				161383F72913E37F00A4E787 /* CollectionContentDetail.swift in Sources */,
 				1658D80928F6A87C00E88878 /* ContentCollectionViewCell.swift in Sources */,
+				166D483229BFCD6400AA5D68 /* SplitVideoAndListViewController.swift in Sources */,
 				CAABE42427BDD10500A5D396 /* AutoFlowedTitleConfig.swift in Sources */,
 				1658D81428F7905300E88878 /* TextFieldCollectionViewCell.swift in Sources */,
 				CACFFABF2848A9BF00D920FF /* VideoCollectionViewController.swift in Sources */,
