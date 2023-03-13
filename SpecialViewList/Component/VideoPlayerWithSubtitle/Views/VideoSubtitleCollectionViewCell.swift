@@ -28,7 +28,7 @@ class VideoSubtitleCollectionViewCell: UICollectionViewCell {
     func activateText(isActivated: Bool) {
         subtitleLabel.font = UIFont.systemFont(
             ofSize: 15,
-            weight: isActivated ? .regular : .bold
+            weight: isActivated ? .bold : .regular
         )
         subtitleLabel.alpha = isActivated ? 1 : 0.5
     }
