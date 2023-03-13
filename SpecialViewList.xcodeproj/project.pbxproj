@@ -40,6 +40,19 @@
 		1658D81428F7905300E88878 /* TextFieldCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1658D81228F7905300E88878 /* TextFieldCollectionViewCell.swift */; };
 		1658D81528F7905300E88878 /* TextFieldCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1658D81328F7905300E88878 /* TextFieldCollectionViewCell.xib */; };
 		1658D81728F7921D00E88878 /* BottomUpKeyboardHeightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1658D81628F7921D00E88878 /* BottomUpKeyboardHeightViewModel.swift */; };
+		166D47B729B16B9300AA5D68 /* VideoPlayerWithSubtitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166D47B629B16B9200AA5D68 /* VideoPlayerWithSubtitleViewController.swift */; };
+		166D47B929B16B9A00AA5D68 /* VideoPlayerWithSubtitleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 166D47B829B16B9A00AA5D68 /* VideoPlayerWithSubtitleViewController.xib */; };
+		166D47BB29B16BA100AA5D68 /* VideoPlayerWithSubtitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166D47BA29B16BA100AA5D68 /* VideoPlayerWithSubtitleViewModel.swift */; };
+		166D47C029B5407B00AA5D68 /* VideoSubtitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166D47BE29B5407B00AA5D68 /* VideoSubtitleCollectionViewCell.swift */; };
+		166D47C129B5407B00AA5D68 /* VideoSubtitleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 166D47BF29B5407B00AA5D68 /* VideoSubtitleCollectionViewCell.xib */; };
+		166D47C329B5480C00AA5D68 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166D47C229B5480C00AA5D68 /* DoubleExtension.swift */; };
+		166D482029BA881E00AA5D68 /* VideoControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166D481F29BA881E00AA5D68 /* VideoControlView.swift */; };
+		166D482229BA882B00AA5D68 /* VideoControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 166D482129BA882B00AA5D68 /* VideoControlView.xib */; };
+		166D482429BA8D5300AA5D68 /* VideoWithControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166D482329BA8D5300AA5D68 /* VideoWithControlView.swift */; };
+		166D482629BA8DD500AA5D68 /* VideoWithControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 166D482529BA8DD500AA5D68 /* VideoWithControlView.xib */; };
+		166D482829BCBCB000AA5D68 /* VideoSubtitleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166D482729BCBCB000AA5D68 /* VideoSubtitleListView.swift */; };
+		166D482A29BCBCB800AA5D68 /* VideoSubtitleListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 166D482929BCBCB800AA5D68 /* VideoSubtitleListView.xib */; };
+		166D482E29BF611800AA5D68 /* low_cloud_speech-to-text.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 166D482D29BF611800AA5D68 /* low_cloud_speech-to-text.mp4 */; };
 		1673A7AB28C4CE8700F9BF77 /* TableViewCellAnimationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673A7AA28C4CE8700F9BF77 /* TableViewCellAnimationViewModel.swift */; };
 		1673A7AE28C4CF7700F9BF77 /* TableViewCellAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673A7AC28C4CF7700F9BF77 /* TableViewCellAnimationViewController.swift */; };
 		1673A7AF28C4CF7700F9BF77 /* TableViewCellAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1673A7AD28C4CF7700F9BF77 /* TableViewCellAnimationViewController.xib */; };
@@ -172,6 +185,19 @@
 		1658D81228F7905300E88878 /* TextFieldCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCollectionViewCell.swift; sourceTree = "<group>"; };
 		1658D81328F7905300E88878 /* TextFieldCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldCollectionViewCell.xib; sourceTree = "<group>"; };
 		1658D81628F7921D00E88878 /* BottomUpKeyboardHeightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomUpKeyboardHeightViewModel.swift; sourceTree = "<group>"; };
+		166D47B629B16B9200AA5D68 /* VideoPlayerWithSubtitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerWithSubtitleViewController.swift; sourceTree = "<group>"; };
+		166D47B829B16B9A00AA5D68 /* VideoPlayerWithSubtitleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoPlayerWithSubtitleViewController.xib; sourceTree = "<group>"; };
+		166D47BA29B16BA100AA5D68 /* VideoPlayerWithSubtitleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerWithSubtitleViewModel.swift; sourceTree = "<group>"; };
+		166D47BE29B5407B00AA5D68 /* VideoSubtitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSubtitleCollectionViewCell.swift; sourceTree = "<group>"; };
+		166D47BF29B5407B00AA5D68 /* VideoSubtitleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoSubtitleCollectionViewCell.xib; sourceTree = "<group>"; };
+		166D47C229B5480C00AA5D68 /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		166D481F29BA881E00AA5D68 /* VideoControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoControlView.swift; sourceTree = "<group>"; };
+		166D482129BA882B00AA5D68 /* VideoControlView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoControlView.xib; sourceTree = "<group>"; };
+		166D482329BA8D5300AA5D68 /* VideoWithControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoWithControlView.swift; sourceTree = "<group>"; };
+		166D482529BA8DD500AA5D68 /* VideoWithControlView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoWithControlView.xib; sourceTree = "<group>"; };
+		166D482729BCBCB000AA5D68 /* VideoSubtitleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSubtitleListView.swift; sourceTree = "<group>"; };
+		166D482929BCBCB800AA5D68 /* VideoSubtitleListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoSubtitleListView.xib; sourceTree = "<group>"; };
+		166D482D29BF611800AA5D68 /* low_cloud_speech-to-text.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "low_cloud_speech-to-text.mp4"; sourceTree = "<group>"; };
 		1673A7AA28C4CE8700F9BF77 /* TableViewCellAnimationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellAnimationViewModel.swift; sourceTree = "<group>"; };
 		1673A7AC28C4CF7700F9BF77 /* TableViewCellAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellAnimationViewController.swift; sourceTree = "<group>"; };
 		1673A7AD28C4CF7700F9BF77 /* TableViewCellAnimationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellAnimationViewController.xib; sourceTree = "<group>"; };
@@ -361,6 +387,32 @@
 			path = BottomUpKeyboardHeight;
 			sourceTree = "<group>";
 		};
+		166D47BC29B16D2100AA5D68 /* Viode */ = {
+			isa = PBXGroup;
+			children = (
+				CACFFAC92848B45500D920FF /* VideoPreviewView.swift */,
+				CACFFACB2848B46400D920FF /* VideoPreviewView.xib */,
+				CA9460F4284A049400EBF5FE /* VideoView.swift */,
+				CA9460F6284A04EA00EBF5FE /* VideoView.xib */,
+				166D481F29BA881E00AA5D68 /* VideoControlView.swift */,
+				166D482129BA882B00AA5D68 /* VideoControlView.xib */,
+				166D482329BA8D5300AA5D68 /* VideoWithControlView.swift */,
+				166D482529BA8DD500AA5D68 /* VideoWithControlView.xib */,
+			);
+			path = Viode;
+			sourceTree = "<group>";
+		};
+		166D47BD29B53FA300AA5D68 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				166D47BE29B5407B00AA5D68 /* VideoSubtitleCollectionViewCell.swift */,
+				166D47BF29B5407B00AA5D68 /* VideoSubtitleCollectionViewCell.xib */,
+				166D482729BCBCB000AA5D68 /* VideoSubtitleListView.swift */,
+				166D482929BCBCB800AA5D68 /* VideoSubtitleListView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		1673A7A928C4CE5000F9BF77 /* TableViewCellAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -417,6 +469,17 @@
 			path = LoginByConcurrency;
 			sourceTree = "<group>";
 		};
+		16CADC1329B16B090034C617 /* VideoPlayerWithSubtitle */ = {
+			isa = PBXGroup;
+			children = (
+				166D47BD29B53FA300AA5D68 /* Views */,
+				166D47B629B16B9200AA5D68 /* VideoPlayerWithSubtitleViewController.swift */,
+				166D47B829B16B9A00AA5D68 /* VideoPlayerWithSubtitleViewController.xib */,
+				166D47BA29B16BA100AA5D68 /* VideoPlayerWithSubtitleViewModel.swift */,
+			);
+			path = VideoPlayerWithSubtitle;
+			sourceTree = "<group>";
+		};
 		CA36A78527CE59CE003B9140 /* SubtitlePlayerView */ = {
 			isa = PBXGroup;
 			children = (
@@ -448,6 +511,7 @@
 				CA9460FE284B144F00EBF5FE /* movie3.mp4 */,
 				CA946100284B145100EBF5FE /* movie4.mp4 */,
 				CA946102284B145100EBF5FE /* movie5.mp4 */,
+				166D482D29BF611800AA5D68 /* low_cloud_speech-to-text.mp4 */,
 				CA36A7A127CFBC7E003B9140 /* audio_tmp_30.m4a */,
 			);
 			path = Assets;
@@ -478,6 +542,7 @@
 				1635CDEC28DAD3BE00ADF7A6 /* UIViewControllerExtension.swift */,
 				16334C2F29192C06002D2FEE /* UIBarButtonItemExtension.swift */,
 				16334C3329192DA1002D2FEE /* UIImageExtension.swift */,
+				166D47C229B5480C00AA5D68 /* DoubleExtension.swift */,
 			);
 			path = Extenstion;
 			sourceTree = "<group>";
@@ -496,6 +561,7 @@
 		CA5F0A2427B5E5290021E1FD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				166D47BC29B16D2100AA5D68 /* Viode */,
 				1658D80628F6A85E00E88878 /* CollectionView */,
 				CA5F0A1E27B5E5250021E1FD /* NibBundler.swift */,
 				CA5F0A1F27B5E5250021E1FD /* NibLoadable.swift */,
@@ -508,6 +574,7 @@
 		CA5F0A2527B5E5640021E1FD /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				16CADC1329B16B090034C617 /* VideoPlayerWithSubtitle */,
 				161383E72913605800A4E787 /* CollectionViewCompositionalLayout */,
 				1658D80D28F777A900E88878 /* BottomUpKeyboardHeight */,
 				1658D7FC28F6A3CE00E88878 /* VideoOnCollectionView */,
@@ -634,10 +701,6 @@
 				CACFFAC12848B2BA00D920FF /* VideoCollectionViewModel.swift */,
 				CACFFAC52848B3B700D920FF /* VideoCollectionView.swift */,
 				CACFFAC72848B3C100D920FF /* VideoCollectionView.xib */,
-				CACFFAC92848B45500D920FF /* VideoPreviewView.swift */,
-				CACFFACB2848B46400D920FF /* VideoPreviewView.xib */,
-				CA9460F4284A049400EBF5FE /* VideoView.swift */,
-				CA9460F6284A04EA00EBF5FE /* VideoView.xib */,
 				CA9460FA284A4A5100EBF5FE /* VideoCollectionViewCell.swift */,
 				CA9460FB284A4A5100EBF5FE /* VideoCollectionViewCell.xib */,
 			);
@@ -708,7 +771,9 @@
 				CA3F555327C6050600D6CAC2 /* LinkLabelView.xib in Resources */,
 				CAAAA90728B76DAE003903F8 /* ChoiceFormViewController.xib in Resources */,
 				CA946104284B145100EBF5FE /* movie2.mp4 in Resources */,
+				166D482229BA882B00AA5D68 /* VideoControlView.xib in Resources */,
 				CA5F0AB827B5FB480021E1FD /* SpecialViewListTableViewCell.xib in Resources */,
+				166D482A29BCBCB800AA5D68 /* VideoSubtitleListView.xib in Resources */,
 				CA9460FD284A4A5100EBF5FE /* VideoCollectionViewCell.xib in Resources */,
 				1635CDC928C8E23500ADF7A6 /* DefaultAVPlayerViewController.xib in Resources */,
 				161383F32913794500A4E787 /* OverviewWithToggleCollectionViewCell.xib in Resources */,
@@ -716,6 +781,7 @@
 				CA946105284B145100EBF5FE /* movie4.mp4 in Resources */,
 				CACFFACC2848B46400D920FF /* VideoPreviewView.xib in Resources */,
 				CA36A78927CE5A99003B9140 /* SubtitlePlayerViewController.xib in Resources */,
+				166D47C129B5407B00AA5D68 /* VideoSubtitleCollectionViewCell.xib in Resources */,
 				CA946103284B145100EBF5FE /* movie3.mp4 in Resources */,
 				CA36A78D27CE5AE0003B9140 /* SubtitlePlayerView.xib in Resources */,
 				CA664DC627B5E31D0083D686 /* LaunchScreen.storyboard in Resources */,
@@ -726,7 +792,9 @@
 				CA5F0A2927B5E8E40021E1FD /* SpecialViewListViewController.xib in Resources */,
 				1658D81528F7905300E88878 /* TextFieldCollectionViewCell.xib in Resources */,
 				16CAA1AC28DCADBB00A5108B /* NextHostingControllerViewController.xib in Resources */,
+				166D482629BA8DD500AA5D68 /* VideoWithControlView.xib in Resources */,
 				CA3F554D27C602B300D6CAC2 /* LinkLabelViewController.xib in Resources */,
+				166D47B929B16B9A00AA5D68 /* VideoPlayerWithSubtitleViewController.xib in Resources */,
 				CAAAA90D28B76F1A003903F8 /* ChoiceFormView.xib in Resources */,
 				CA36A79127CE5D94003B9140 /* SubtitleTableViewCell.xib in Resources */,
 				1658D80028F6A3E600E88878 /* VideoOnCollectionViewController.xib in Resources */,
@@ -743,6 +811,7 @@
 				161383EB2913608300A4E787 /* CollectionViewCompositionalLayoutViewController.xib in Resources */,
 				CACFFAC02848A9BF00D920FF /* VideoCollectionViewController.xib in Resources */,
 				CA9460F7284A04EA00EBF5FE /* VideoView.xib in Resources */,
+				166D482E29BF611800AA5D68 /* low_cloud_speech-to-text.mp4 in Resources */,
 				CACFFAC82848B3C100D920FF /* VideoCollectionView.xib in Resources */,
 				CA5F0AC427B6358A0021E1FD /* Grid3x3View.xib in Resources */,
 				CAAAA91128B79A8E003903F8 /* ChoiceView.xib in Resources */,
@@ -761,6 +830,7 @@
 				16CAA1A528DC9A0F00A5108B /* ActionSender.swift in Sources */,
 				1673A7AB28C4CE8700F9BF77 /* TableViewCellAnimationViewModel.swift in Sources */,
 				16334C3229192C46002D2FEE /* SFSymbolType.swift in Sources */,
+				166D47BB29B16BA100AA5D68 /* VideoPlayerWithSubtitleViewModel.swift in Sources */,
 				CA36A78427CE4F6A003B9140 /* SubtitleInfo.swift in Sources */,
 				CACFFAC62848B3B700D920FF /* VideoCollectionView.swift in Sources */,
 				CA5F0ACB27B645DA0021E1FD /* ItemContent.swift in Sources */,
@@ -771,6 +841,7 @@
 				1673A7B628C573CC00F9BF77 /* CellAnimationTableViewCell.swift in Sources */,
 				CA3F555127C604FB00D6CAC2 /* LinkLabelView.swift in Sources */,
 				1673A7AE28C4CF7700F9BF77 /* TableViewCellAnimationViewController.swift in Sources */,
+				166D47C329B5480C00AA5D68 /* DoubleExtension.swift in Sources */,
 				16CAA19928DC94DF00A5108B /* HostingControllerViewController.swift in Sources */,
 				1635CDE828D98AE800ADF7A6 /* RotateScreenSampleViewController.swift in Sources */,
 				1658D80C28F7006100E88878 /* VideoOnCollectionViewModel.swift in Sources */,
@@ -786,7 +857,9 @@
 				CA5F0AD127B7769E0021E1FD /* Grid3x3ViewModel.swift in Sources */,
 				CAAAA90B28B76EFB003903F8 /* ChoiceFormView.swift in Sources */,
 				CA3F554F27C603E400D6CAC2 /* LinkLabelViewModel.swift in Sources */,
+				166D482829BCBCB000AA5D68 /* VideoSubtitleListView.swift in Sources */,
 				CAABE3D527BC6D5700A5D396 /* AutoFlowedTitleViewModel.swift in Sources */,
+				166D47B729B16B9300AA5D68 /* VideoPlayerWithSubtitleViewController.swift in Sources */,
 				CA36A78827CE5A99003B9140 /* SubtitlePlayerViewController.swift in Sources */,
 				1658D81728F7921D00E88878 /* BottomUpKeyboardHeightViewModel.swift in Sources */,
 				CA5F0ABA27B633D20021E1FD /* SpecialViewListViewModel.swift in Sources */,
@@ -807,6 +880,7 @@
 				CA5F0A1B27B5E4E00021E1FD /* UICollectionViewExtension.swift in Sources */,
 				161383EA2913608300A4E787 /* CollectionViewCompositionalLayoutViewController.swift in Sources */,
 				16334C3029192C06002D2FEE /* UIBarButtonItemExtension.swift in Sources */,
+				166D482029BA881E00AA5D68 /* VideoControlView.swift in Sources */,
 				CA5F0A2127B5E5250021E1FD /* NibBundler.swift in Sources */,
 				1635CDC828C8E23500ADF7A6 /* DefaultAVPlayerViewController.swift in Sources */,
 				16334C3429192DA1002D2FEE /* UIImageExtension.swift in Sources */,
@@ -819,6 +893,7 @@
 				CACFFACA2848B45500D920FF /* VideoPreviewView.swift in Sources */,
 				CAAAA90628B76DAE003903F8 /* ChoiceFormViewController.swift in Sources */,
 				CAAAA90928B76E01003903F8 /* ChoiceFormViewModel.swift in Sources */,
+				166D482429BA8D5300AA5D68 /* VideoWithControlView.swift in Sources */,
 				CA3F555527C6083600D6CAC2 /* LabelLinkTapGesture.swift in Sources */,
 				16CAA1B028DCB30200A5108B /* NextHostingControllerViewModel.swift in Sources */,
 				CA5F0ABF27B634EE0021E1FD /* Grid3x3ViewController.swift in Sources */,
@@ -840,6 +915,7 @@
 				16CAA19E28DC98E800A5108B /* HostingControllerViewModel.swift in Sources */,
 				CA5F0ACD27B646020021E1FD /* Grid3x3ItemTapGesture.swift in Sources */,
 				161383F52913E36000A4E787 /* Sample.swift in Sources */,
+				166D47C029B5407B00AA5D68 /* VideoSubtitleCollectionViewCell.swift in Sources */,
 				CAAAA90F28B7753F003903F8 /* ChoiceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

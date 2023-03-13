@@ -152,6 +152,18 @@ class SpecialViewListViewController: UIViewController {
             let nav = UINavigationController()
             nav.viewControllers = [controller]
             present(nav, animated: true)
+        case .videoPlayerWithSubtitle:
+            let videoPlayer = VideoPlayer()
+            let viewModel = VideoPlayerWithSubtitleViewModel(
+                videoPlayer: videoPlayer
+            )
+            let controller = VideoPlayerWithSubtitleViewController(
+                viewModel: viewModel,
+                videoPlayer: videoPlayer
+            )
+            let nav = UINavigationController()
+            nav.viewControllers = [controller]
+            present(nav, animated: true)
         }
     }
 }

@@ -52,3 +52,7 @@ extension Sample {
     static let thumbnailFileName4 = "thumbnail4"
     static let thumbnailFileName5 = "thumbnail5"
 }
+
+extension Sample {
+    static let cloudSpeechToTextMovie = "low_cloud_speech-to-text.mp4"
+}

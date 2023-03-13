@@ -10,7 +10,7 @@ class VideoCollectionViewCell: UICollectionViewCell {
     }
     
     func removePlayer() {
-        videoView.removePlayer()
+        videoView.resetPlayer()
     }
 
     func setupThumbnailImage(urlString: String) {
