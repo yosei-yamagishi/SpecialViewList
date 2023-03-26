@@ -55,6 +55,8 @@
 		166D482E29BF611800AA5D68 /* low_cloud_speech-to-text.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 166D482D29BF611800AA5D68 /* low_cloud_speech-to-text.mp4 */; };
 		166D483229BFCD6400AA5D68 /* SplitVideoAndListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166D483029BFCD6400AA5D68 /* SplitVideoAndListViewController.swift */; };
 		166D483329BFCD6400AA5D68 /* SplitVideoAndListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 166D483129BFCD6400AA5D68 /* SplitVideoAndListViewController.xib */; };
+		166D483729BFD53700AA5D68 /* SpllitVideoAndListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166D483529BFD53700AA5D68 /* SpllitVideoAndListCollectionViewCell.swift */; };
+		166D483829BFD53700AA5D68 /* SpllitVideoAndListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 166D483629BFD53700AA5D68 /* SpllitVideoAndListCollectionViewCell.xib */; };
 		1673A7AB28C4CE8700F9BF77 /* TableViewCellAnimationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673A7AA28C4CE8700F9BF77 /* TableViewCellAnimationViewModel.swift */; };
 		1673A7AE28C4CF7700F9BF77 /* TableViewCellAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673A7AC28C4CF7700F9BF77 /* TableViewCellAnimationViewController.swift */; };
 		1673A7AF28C4CF7700F9BF77 /* TableViewCellAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1673A7AD28C4CF7700F9BF77 /* TableViewCellAnimationViewController.xib */; };
@@ -202,6 +204,8 @@
 		166D482D29BF611800AA5D68 /* low_cloud_speech-to-text.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "low_cloud_speech-to-text.mp4"; sourceTree = "<group>"; };
 		166D483029BFCD6400AA5D68 /* SplitVideoAndListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitVideoAndListViewController.swift; sourceTree = "<group>"; };
 		166D483129BFCD6400AA5D68 /* SplitVideoAndListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplitVideoAndListViewController.xib; sourceTree = "<group>"; };
+		166D483529BFD53700AA5D68 /* SpllitVideoAndListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpllitVideoAndListCollectionViewCell.swift; sourceTree = "<group>"; };
+		166D483629BFD53700AA5D68 /* SpllitVideoAndListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpllitVideoAndListCollectionViewCell.xib; sourceTree = "<group>"; };
 		1673A7AA28C4CE8700F9BF77 /* TableViewCellAnimationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellAnimationViewModel.swift; sourceTree = "<group>"; };
 		1673A7AC28C4CF7700F9BF77 /* TableViewCellAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellAnimationViewController.swift; sourceTree = "<group>"; };
 		1673A7AD28C4CF7700F9BF77 /* TableViewCellAnimationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellAnimationViewController.xib; sourceTree = "<group>"; };
@@ -420,10 +424,20 @@
 		166D482F29BFCCF200AA5D68 /* SplitVideoAndList */ = {
 			isa = PBXGroup;
 			children = (
+				166D483429BFD4D900AA5D68 /* Views */,
 				166D483029BFCD6400AA5D68 /* SplitVideoAndListViewController.swift */,
 				166D483129BFCD6400AA5D68 /* SplitVideoAndListViewController.xib */,
 			);
 			path = SplitVideoAndList;
+			sourceTree = "<group>";
+		};
+		166D483429BFD4D900AA5D68 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				166D483529BFD53700AA5D68 /* SpllitVideoAndListCollectionViewCell.swift */,
+				166D483629BFD53700AA5D68 /* SpllitVideoAndListCollectionViewCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		1673A7A928C4CE5000F9BF77 /* TableViewCellAnimation */ = {
@@ -805,6 +819,7 @@
 				CA946107284B145100EBF5FE /* movie5.mp4 in Resources */,
 				CA5F0A2927B5E8E40021E1FD /* SpecialViewListViewController.xib in Resources */,
 				1658D81528F7905300E88878 /* TextFieldCollectionViewCell.xib in Resources */,
+				166D483829BFD53700AA5D68 /* SpllitVideoAndListCollectionViewCell.xib in Resources */,
 				16CAA1AC28DCADBB00A5108B /* NextHostingControllerViewController.xib in Resources */,
 				166D482629BA8DD500AA5D68 /* VideoWithControlView.xib in Resources */,
 				CA3F554D27C602B300D6CAC2 /* LinkLabelViewController.xib in Resources */,
@@ -872,6 +887,7 @@
 				CA5F0AD127B7769E0021E1FD /* Grid3x3ViewModel.swift in Sources */,
 				CAAAA90B28B76EFB003903F8 /* ChoiceFormView.swift in Sources */,
 				CA3F554F27C603E400D6CAC2 /* LinkLabelViewModel.swift in Sources */,
+				166D483729BFD53700AA5D68 /* SpllitVideoAndListCollectionViewCell.swift in Sources */,
 				166D482829BCBCB000AA5D68 /* VideoSubtitleListView.swift in Sources */,
 				CAABE3D527BC6D5700A5D396 /* AutoFlowedTitleViewModel.swift in Sources */,
 				166D47B729B16B9300AA5D68 /* VideoPlayerWithSubtitleViewController.swift in Sources */,
