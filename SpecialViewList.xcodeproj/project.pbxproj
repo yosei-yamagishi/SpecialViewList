@@ -507,6 +507,36 @@
 			path = VideoPlayerWithSubtitle;
 			sourceTree = "<group>";
 		};
+		16DC40C929D110F7005B30C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				16CADC1329B16B090034C617 /* VideoPlayerWithSubtitle */,
+				161383E72913605800A4E787 /* CollectionViewCompositionalLayout */,
+				1658D80D28F777A900E88878 /* BottomUpKeyboardHeight */,
+				1658D7FC28F6A3CE00E88878 /* VideoOnCollectionView */,
+				16CAA1B128E0182700A5108B /* LoginByConcurrency */,
+				16CAA19628DC93C100A5108B /* HostingController */,
+				166D482F29BFCCF200AA5D68 /* SplitVideoAndList */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		16DC40CA29D1110D005B30C9 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				1635CDC528C8E21000ADF7A6 /* SomeAutoVideoPlayer */,
+				1635CDE528D989F400ADF7A6 /* Orientation */,
+				1673A7A928C4CE5000F9BF77 /* TableViewCellAnimation */,
+				CAAAA90328B76D99003903F8 /* ChoiceForm */,
+				CACFFABC2848A9A700D920FF /* VideoCollection */,
+				CA36A78527CE59CE003B9140 /* SubtitlePlayerView */,
+				CA3F554927C6026500D6CAC2 /* LinkLabel */,
+				CAABE3CF27BC6CFE00A5D396 /* AutoFlowedTitleView */,
+				CA5F0ABC27B634570021E1FD /* Grid3x3 */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 		CA36A78527CE59CE003B9140 /* SubtitlePlayerView */ = {
 			isa = PBXGroup;
 			children = (
@@ -601,38 +631,16 @@
 		CA5F0A2527B5E5640021E1FD /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				166D482F29BFCCF200AA5D68 /* SplitVideoAndList */,
-				16CADC1329B16B090034C617 /* VideoPlayerWithSubtitle */,
-				161383E72913605800A4E787 /* CollectionViewCompositionalLayout */,
-				1658D80D28F777A900E88878 /* BottomUpKeyboardHeight */,
-				1658D7FC28F6A3CE00E88878 /* VideoOnCollectionView */,
-				16CAA1B128E0182700A5108B /* LoginByConcurrency */,
-				16CAA19628DC93C100A5108B /* HostingController */,
-				1635CDE528D989F400ADF7A6 /* Orientation */,
-				1635CDC528C8E21000ADF7A6 /* SomeAutoVideoPlayer */,
-				1673A7A928C4CE5000F9BF77 /* TableViewCellAnimation */,
-				CAAAA90328B76D99003903F8 /* ChoiceForm */,
-				CACFFABC2848A9A700D920FF /* VideoCollection */,
-				CA36A78527CE59CE003B9140 /* SubtitlePlayerView */,
-				CA3F554927C6026500D6CAC2 /* LinkLabel */,
-				CAABE3CF27BC6CFE00A5D396 /* AutoFlowedTitleView */,
-				CA5F0ABC27B634570021E1FD /* Grid3x3 */,
-				CA5F0ABB27B634300021E1FD /* SpecialViewList */,
-			);
-			path = Component;
-			sourceTree = "<group>";
-		};
-		CA5F0ABB27B634300021E1FD /* SpecialViewList */ = {
-			isa = PBXGroup;
-			children = (
 				CA5F0A2627B5E8E40021E1FD /* SpecialViewListViewController.swift */,
 				CA5F0A2727B5E8E40021E1FD /* SpecialViewListViewController.xib */,
 				CA5F0AB527B5FB480021E1FD /* SpecialViewListTableViewCell.swift */,
 				CA5F0AB627B5FB480021E1FD /* SpecialViewListTableViewCell.xib */,
 				CA5F0AB927B633D20021E1FD /* SpecialViewListViewModel.swift */,
 				CA5F0AD227B7770E0021E1FD /* SpecialViewList.swift */,
+				16DC40C929D110F7005B30C9 /* View */,
+				16DC40CA29D1110D005B30C9 /* CustomView */,
 			);
-			path = SpecialViewList;
+			path = Component;
 			sourceTree = "<group>";
 		};
 		CA5F0ABC27B634570021E1FD /* Grid3x3 */ = {
