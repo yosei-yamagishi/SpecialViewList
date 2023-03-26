@@ -1,4 +1,4 @@
-struct ItemContent {
+struct ItemContent: Equatable {
     let name: String
 }
 

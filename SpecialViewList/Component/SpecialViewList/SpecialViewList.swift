@@ -30,7 +30,8 @@ enum SpecialViewList {
                     .videoPreviewOnCollectionView,
                     .bottomUpKeyboardHeightView,
                     .collectionViewCompositionalLayoutView,
-                    .videoPlayerWithSubtitle
+                    .videoPlayerWithSubtitle,
+                    .splitVideoAndList
                 ]
             }
         }
@@ -40,7 +41,7 @@ enum SpecialViewList {
         // customView
         case grid3x3, autoFlowedTitle, linkLabel, subtitlePlayer, videoCollection, choiceForm, tableViewCellAnimation, defaultAVPlayerView, orientation
         // viewController
-        case hostingController, loginByConcurrency, videoPreviewOnCollectionView, bottomUpKeyboardHeightView, collectionViewCompositionalLayoutView, videoPlayerWithSubtitle
+        case hostingController, loginByConcurrency, videoPreviewOnCollectionView, bottomUpKeyboardHeightView, collectionViewCompositionalLayoutView, videoPlayerWithSubtitle, splitVideoAndList
         
         var title: String {
             switch self {
@@ -74,6 +75,8 @@ enum SpecialViewList {
                 return "CollectionViewCompositionalLayoutをつかったCollectionViewの画面"
             case .videoPlayerWithSubtitle:
                 return "動画と書き起こしが連動している画面"
+            case .splitVideoAndList:
+                return "画面がスプリットされている画面"
             }
         }
         
@@ -110,6 +113,8 @@ enum SpecialViewList {
                 return "CollectionViewのcellを自動でサイズ調整するためにCollectionViewCompositionalLayoutを使って実装"
             case .videoPlayerWithSubtitle:
                 return "動画が流れて書き起こしが連動していく、書き起こし部分をタップするとその再生時間で動画が再生される"
+            case .splitVideoAndList:
+                return "縦や横に画面が、動画とリストの画面にスプリットされる"
             }
         }
     }

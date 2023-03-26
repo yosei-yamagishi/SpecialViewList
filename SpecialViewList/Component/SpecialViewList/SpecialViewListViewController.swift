@@ -164,6 +164,12 @@ class SpecialViewListViewController: UIViewController {
             let nav = UINavigationController()
             nav.viewControllers = [controller]
             present(nav, animated: true)
+        case .splitVideoAndList:
+            let viewModel = SplitVideoAndListViewModel()
+            let controller = SplitVideoAndListViewController(viewModel: viewModel)
+            let nav = UINavigationController()
+            nav.viewControllers = [controller]
+            present(nav, animated: true)
         }
     }
 }
