@@ -77,6 +77,9 @@
 		16CAA1B028DCB30200A5108B /* NextHostingControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CAA1AF28DCB30200A5108B /* NextHostingControllerViewModel.swift */; };
 		16CAA1B428E0186300A5108B /* LoginByConcurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CAA1B228E0186300A5108B /* LoginByConcurrencyViewController.swift */; };
 		16CAA1B528E0186300A5108B /* LoginByConcurrencyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16CAA1B328E0186300A5108B /* LoginByConcurrencyViewController.xib */; };
+		16DC40D029D11327005B30C9 /* QuizAppByChatGPTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DC40CE29D11327005B30C9 /* QuizAppByChatGPTViewController.swift */; };
+		16DC40D129D11327005B30C9 /* QuizAppByChatGPTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16DC40CF29D11327005B30C9 /* QuizAppByChatGPTViewController.xib */; };
+		16DC40D329D11393005B30C9 /* QuizAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DC40D229D11393005B30C9 /* QuizAppView.swift */; };
 		16FCFC7B2917E6060061C97B /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FCFC7A2917E6060061C97B /* CollectionHeaderView.swift */; };
 		16FCFC7D2917E7910061C97B /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16FCFC7C2917E7910061C97B /* CollectionHeaderView.xib */; };
 		CA36A78427CE4F6A003B9140 /* SubtitleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36A78327CE4F6A003B9140 /* SubtitleInfo.swift */; };
@@ -226,6 +229,9 @@
 		16CAA1AF28DCB30200A5108B /* NextHostingControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextHostingControllerViewModel.swift; sourceTree = "<group>"; };
 		16CAA1B228E0186300A5108B /* LoginByConcurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginByConcurrencyViewController.swift; sourceTree = "<group>"; };
 		16CAA1B328E0186300A5108B /* LoginByConcurrencyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginByConcurrencyViewController.xib; sourceTree = "<group>"; };
+		16DC40CE29D11327005B30C9 /* QuizAppByChatGPTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAppByChatGPTViewController.swift; sourceTree = "<group>"; };
+		16DC40CF29D11327005B30C9 /* QuizAppByChatGPTViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizAppByChatGPTViewController.xib; sourceTree = "<group>"; };
+		16DC40D229D11393005B30C9 /* QuizAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAppView.swift; sourceTree = "<group>"; };
 		16FCFC7A2917E6060061C97B /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
 		16FCFC7C2917E7910061C97B /* CollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
 		CA36A78327CE4F6A003B9140 /* SubtitleInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleInfo.swift; sourceTree = "<group>"; };
@@ -510,6 +516,7 @@
 		16DC40C929D110F7005B30C9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				16DC40CD29D112F0005B30C9 /* QuizAppByChatGPT */,
 				16CADC1329B16B090034C617 /* VideoPlayerWithSubtitle */,
 				161383E72913605800A4E787 /* CollectionViewCompositionalLayout */,
 				1658D80D28F777A900E88878 /* BottomUpKeyboardHeight */,
@@ -535,6 +542,16 @@
 				CA5F0ABC27B634570021E1FD /* Grid3x3 */,
 			);
 			path = CustomView;
+			sourceTree = "<group>";
+		};
+		16DC40CD29D112F0005B30C9 /* QuizAppByChatGPT */ = {
+			isa = PBXGroup;
+			children = (
+				16DC40CE29D11327005B30C9 /* QuizAppByChatGPTViewController.swift */,
+				16DC40CF29D11327005B30C9 /* QuizAppByChatGPTViewController.xib */,
+				16DC40D229D11393005B30C9 /* QuizAppView.swift */,
+			);
+			path = QuizAppByChatGPT;
 			sourceTree = "<group>";
 		};
 		CA36A78527CE59CE003B9140 /* SubtitlePlayerView */ = {
@@ -824,6 +841,7 @@
 				16CAA1B528E0186300A5108B /* LoginByConcurrencyViewController.xib in Resources */,
 				CA946106284B145100EBF5FE /* movie1.mp4 in Resources */,
 				1635CDD128CC319D00ADF7A6 /* AVPlayerViewControllerView.xib in Resources */,
+				16DC40D129D11327005B30C9 /* QuizAppByChatGPTViewController.xib in Resources */,
 				CA946107284B145100EBF5FE /* movie5.mp4 in Resources */,
 				CA5F0A2927B5E8E40021E1FD /* SpecialViewListViewController.xib in Resources */,
 				1658D81528F7905300E88878 /* TextFieldCollectionViewCell.xib in Resources */,
@@ -892,7 +910,9 @@
 				16FCFC7B2917E6060061C97B /* CollectionHeaderView.swift in Sources */,
 				CA36A78B27CE5AC7003B9140 /* SubtitlePlayerView.swift in Sources */,
 				CA9460F5284A049400EBF5FE /* VideoView.swift in Sources */,
+				16DC40D329D11393005B30C9 /* QuizAppView.swift in Sources */,
 				CA5F0AD127B7769E0021E1FD /* Grid3x3ViewModel.swift in Sources */,
+				16DC40D029D11327005B30C9 /* QuizAppByChatGPTViewController.swift in Sources */,
 				CAAAA90B28B76EFB003903F8 /* ChoiceFormView.swift in Sources */,
 				CA3F554F27C603E400D6CAC2 /* LinkLabelViewModel.swift in Sources */,
 				166D483729BFD53700AA5D68 /* SpllitVideoAndListCollectionViewCell.swift in Sources */,
