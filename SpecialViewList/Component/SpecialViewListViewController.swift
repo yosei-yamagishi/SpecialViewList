@@ -170,6 +170,9 @@ class SpecialViewListViewController: UIViewController {
             let nav = UINavigationController()
             nav.viewControllers = [controller]
             present(nav, animated: true)
+        case .quizByChatGPT:
+            let controller = QuizAppByChatGPTViewController()
+            present(controller, animated: true)
         }
     }
 }

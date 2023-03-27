@@ -31,7 +31,8 @@ enum SpecialViewList {
                     .bottomUpKeyboardHeightView,
                     .collectionViewCompositionalLayoutView,
                     .videoPlayerWithSubtitle,
-                    .splitVideoAndList
+                    .splitVideoAndList,
+                    .quizByChatGPT
                 ]
             }
         }
@@ -41,7 +42,7 @@ enum SpecialViewList {
         // customView
         case grid3x3, autoFlowedTitle, linkLabel, subtitlePlayer, videoCollection, choiceForm, tableViewCellAnimation, defaultAVPlayerView, orientation
         // viewController
-        case hostingController, loginByConcurrency, videoPreviewOnCollectionView, bottomUpKeyboardHeightView, collectionViewCompositionalLayoutView, videoPlayerWithSubtitle, splitVideoAndList
+        case hostingController, loginByConcurrency, videoPreviewOnCollectionView, bottomUpKeyboardHeightView, collectionViewCompositionalLayoutView, videoPlayerWithSubtitle, splitVideoAndList, quizByChatGPT
         
         var title: String {
             switch self {
@@ -77,6 +78,8 @@ enum SpecialViewList {
                 return "動画と書き起こしが連動している画面"
             case .splitVideoAndList:
                 return "画面がスプリットされている画面"
+            case .quizByChatGPT:
+                return "ChatGPT-4が作ったクイズアプリ"
             }
         }
         
@@ -115,6 +118,8 @@ enum SpecialViewList {
                 return "動画が流れて書き起こしが連動していく、書き起こし部分をタップするとその再生時間で動画が再生される"
             case .splitVideoAndList:
                 return "縦や横に画面が、動画とリストの画面にスプリットされる"
+            case .quizByChatGPT:
+                return "ChatGPT-4にアプリの雑な仕様を入力し、SwiftUIのアプリの動作確認ができる"
             }
         }
     }
