@@ -18,6 +18,10 @@ class VideoPlayerWithSubtitleViewModel: UDFViewModel {
     }
     
     struct State: Equatable {
+        let videoUrl = Bundle.main.bundleURL
+            .appendingPathComponent(
+                Sample.cloudSpeechToTextMovie
+            )
         var subtitleInfoList: [SubtitleInfo] = []
         var isPlaying: Bool = false
         var duration: Float = .zero
@@ -41,11 +45,7 @@ class VideoPlayerWithSubtitleViewModel: UDFViewModel {
         switch action {
         case .viewDidLoad:
             state.subtitleInfoList = SubtitleInfo.videoSampleList
-            let url = Bundle.main.bundleURL
-                .appendingPathComponent(
-                    Sample.cloudSpeechToTextMovie
-                )
-            videoPlayer.prepare(url: url)
+            videoPlayer.prepare(url: state.videoUrl)
             videoPlayer.startObservePlayerTimer()
             state.duration = videoPlayer.duration
         case .didTapPlayAndPause:

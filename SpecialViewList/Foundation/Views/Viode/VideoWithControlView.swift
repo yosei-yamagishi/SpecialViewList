@@ -67,6 +67,10 @@ class VideoWithControlView: UIView, NibOwnerLoadable {
     func resetPlayer() {
         playerView.resetPlayer()
     }
+    
+    func updateImage(image: UIImage?) {
+        controlView.updateThumbnailImage(image: image)
+    }
 }
 
 extension VideoWithControlView {
