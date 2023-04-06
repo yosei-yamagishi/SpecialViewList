@@ -152,8 +152,8 @@ final class VideoControlView: UIView, NibOwnerLoadable {
                     guard let self = self,
                           let slider = action.sender as? UISlider
                     else { return }
-                    playerControllerStackView.isHidden = true
-                    thumbnailImageBaseView.isHidden = false
+                    playerControllerStackView.fadeOut()
+                    thumbnailImageBaseView.fadeIn()
                     delegate?.didTapDownSeekBar(
                         currentTime: slider.value
                     )
@@ -166,8 +166,8 @@ final class VideoControlView: UIView, NibOwnerLoadable {
                     guard let self = self,
                           let slider = action.sender as? UISlider
                     else { return }
-                    playerControllerStackView.isHidden = false
-                    thumbnailImageBaseView.isHidden = true
+                    playerControllerStackView.fadeIn()
+                    thumbnailImageBaseView.fadeOut()
                     self.delegate?.didTapUpInsideOrOutsideSeekBar(
                         currentTime: slider.value
                     )
@@ -212,9 +212,15 @@ final class VideoControlView: UIView, NibOwnerLoadable {
     weak var delegate: VideoControlDelegate?
     var isHiddenControlView: Bool = false {
         didSet {
-            playerControllerStackView.isHidden = isHiddenControlView
-            playerInfoView.isHidden = isHiddenControlView
-            playerBackgroundView.isHidden = isHiddenControlView
+            if isHiddenControlView {
+                playerControllerStackView.fadeOut()
+                playerInfoView.fadeOut()
+                playerBackgroundView.fadeOut()
+            } else {
+                playerControllerStackView.fadeIn()
+                playerInfoView.fadeIn()
+                playerBackgroundView.fadeIn(displayAlpha: 0.6)
+            }
         }
     }
     
