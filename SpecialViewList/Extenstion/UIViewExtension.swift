@@ -35,3 +35,40 @@ extension UIView {
         maskCorner(radius: radius)
     }
 }
+
+extension UIView {
+    func fadeIn(
+        displayAlpha: CGFloat = 1.0,
+        duration: TimeInterval = 0.3,
+        completion: ((Bool) -> Void)? = nil
+    ) {
+        isHidden = false
+        
+        if alpha > .zero {
+            alpha = .zero
+        }
+        
+        UIView.animate(withDuration: duration, animations: { [weak self] in
+            guard let self else { return }
+            alpha = displayAlpha
+        }, completion: { finished in
+            completion?(finished)
+        })
+    }
+    
+    func fadeOut(
+        duration: TimeInterval = 0.3,
+        hideWhenDone: Bool = true,
+        completion: ((Bool) -> Void)? = nil
+    ) {
+        UIView.animate(withDuration: duration, animations: {
+            self.alpha = 0.0
+        }, completion: {  [weak self] finished in
+            guard let self else { return }
+            if hideWhenDone {
+                isHidden = true
+            }
+            completion?(finished)
+        })
+    }
+}
