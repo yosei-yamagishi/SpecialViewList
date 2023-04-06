@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,6 +21,8 @@
                 <outlet property="playerControllerStackView" destination="igA-75-tAo" id="sT1-gS-qPk"/>
                 <outlet property="playerInfoView" destination="Qvx-pD-5VE" id="uri-Yj-4Gq"/>
                 <outlet property="seekBarSlider" destination="TmQ-fM-A1p" id="T0s-yg-o6A"/>
+                <outlet property="thumbnailImageBaseView" destination="l6g-Hb-KEE" id="WlK-kH-nIE"/>
+                <outlet property="thumbnailImageView" destination="hSa-CU-0w7" id="hvp-NK-Kct"/>
                 <outlet property="videoPlaybackRateButton" destination="WEL-Be-eiD" id="huM-Fn-cgJ"/>
             </connections>
         </placeholder>
@@ -161,14 +163,35 @@
                         <constraint firstAttribute="trailing" secondItem="fVw-L2-321" secondAttribute="trailing" id="vCa-As-1oI"/>
                     </constraints>
                 </view>
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l6g-Hb-KEE">
+                    <rect key="frame" x="0.0" y="89" width="393" height="84"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hSa-CU-0w7">
+                            <rect key="frame" x="0.0" y="0.0" width="128" height="72"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="hSa-CU-0w7" secondAttribute="height" multiplier="16:9" id="3Qu-wi-4rr"/>
+                                <constraint firstAttribute="height" constant="72" id="3Yd-UX-tiQ"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="hSa-CU-0w7" firstAttribute="top" secondItem="l6g-Hb-KEE" secondAttribute="top" id="L3K-bW-Vao"/>
+                        <constraint firstItem="hSa-CU-0w7" firstAttribute="leading" secondItem="l6g-Hb-KEE" secondAttribute="leading" id="erN-oY-j29"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hSa-CU-0w7" secondAttribute="trailing" id="lGE-su-zCg"/>
+                        <constraint firstAttribute="height" constant="84" id="lOO-8M-Oq6"/>
+                    </constraints>
+                </view>
             </subviews>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="0L8-ZH-eGl" secondAttribute="trailing" id="11w-58-86H"/>
+                <constraint firstItem="Qvx-pD-5VE" firstAttribute="top" secondItem="l6g-Hb-KEE" secondAttribute="bottom" id="1Or-Ag-TuT"/>
+                <constraint firstItem="l6g-Hb-KEE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="AyB-4B-G87"/>
                 <constraint firstAttribute="bottom" secondItem="Qvx-pD-5VE" secondAttribute="bottom" id="BjH-9c-FIq"/>
                 <constraint firstItem="0L8-ZH-eGl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LkQ-Me-ji2"/>
                 <constraint firstItem="0L8-ZH-eGl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="SbI-rl-7sX"/>
                 <constraint firstItem="Qvx-pD-5VE" firstAttribute="top" secondItem="0L8-ZH-eGl" secondAttribute="bottom" id="V3x-iJ-YM2"/>
                 <constraint firstAttribute="trailing" secondItem="Qvx-pD-5VE" secondAttribute="trailing" id="cag-xI-JK7"/>
+                <constraint firstAttribute="trailing" secondItem="l6g-Hb-KEE" secondAttribute="trailing" id="s3v-sY-aA2"/>
                 <constraint firstItem="Qvx-pD-5VE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="shn-TG-pCX"/>
                 <constraint firstItem="Qvx-pD-5VE" firstAttribute="top" secondItem="0L8-ZH-eGl" secondAttribute="bottom" id="xlg-d6-azI"/>
             </constraints>

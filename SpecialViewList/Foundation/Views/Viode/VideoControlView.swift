@@ -9,6 +9,7 @@ protocol VideoControlDelegate: AnyObject {
     func didTapDownSeekBar(currentTime: Float)
     func didTapUpInsideOrOutsideSeekBar(currentTime: Float)
     func didTapSeekBar(currentTime: Float)
+    func didChangedPlayTime(currentTime: Float)
 }
 
 final class VideoControlView: UIView, NibOwnerLoadable {
@@ -124,6 +125,12 @@ final class VideoControlView: UIView, NibOwnerLoadable {
         }
     }
 
+    @IBOutlet weak var thumbnailImageBaseView: UIView! {
+        didSet {
+            thumbnailImageBaseView.isHidden = true
+        }
+    }
+    @IBOutlet weak var thumbnailImageView: UIImageView!
     @IBOutlet weak var seekBarSlider: UISlider! {
         didSet {
             seekBarSlider.addAction(
@@ -131,9 +138,11 @@ final class VideoControlView: UIView, NibOwnerLoadable {
                     guard let self = self,
                           let slider = action.sender as? UISlider
                     else { return }
-                    self.setCurrentTime(
+                    updateThumbnailImagePoint(slider: slider)
+                    setCurrentTime(
                         currentTime: slider.value
                     )
+                    delegate?.didChangedPlayTime(currentTime: slider.value)
                 },
                 for: .valueChanged
             )
@@ -143,7 +152,9 @@ final class VideoControlView: UIView, NibOwnerLoadable {
                     guard let self = self,
                           let slider = action.sender as? UISlider
                     else { return }
-                    self.delegate?.didTapDownSeekBar(
+                    playerControllerStackView.isHidden = true
+                    thumbnailImageBaseView.isHidden = false
+                    delegate?.didTapDownSeekBar(
                         currentTime: slider.value
                     )
                 },
@@ -155,6 +166,8 @@ final class VideoControlView: UIView, NibOwnerLoadable {
                     guard let self = self,
                           let slider = action.sender as? UISlider
                     else { return }
+                    playerControllerStackView.isHidden = false
+                    thumbnailImageBaseView.isHidden = true
                     self.delegate?.didTapUpInsideOrOutsideSeekBar(
                         currentTime: slider.value
                     )
@@ -181,6 +194,20 @@ final class VideoControlView: UIView, NibOwnerLoadable {
             seekBarSlider.addGestureRecognizer(tapGesture)
         }
     }
+    
+    private func updateThumbnailImagePoint(slider: UISlider) {
+         let trackRect = slider.trackRect(forBounds: slider.bounds)
+         let thumbRect = slider.thumbRect(forBounds: slider.bounds, trackRect: trackRect, value: slider.value)
+         let thumbCenter = CGPoint(x: thumbRect.midX, y: thumbRect.midY)
+         
+        let x = max(
+            min(thumbCenter.x,frame.width), 0
+        )
+        thumbnailImageView.frame.origin = CGPoint(
+            x: x,
+            y: thumbnailImageView.frame.origin.y
+        )
+     }
 
     weak var delegate: VideoControlDelegate?
     var isHiddenControlView: Bool = false {
@@ -247,18 +274,19 @@ final class VideoControlView: UIView, NibOwnerLoadable {
             for: .normal
         )
     }
+    
+    func updateThumbnailImage(image: UIImage?) {
+        thumbnailImageView.image = image
+    }
 
     @objc
     private func skipTimeToPosision(
         gestureRecognizer: UIGestureRecognizer
     ) {
-        let pointTapped: CGPoint = gestureRecognizer.location(
-            in: seekBarSlider
-        )
-        let positionOfSlider: CGPoint = seekBarSlider.frame.origin
-        let widthOfSlider: CGFloat = seekBarSlider.frame.size.width
+        let tapPositionX = gestureRecognizer.location(in: seekBarSlider).x
+        let sliderWidth = seekBarSlider.frame.width
         let currentTime = Float(
-            (pointTapped.x - positionOfSlider.x) * CGFloat(seekBarSlider.maximumValue) / widthOfSlider
+            CGFloat(seekBarSlider.maximumValue) * (tapPositionX / sliderWidth)
         )
         delegate?.didTapSeekBar(
             currentTime: currentTime
