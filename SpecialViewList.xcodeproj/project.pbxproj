@@ -16,6 +16,8 @@
 		161383F52913E36000A4E787 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161383F42913E36000A4E787 /* Sample.swift */; };
 		161383F72913E37F00A4E787 /* CollectionContentDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161383F62913E37F00A4E787 /* CollectionContentDetail.swift */; };
 		161383F9291400E900A4E787 /* CollectionViewCompositionalLayoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161383F8291400E900A4E787 /* CollectionViewCompositionalLayoutViewModel.swift */; };
+		1617D1872A07ED6700CE0EE8 /* ReactionAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1617D1852A07ED6700CE0EE8 /* ReactionAnimationViewController.swift */; };
+		1617D1882A07ED6700CE0EE8 /* QuizReactionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1617D1862A07ED6700CE0EE8 /* QuizReactionViewController.xib */; };
 		16334C3029192C06002D2FEE /* UIBarButtonItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16334C2F29192C06002D2FEE /* UIBarButtonItemExtension.swift */; };
 		16334C3229192C46002D2FEE /* SFSymbolType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16334C3129192C46002D2FEE /* SFSymbolType.swift */; };
 		16334C3429192DA1002D2FEE /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16334C3329192DA1002D2FEE /* UIImageExtension.swift */; };
@@ -168,6 +170,8 @@
 		161383F42913E36000A4E787 /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 		161383F62913E37F00A4E787 /* CollectionContentDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionContentDetail.swift; sourceTree = "<group>"; };
 		161383F8291400E900A4E787 /* CollectionViewCompositionalLayoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCompositionalLayoutViewModel.swift; sourceTree = "<group>"; };
+		1617D1852A07ED6700CE0EE8 /* ReactionAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionAnimationViewController.swift; sourceTree = "<group>"; };
+		1617D1862A07ED6700CE0EE8 /* QuizReactionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizReactionViewController.xib; sourceTree = "<group>"; };
 		16334C2F29192C06002D2FEE /* UIBarButtonItemExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemExtension.swift; sourceTree = "<group>"; };
 		16334C3129192C46002D2FEE /* SFSymbolType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolType.swift; sourceTree = "<group>"; };
 		16334C3329192DA1002D2FEE /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
@@ -331,6 +335,15 @@
 				161383F8291400E900A4E787 /* CollectionViewCompositionalLayoutViewModel.swift */,
 			);
 			path = CollectionViewCompositionalLayout;
+			sourceTree = "<group>";
+		};
+		1617D1842A07ED4500CE0EE8 /* QuizReaction */ = {
+			isa = PBXGroup;
+			children = (
+				1617D1852A07ED6700CE0EE8 /* ReactionAnimationViewController.swift */,
+				1617D1862A07ED6700CE0EE8 /* QuizReactionViewController.xib */,
+			);
+			path = QuizReaction;
 			sourceTree = "<group>";
 		};
 		1635CDC528C8E21000ADF7A6 /* SomeAutoVideoPlayer */ = {
@@ -516,6 +529,7 @@
 		16DC40C929D110F7005B30C9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1617D1842A07ED4500CE0EE8 /* QuizReaction */,
 				16DC40CD29D112F0005B30C9 /* QuizAppByChatGPT */,
 				16CADC1329B16B090034C617 /* VideoPlayerWithSubtitle */,
 				161383E72913605800A4E787 /* CollectionViewCompositionalLayout */,
@@ -846,6 +860,7 @@
 				CA5F0A2927B5E8E40021E1FD /* SpecialViewListViewController.xib in Resources */,
 				1658D81528F7905300E88878 /* TextFieldCollectionViewCell.xib in Resources */,
 				166D483829BFD53700AA5D68 /* SpllitVideoAndListCollectionViewCell.xib in Resources */,
+				1617D1882A07ED6700CE0EE8 /* QuizReactionViewController.xib in Resources */,
 				16CAA1AC28DCADBB00A5108B /* NextHostingControllerViewController.xib in Resources */,
 				166D482629BA8DD500AA5D68 /* VideoWithControlView.xib in Resources */,
 				CA3F554D27C602B300D6CAC2 /* LinkLabelViewController.xib in Resources */,
@@ -893,6 +908,7 @@
 				1658D7FF28F6A3E600E88878 /* VideoOnCollectionViewController.swift in Sources */,
 				16CAA1AE28DCAF5800A5108B /* NextHostingBaseView.swift in Sources */,
 				CA36A79F27CFB1DF003B9140 /* AudioPlayer.swift in Sources */,
+				1617D1872A07ED6700CE0EE8 /* ReactionAnimationViewController.swift in Sources */,
 				CA5F0A2327B5E5250021E1FD /* NibOwnerLoadable.swift in Sources */,
 				1673A7B628C573CC00F9BF77 /* CellAnimationTableViewCell.swift in Sources */,
 				CA3F555127C604FB00D6CAC2 /* LinkLabelView.swift in Sources */,
