@@ -138,11 +138,11 @@ final class VideoControlView: UIView, NibOwnerLoadable {
                     guard let self = self,
                           let slider = action.sender as? UISlider
                     else { return }
-                    updateThumbnailImagePoint(slider: slider)
-                    setCurrentTime(
+                    self.updateThumbnailImagePoint(slider: slider)
+                    self.setCurrentTime(
                         currentTime: slider.value
                     )
-                    delegate?.didChangedPlayTime(currentTime: slider.value)
+                    self.delegate?.didChangedPlayTime(currentTime: slider.value)
                 },
                 for: .valueChanged
             )
@@ -152,9 +152,9 @@ final class VideoControlView: UIView, NibOwnerLoadable {
                     guard let self = self,
                           let slider = action.sender as? UISlider
                     else { return }
-                    playerControllerStackView.fadeOut()
-                    thumbnailImageBaseView.fadeIn()
-                    delegate?.didTapDownSeekBar(
+                    self.playerControllerStackView.fadeOut()
+                    self.thumbnailImageBaseView.fadeIn()
+                    self.delegate?.didTapDownSeekBar(
                         currentTime: slider.value
                     )
                 },
@@ -166,8 +166,8 @@ final class VideoControlView: UIView, NibOwnerLoadable {
                     guard let self = self,
                           let slider = action.sender as? UISlider
                     else { return }
-                    playerControllerStackView.fadeIn()
-                    thumbnailImageBaseView.fadeOut()
+                    self.playerControllerStackView.fadeIn()
+                    self.thumbnailImageBaseView.fadeOut()
                     self.delegate?.didTapUpInsideOrOutsideSeekBar(
                         currentTime: slider.value
                     )

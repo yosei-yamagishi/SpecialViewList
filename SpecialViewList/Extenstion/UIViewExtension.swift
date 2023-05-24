@@ -50,7 +50,7 @@ extension UIView {
         
         UIView.animate(withDuration: duration, animations: { [weak self] in
             guard let self else { return }
-            alpha = displayAlpha
+            self.alpha = displayAlpha
         }, completion: { finished in
             completion?(finished)
         })
@@ -66,7 +66,7 @@ extension UIView {
         }, completion: {  [weak self] finished in
             guard let self else { return }
             if hideWhenDone {
-                isHidden = true
+                self.isHidden = true
             }
             completion?(finished)
         })
