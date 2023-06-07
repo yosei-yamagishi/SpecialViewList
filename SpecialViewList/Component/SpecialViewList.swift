@@ -33,7 +33,8 @@ enum SpecialViewList {
                     .videoPlayerWithSubtitle,
                     .splitVideoAndList,
                     .quizByChatGPT,
-                    .reactionAnimation
+                    .reactionAnimation,
+                    .mypageOfSwiftUI
                 ]
             }
         }
@@ -43,7 +44,7 @@ enum SpecialViewList {
         // customView
         case grid3x3, autoFlowedTitle, linkLabel, subtitlePlayer, videoCollection, choiceForm, tableViewCellAnimation, defaultAVPlayerView, orientation
         // viewController
-        case hostingController, loginByConcurrency, videoPreviewOnCollectionView, bottomUpKeyboardHeightView, collectionViewCompositionalLayoutView, videoPlayerWithSubtitle, splitVideoAndList, quizByChatGPT, reactionAnimation
+        case hostingController, loginByConcurrency, videoPreviewOnCollectionView, bottomUpKeyboardHeightView, collectionViewCompositionalLayoutView, videoPlayerWithSubtitle, splitVideoAndList, quizByChatGPT, reactionAnimation, mypageOfSwiftUI
         
         var title: String {
             switch self {
@@ -83,6 +84,8 @@ enum SpecialViewList {
                 return "ChatGPT-4が作ったクイズアプリ"
             case .reactionAnimation:
                 return "リアクションのアニメーション画面"
+            case .mypageOfSwiftUI:
+                return "SwiftUIのマイページ"
             }
         }
         
@@ -125,6 +128,8 @@ enum SpecialViewList {
                 return "ChatGPT-4にアプリの雑な仕様を入力し、SwiftUIのアプリの動作確認ができる"
             case .reactionAnimation:
                 return "下から丸い半円がアニメーションで出現する画面"
+            case .mypageOfSwiftUI:
+                return "SwiftUIのListで作ったマイページ"
             }
         }
     }
