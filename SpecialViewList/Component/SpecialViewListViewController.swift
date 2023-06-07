@@ -175,9 +175,19 @@ class SpecialViewListViewController: UIViewController {
             present(controller, animated: true)
         case .reactionAnimation:
             let controller = ReactionAnimationViewController()
-            let nav = UINavigationController()
-            nav.viewControllers = [controller]
-            present(nav, animated: true)
+            navigationController?.pushViewController(
+                controller,
+                animated: true
+            )
+        case .mypageOfSwiftUI:
+            let viewModel = MypageOfSwiftUIViewModel()
+            let controller = MypageOfSwiftUIHostingController(
+                viewModel: viewModel
+            )
+            navigationController?.pushViewController(
+                controller,
+                animated: true
+            )
         }
     }
 }
