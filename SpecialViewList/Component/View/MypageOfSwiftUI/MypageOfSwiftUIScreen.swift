@@ -61,7 +61,7 @@ struct MypageOfSwiftUIScreen: View {
     
     var body: some View {
         ZStack(alignment: .top) {
-            Color.gray.ignoresSafeArea()
+            Color(0xF0FFF0, alpha: 1.0).ignoresSafeArea()
             ScrollView {
                 VStack {
                     profileSection

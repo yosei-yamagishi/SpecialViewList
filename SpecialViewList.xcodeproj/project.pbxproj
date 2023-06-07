@@ -33,6 +33,7 @@
 		164CB01F2A30B1E10041901A /* MypageOfSwiftUIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164CB01E2A30B1E10041901A /* MypageOfSwiftUIViewModel.swift */; };
 		164CB0222A30B2770041901A /* SectionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164CB0212A30B2770041901A /* SectionModifier.swift */; };
 		164CB0242A30B2C70041901A /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164CB0232A30B2C70041901A /* ViewExtension.swift */; };
+		164CB0262A30B70F0041901A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164CB0252A30B70F0041901A /* Color.swift */; };
 		1658D7FF28F6A3E600E88878 /* VideoOnCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1658D7FD28F6A3E600E88878 /* VideoOnCollectionViewController.swift */; };
 		1658D80028F6A3E600E88878 /* VideoOnCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1658D7FE28F6A3E600E88878 /* VideoOnCollectionViewController.xib */; };
 		1658D80428F6A83D00E88878 /* VideoPreviewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1658D80228F6A83D00E88878 /* VideoPreviewCollectionViewCell.swift */; };
@@ -196,6 +197,7 @@
 		164CB01E2A30B1E10041901A /* MypageOfSwiftUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageOfSwiftUIViewModel.swift; sourceTree = "<group>"; };
 		164CB0212A30B2770041901A /* SectionModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionModifier.swift; sourceTree = "<group>"; };
 		164CB0232A30B2C70041901A /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		164CB0252A30B70F0041901A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		1658D7FD28F6A3E600E88878 /* VideoOnCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoOnCollectionViewController.swift; sourceTree = "<group>"; };
 		1658D7FE28F6A3E600E88878 /* VideoOnCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoOnCollectionViewController.xib; sourceTree = "<group>"; };
 		1658D80228F6A83D00E88878 /* VideoPreviewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -687,6 +689,7 @@
 				16334C3329192DA1002D2FEE /* UIImageExtension.swift */,
 				166D47C229B5480C00AA5D68 /* DoubleExtension.swift */,
 				164CB0232A30B2C70041901A /* ViewExtension.swift */,
+				164CB0252A30B70F0041901A /* Color.swift */,
 			);
 			path = Extenstion;
 			sourceTree = "<group>";
@@ -962,6 +965,7 @@
 				16CAA1A528DC9A0F00A5108B /* ActionSender.swift in Sources */,
 				16D64EF42A2381FA0029E7CE /* EventTrigger.swift in Sources */,
 				1673A7AB28C4CE8700F9BF77 /* TableViewCellAnimationViewModel.swift in Sources */,
+				164CB0262A30B70F0041901A /* Color.swift in Sources */,
 				16334C3229192C46002D2FEE /* SFSymbolType.swift in Sources */,
 				166D47BB29B16BA100AA5D68 /* VideoPlayerWithSubtitleViewModel.swift in Sources */,
 				CA36A78427CE4F6A003B9140 /* SubtitleInfo.swift in Sources */,
