@@ -181,7 +181,7 @@ class SpecialViewListViewController: UIViewController {
             )
         case .mypageOfSwiftUI:
             let viewModel = MypageOfSwiftUIViewModel()
-            let controller = MypageOfSwiftUIViewController(
+            let controller = MypageOfSwiftUIHostingController(
                 viewModel: viewModel
             )
             navigationController?.pushViewController(

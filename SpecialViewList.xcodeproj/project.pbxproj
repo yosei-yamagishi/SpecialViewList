@@ -89,7 +89,7 @@
 		16DC40D029D11327005B30C9 /* QuizAppByChatGPTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DC40CE29D11327005B30C9 /* QuizAppByChatGPTViewController.swift */; };
 		16DC40D129D11327005B30C9 /* QuizAppByChatGPTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16DC40CF29D11327005B30C9 /* QuizAppByChatGPTViewController.xib */; };
 		16DC40D329D11393005B30C9 /* QuizAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DC40D229D11393005B30C9 /* QuizAppView.swift */; };
-		16F076AD2A1F9321007EFCD4 /* MypageOfSwiftUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F076AB2A1F9321007EFCD4 /* MypageOfSwiftUIViewController.swift */; };
+		16F076AD2A1F9321007EFCD4 /* MypageOfSwiftUIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F076AB2A1F9321007EFCD4 /* MypageOfSwiftUIScreen.swift */; };
 		16F076AE2A1F9321007EFCD4 /* MypageOfSwiftUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16F076AC2A1F9321007EFCD4 /* MypageOfSwiftUIViewController.xib */; };
 		16FCFC7B2917E6060061C97B /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FCFC7A2917E6060061C97B /* CollectionHeaderView.swift */; };
 		16FCFC7D2917E7910061C97B /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16FCFC7C2917E7910061C97B /* CollectionHeaderView.xib */; };
@@ -252,7 +252,7 @@
 		16DC40CE29D11327005B30C9 /* QuizAppByChatGPTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAppByChatGPTViewController.swift; sourceTree = "<group>"; };
 		16DC40CF29D11327005B30C9 /* QuizAppByChatGPTViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizAppByChatGPTViewController.xib; sourceTree = "<group>"; };
 		16DC40D229D11393005B30C9 /* QuizAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAppView.swift; sourceTree = "<group>"; };
-		16F076AB2A1F9321007EFCD4 /* MypageOfSwiftUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageOfSwiftUIViewController.swift; sourceTree = "<group>"; };
+		16F076AB2A1F9321007EFCD4 /* MypageOfSwiftUIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageOfSwiftUIScreen.swift; sourceTree = "<group>"; };
 		16F076AC2A1F9321007EFCD4 /* MypageOfSwiftUIViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MypageOfSwiftUIViewController.xib; sourceTree = "<group>"; };
 		16FCFC7A2917E6060061C97B /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
 		16FCFC7C2917E7910061C97B /* CollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
@@ -616,7 +616,7 @@
 		16F076AA2A1F91FF007EFCD4 /* MypageOfSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				16F076AB2A1F9321007EFCD4 /* MypageOfSwiftUIViewController.swift */,
+				16F076AB2A1F9321007EFCD4 /* MypageOfSwiftUIScreen.swift */,
 				16F076AC2A1F9321007EFCD4 /* MypageOfSwiftUIViewController.xib */,
 				164CB01E2A30B1E10041901A /* MypageOfSwiftUIViewModel.swift */,
 			);
@@ -992,7 +992,7 @@
 				CA5F0AD127B7769E0021E1FD /* Grid3x3ViewModel.swift in Sources */,
 				16DC40D029D11327005B30C9 /* QuizAppByChatGPTViewController.swift in Sources */,
 				CAAAA90B28B76EFB003903F8 /* ChoiceFormView.swift in Sources */,
-				16F076AD2A1F9321007EFCD4 /* MypageOfSwiftUIViewController.swift in Sources */,
+				16F076AD2A1F9321007EFCD4 /* MypageOfSwiftUIScreen.swift in Sources */,
 				CA3F554F27C603E400D6CAC2 /* LinkLabelViewModel.swift in Sources */,
 				16D64EF82A2385A30029E7CE /* DummyViewController.swift in Sources */,
 				166D483729BFD53700AA5D68 /* SpllitVideoAndListCollectionViewCell.swift in Sources */,

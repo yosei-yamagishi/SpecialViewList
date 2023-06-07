@@ -2,13 +2,13 @@ import UIKit
 import Combine
 import SwiftUI
 
-class MypageOfSwiftUIViewController: UIHostingController<MypageOfSwiftUIView> {
+class MypageOfSwiftUIHostingController: UIHostingController<MypageOfSwiftUIScreen> {
     
     private var cancellables = Set<AnyCancellable>()
     
     init(viewModel: MypageOfSwiftUIViewModel) {
         super.init(
-            rootView: MypageOfSwiftUIView(
+            rootView: MypageOfSwiftUIScreen(
                 viewModel: viewModel
             )
         )
@@ -52,7 +52,7 @@ class MypageOfSwiftUIViewController: UIHostingController<MypageOfSwiftUIView> {
 }
 
 
-struct MypageOfSwiftUIView: View {
+struct MypageOfSwiftUIScreen: View {
     @ObservedObject private var viewModel: MypageOfSwiftUIViewModel
     
     init(viewModel: MypageOfSwiftUIViewModel) {
