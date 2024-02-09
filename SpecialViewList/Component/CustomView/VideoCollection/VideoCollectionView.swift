@@ -17,12 +17,13 @@ class VideoCollectionView: UIView, NibOwnerLoadable {
             collectionView.delegate = self
             let nibs = [VideoCollectionViewCell.self]
             collectionView.registerNib(cellTypes: nibs)
+            collectionView.contentInsetAdjustmentBehavior = .never
         }
     }
     
     private var collectionLayout: CollectionLayout {
         CollectionLayout(
-            scrollDirection: .horizontal,
+            scrollDirection: .vertical,
             insets: .zero,
             minimumLineSpacing: 0,
             minimumInterItemSpacing: 0
@@ -95,7 +96,7 @@ extension VideoCollectionView: UICollectionViewDataSource {
 extension VideoCollectionView: UICollectionViewDelegate {
     // 画面から指が離れたかつスクロールが自動停止した時
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        currentIndex = Int(round(scrollView.contentOffset.x / cellSize.width))
+        currentIndex = Int(round(scrollView.contentOffset.y / cellSize.height))
     }
 }
 
@@ -105,7 +106,7 @@ extension VideoCollectionView: UICollectionViewDelegateFlowLayout {
         layout collectionViewLayout: UICollectionViewLayout,
         sizeForItemAt indexPath: IndexPath
     ) -> CGSize {
-        collectionLayout.cellSize(type: .free(size: frame.size))
+        cellSize
     }
 
     func collectionView(

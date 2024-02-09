@@ -2,6 +2,12 @@ import UIKit
 import AVKit
 
 class VideoCollectionViewCell: UICollectionViewCell {
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        removePlayer()
+        videoView.resetImage()
+    }
 
     @IBOutlet weak var videoView: VideoView!
     

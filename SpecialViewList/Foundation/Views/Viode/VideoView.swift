@@ -25,6 +25,11 @@ class VideoView: UIView, NibOwnerLoadable {
     }
 
     func setupThumbnailImage(urlString: String) {
+        thumbnailImageView.contentMode = .scaleAspectFill
         thumbnailImageView.image = UIImage(named: urlString)
+    }
+    
+    func resetImage() {
+        thumbnailImageView.image = nil
     }
 }

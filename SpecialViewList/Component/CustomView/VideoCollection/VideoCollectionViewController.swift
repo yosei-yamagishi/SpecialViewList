@@ -47,6 +47,9 @@ class VideoCollectionViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+        navigationItem.largeTitleDisplayMode = .never
+        
         videoCollectionView.setupVideos(
             videos: viewModel.videos
         )
