@@ -138,6 +138,21 @@ class VideoPlayerWithSubtitleViewController: UIViewController {
                 }
             )
             .store(in: &cancellables)
+        
+        viewModel.$state.map(\.speedRateInfo)
+            .receive(on: DispatchQueue.main)
+            .sink(receiveValue: { [weak self] speedRateInfo in
+                guard let self else { return }
+                guard let currentSpeedRate = speedRateInfo?.first(where: { $0.value })?.key else {
+                    return
+                }
+                let speeds = speedRateInfo?.keys.sorted() ?? []
+                self.videoWithControlView.setupSpeedButton(
+                    currentSpeed: currentSpeedRate,
+                    speeds: speeds
+                )
+            })
+            .store(in: &cancellables)
     }
 }
 
@@ -171,9 +186,8 @@ extension VideoPlayerWithSubtitleViewController: VideoControlDelegate {
         viewModel.send(.didTapFullScreen)
     }
     
-    func didTapSpeedRate() {
-        
-        viewModel.send(.didTapSpeedRate)
+    func didTapSpeedRate(speed: Double) {
+        viewModel.send(.didTapSpeedRate(speed: speed))
     }
     
     func didTapDownSeekBar(

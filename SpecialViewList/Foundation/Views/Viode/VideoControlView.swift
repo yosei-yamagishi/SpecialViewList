@@ -5,7 +5,7 @@ protocol VideoControlDelegate: AnyObject {
     func didTapForward()
     func didTapBackward()
     func didTapFullScreen()
-    func didTapSpeedRate()
+    func didTapSpeedRate(speed: Double)
     func didTapDownSeekBar(currentTime: Float)
     func didTapUpInsideOrOutsideSeekBar(currentTime: Float)
     func didTapSeekBar(currentTime: Float)
@@ -81,17 +81,27 @@ final class VideoControlView: UIView, NibOwnerLoadable {
         }
     }
     
+    @IBOutlet weak var subtitleButton: UIButton! {
+        didSet {
+            subtitleButton.setImage(
+                UIImage.sfsymbolImage(
+                    sfsymbolType: .captionsBubble,
+                    pointSize: 24
+                ),
+                for: .normal
+            )
+        }
+    }
+    
     @IBOutlet weak var videoPlaybackRateButton: UIButton! {
         didSet {
-            videoPlaybackRateButton.addAction(
-                UIAction { [weak self] _ in
-                    self?.delegate?.didTapSpeedRate()
-                },
-                for: .touchUpInside
+            videoPlaybackRateButton.setImage(
+                UIImage.sfsymbolImage(
+                    sfsymbolType: .gaugeWithDotsNeedle67percent,
+                    pointSize: 24
+                ),
+                for: .normal
             )
-            videoPlaybackRateButton.layer.borderColor = UIColor.white.cgColor
-            videoPlaybackRateButton.layer.cornerRadius = 3.0
-            videoPlaybackRateButton.layer.borderWidth = 1.0
         }
     }
 
@@ -255,13 +265,24 @@ final class VideoControlView: UIView, NibOwnerLoadable {
         seekBarSlider.value = currentTime
     }
 
-    func setPlaybackRate(
-        playbackRate: VideoPlayer.PlaybackRate
+    func setupSpeedButton(
+        currentSpeed: Double,
+        speeds: [Double]
     ) {
-        videoPlaybackRateButton.setTitle(
-            "\(playbackRate.rawValue)x",
-            for: .normal
+        let actions = speeds.map { speed in
+            UIAction(
+                title: "\(speed)x",
+                state: speed == currentSpeed ? .on : .off
+            ) { [weak self] action in
+                self?.delegate?.didTapSpeedRate(speed: speed)
+            }
+        }
+        videoPlaybackRateButton.menu = UIMenu(
+            title: "再生スピード",
+            children: actions
         )
+        
+        videoPlaybackRateButton.showsMenuAsPrimaryAction = true
     }
 
     func switchFullScreenButton(

@@ -6,4 +6,7 @@ enum SFSymbolType: String {
     case gobackward10 = "gobackward.10"
     case fullScreen = "arrow.up.backward.and.arrow.down.forward"
     case fullScreenCancel = "arrow.down.forward.and.arrow.up.backward"
+    case captionsBubble = "captions.bubble"
+    case captionsBubbleFill = "captions.bubble.fill"
+    case gaugeWithDotsNeedle67percent = "gauge.with.dots.needle.67percent"
 }

@@ -10,7 +10,7 @@ class VideoPlayerWithSubtitleViewModel: UDFViewModel {
         case didTapForward
         case didTapBackward
         case didTapFullScreen
-        case didTapSpeedRate
+        case didTapSpeedRate(speed: Double)
         case didTapDownSeekBar(currentTime: Float)
         case didTapUpInsideOrOutsideSeekBar(currentTime: Float)
         case didTapSeekBar(currentTime: Float)
@@ -27,6 +27,7 @@ class VideoPlayerWithSubtitleViewModel: UDFViewModel {
         var duration: Float = .zero
         var currentSeconds: Float?
         var activeScrollIndexPath: IndexPath?
+        var speedRateInfo: [Double: Bool]?
     }
 
     @Published private(set) var state: State
@@ -48,6 +49,7 @@ class VideoPlayerWithSubtitleViewModel: UDFViewModel {
             videoPlayer.prepare(url: state.videoUrl)
             videoPlayer.startObservePlayerTimer()
             state.duration = videoPlayer.duration
+            state.speedRateInfo = videoPlayer.currentSpeedRateInfo
         case .didTapPlayAndPause:
             videoPlayer.isPlaying
                 ? videoPlayer.pause()
@@ -59,9 +61,11 @@ class VideoPlayerWithSubtitleViewModel: UDFViewModel {
             videoPlayer.skipBackward()
         case .didTapFullScreen:
             break
-        case .didTapSpeedRate:
-            //videoPlayer.setPlaybackRate(rate: )
-            break
+        case let .didTapSpeedRate(speed):
+            videoPlayer.setPlaybackRate(
+                rate: Float(speed)
+            )
+            state.speedRateInfo = videoPlayer.currentSpeedRateInfo
         case let .didTapDownSeekBar(currentTime: currentTime):
             videoPlayer.setCurrentTime(currentTime: currentTime)
         case let .didTapUpInsideOrOutsideSeekBar(currentTime: currentTime):

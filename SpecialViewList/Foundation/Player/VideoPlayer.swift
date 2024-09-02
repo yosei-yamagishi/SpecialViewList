@@ -9,6 +9,7 @@ protocol VideoPlayerControlProtocol {
     var currentTime: Float { get }
     var duration: Float { get }
     var delegate: VideoPlayerDelegate? { get set }
+    var currentSpeedRateInfo: [Double: Bool] { get }
     func play()
     func pause()
     func skipForward()
@@ -46,6 +47,22 @@ class VideoPlayer: VideoPlayerProtocol, VideoPlayerControlProtocol {
     var delegate: VideoPlayerDelegate?
     var player: AVPlayer?
     
+    private var currentSpeedRate: Double {
+        let rate = player?.rate ?? .zero
+        if rate == .zero {
+           return Double(PlaybackRate.defaultPlaybackRate.rawValue)
+        }
+        return Double(rate)
+    }
+    private var speedRates: [Double] = PlaybackRate.allCases.map { Double($0.rawValue) }
+    var currentSpeedRateInfo: [Double: Bool] {
+        var info = [Double: Bool]()
+        for rate in speedRates {
+            info[rate] = (rate == currentSpeedRate)
+        }
+        return info
+    }
+    
     var isPlaying: Bool { player?.isPlaying ?? false }
 
     var currentTime: Float {
@@ -58,6 +75,11 @@ class VideoPlayer: VideoPlayerProtocol, VideoPlayerControlProtocol {
     func prepare(url: URL) {
         let item = AVPlayerItem(url: url)
         player = AVPlayer(playerItem: item)
+        if #available(iOS 16.0, *) {
+            player?.defaultRate = PlaybackRate.defaultPlaybackRate.rawValue
+        } else {
+            // Fallback on earlier versions
+        }
     }
     
     func play() {

@@ -44,14 +44,6 @@ class VideoWithControlView: UIView, NibOwnerLoadable {
         )
     }
 
-    func setPlaybackRate(
-        playbackRate: VideoPlayer.PlaybackRate
-    ) {
-        controlView.setPlaybackRate(
-            playbackRate: playbackRate
-        )
-    }
-
     func switchDisplayControlView(isHidden: Bool) {
         controlView.isHidden = isHidden
     }
@@ -70,6 +62,16 @@ class VideoWithControlView: UIView, NibOwnerLoadable {
     
     func updateImage(image: UIImage?) {
         controlView.updateThumbnailImage(image: image)
+    }
+    
+    func setupSpeedButton(
+        currentSpeed: Double,
+        speeds: [Double]
+    ) {
+        controlView.setupSpeedButton(
+            currentSpeed: currentSpeed,
+            speeds: speeds
+        )
     }
 }
 
