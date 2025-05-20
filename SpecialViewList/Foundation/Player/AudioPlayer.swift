@@ -44,19 +44,17 @@ class AudioPlayer: AudioPlayerProtocol {
     func updateTime(currentTime: Double) {
         audioPlayer?.currentTime = currentTime
     }
-    
+
     func skipBack() {
-        let leftTime = duration - Self.skipTime
-        audioPlayer?.currentTime -= leftTime >= Self.skipTime
-            ? Self.skipTime
-            : leftTime
+        guard let player = audioPlayer else { return }
+        let newTime = max(player.currentTime - Self.skipTime, 0)
+        player.currentTime = newTime
     }
-    
+
     func skipForward() {
-        let leftTime = duration - Self.skipTime
-        audioPlayer?.currentTime += leftTime >= Self.skipTime
-            ? Self.skipTime
-            : leftTime
+        guard let player = audioPlayer else { return }
+        let newTime = min(player.currentTime + Self.skipTime, player.duration)
+        player.currentTime = newTime
     }
 }
 
