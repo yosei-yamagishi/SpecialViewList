@@ -43,7 +43,7 @@ class VideoPlayer: VideoPlayerProtocol, VideoPlayerControlProtocol {
         case speed200 = 2.0
     }
 
-    private var timeerObserver: Any?
+    private var timerObserver: Any?
     var delegate: VideoPlayerDelegate?
     var player: AVPlayer?
     
@@ -98,11 +98,11 @@ class VideoPlayer: VideoPlayerProtocol, VideoPlayerControlProtocol {
     func pauseAndInit() {
         player?.pause()
         player?.replaceCurrentItem(with: nil)
-        if let timeerObserver {
+        if let timerObserver {
             player?.removeTimeObserver(
-                timeerObserver
+                timerObserver
             )
-            self.timeerObserver = nil
+            self.timerObserver = nil
         }
         player = nil
         delegate = nil
@@ -148,7 +148,7 @@ class VideoPlayer: VideoPlayerProtocol, VideoPlayerControlProtocol {
             Self.timeInterval,
             preferredTimescale: Int32(NSEC_PER_SEC)
         )
-        timeerObserver = player?.addPeriodicTimeObserver(
+        timerObserver = player?.addPeriodicTimeObserver(
             forInterval: intervalTime,
             queue: nil,
             using: { [weak self] _ in
